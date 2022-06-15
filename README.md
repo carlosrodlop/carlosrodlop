@@ -2,13 +2,11 @@
 
 ![](img/carlosrodlop.png)
 
-Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional Service Team.
+Automation Consultant embracing the DevOps culture. Background of Java Web and (Geo) Data Management and Analysis. Running CI/CD pipelines in the Cloud.
 
-I help customers to love our CI/CD products!
+Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional Service Team, helping customers to love more our CI/CD products!
 
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlosrodlop/)
-
-
 
 ## 🔧 Technologies & Tools
 
