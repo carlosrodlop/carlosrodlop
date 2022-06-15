@@ -2,16 +2,20 @@
 
 ![](img/carlosrodlop.png)
 
-Happily Working at [CloudBees](https://www.cloudbees.com/) in the Professional Service Team.
+Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional Service Team.
 
-I help customer to love our products!
+I help customers to love our CI/CD products!
+
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlosrodlop/)
+
+
 
 ## 🔧 Technologies & Tools
 
 ![](https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=A0C65C)
 ![](https://img.shields.io/badge/Editor-Visual_Studio-informational?style=flat&logo=visualstudiocode&logoColor=white&color=A0C65C)
 ![](https://img.shields.io/badge/Code-Java-informational?style=flat&logo=java&logoColor=white&color=A0C65C)
-![](https://img.shields.io/badge/Code-Groovy-informational?style=flat&logo=groovy&logoColor=white&color=A0C65C)
+![](https://img.shields.io/badge/Code-Groovy-informational?style=flat&logo=Apache+Groovy&logoColor=white&color=A0C65C)
 ![](https://img.shields.io/badge/Shell-Bash-informational?style=flat&logo=gnu-bash&logoColor=white&color=A0C65C)
 ![](https://img.shields.io/badge/Tools-Jenkins-informational?style=flat&logo=jenkins&logoColor=white&color=A0C65C)
 ![](https://img.shields.io/badge/Tools-Docker-informational?style=flat&logo=docker&logoColor=white&color=A0C65C)
