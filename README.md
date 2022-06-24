@@ -6,20 +6,20 @@ Automation Consultant embracing the DevOps culture. Background of Java Web and (
 
 Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional Service Team, helping customers to love more our CI/CD products!
 
-[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlosrodlop/)
+| | |
+|----------|-------------|
+|[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlosrodlop/)|[![Awesome](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/carlosrodlop/carlosrodlop/blob/main/AWESOME_POD.md)|
+
 
 ## 🔧 Technologies & Tools
 
+| |
+|----------|
 ![](https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=A0C65C)
-![](https://img.shields.io/badge/Editor-Visual_Studio-informational?style=flat&logo=visualstudiocode&logoColor=white&color=A0C65C)
-![](https://img.shields.io/badge/Code-Java-informational?style=flat&logo=java&logoColor=white&color=A0C65C)
-![](https://img.shields.io/badge/Code-Groovy-informational?style=flat&logo=Apache+Groovy&logoColor=white&color=A0C65C)
 ![](https://img.shields.io/badge/Shell-Bash-informational?style=flat&logo=gnu-bash&logoColor=white&color=A0C65C)
-![](https://img.shields.io/badge/Tools-Jenkins-informational?style=flat&logo=jenkins&logoColor=white&color=A0C65C)
-![](https://img.shields.io/badge/Tools-Docker-informational?style=flat&logo=docker&logoColor=white&color=A0C65C)
-![](https://img.shields.io/badge/Tools-Kubernetes-informational?style=flat&logo=kubernetes&logoColor=white&color=A0C65C)
-![](https://img.shields.io/badge/Tools-Terraform-informational?style=flat&logo=terraform&logoColor=white&color=A0C65C)
-![](https://img.shields.io/badge/Cloud-AWS-informational?style=flat&logo=amazon-aws&logoColor=white&color=A0C65C)
+![](https://img.shields.io/badge/Editor-Visual_Studio-informational?style=flat&logo=visualstudiocode&logoColor=white&color=A0C65C)
+![](https://img.shields.io/badge/Code-Java-informational?style=flat&logo=java&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Code-Groovy-informational?style=flat&logo=Apache+Groovy&logoColor=white&color=A0C65C)
+![](https://img.shields.io/badge/Tools-Jenkins-informational?style=flat&logo=jenkins&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Tools-Docker-informational?style=flat&logo=docker&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Tools-Kubernetes-informational?style=flat&logo=kubernetes&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Tools-Terraform-informational?style=flat&logo=terraform&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Cloud-AWS-informational?style=flat&logo=amazon-aws&logoColor=white&color=A0C65C)
 
 ## &#x270d; Blog & Writing
 
