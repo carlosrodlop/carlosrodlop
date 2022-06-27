@@ -18,7 +18,6 @@ spec:
 - [tomhuang12/awesome-k8s-resources: A curated list of awesome Kubernetes tools and resources.](https://github.com/tomhuang12/awesome-k8s-resources)
 - [kamranahmedse/developer-roadmap: Roadmap to becoming a developer in 2022](https://github.com/kamranahmedse/developer-roadmap)
 - [70+ Free Awesome Certificates to Earn in 2021 - DEV Community](https://dev.to/panx/50-free-awesome-certificates-to-earn-in-2021-2l7g)
-- [📛 Awesome Badges - DEV Community](https://dev.to/envoy_/150-badges-for-github-pnk)
 
 ```yaml
     # References to links on different topics per module
