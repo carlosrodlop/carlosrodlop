@@ -13,7 +13,7 @@
 </td>
 <td>
 <a href="https://github.com/carlosrodlop/carlosrodlop/blob/main/AWESOME_POD.md">
-    <img alt="Awesome" src="https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg">
+    <img alt="Awesome" src="img/awesome_badge.svg">
 </a>
 </td>
 </tr>

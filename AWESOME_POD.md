@@ -1,4 +1,4 @@
-# Awesome Pod
+# Awesome Pod [![Awesome](img/awesome_badge.svg)](https://github.com/sindresorhus/awesome)
 
 ```yaml
 metadata:
@@ -7,17 +7,21 @@ metadata:
     author: carlosrodlop
     scope: knowledge
 spec:
+    # References to other awesome lists
     containers:
 ```
 
 - [Curated list of awesome lists | Project-Awesome.org](https://project-awesome.org/)
 - [GitHub - EbookFoundation/free-programming-books: Freely available programming books](https://github.sre.pub/EbookFoundation/free-programming-books)
 - [awesome-soft/awesome-devops: A curated list of awesome softwares for Devops.](https://github.com/awesome-soft/awesome-devops)
+- [shuaibiyy/awesome-terraform: Curated list of resources on HashiCorp's Terraform](https://github.com/shuaibiyy/awesome-terraform)
+- [tomhuang12/awesome-k8s-resources: A curated list of awesome Kubernetes tools and resources.](https://github.com/tomhuang12/awesome-k8s-resources)
 - [kamranahmedse/developer-roadmap: Roadmap to becoming a developer in 2022](https://github.com/kamranahmedse/developer-roadmap)
 - [70+ Free Awesome Certificates to Earn in 2021 - DEV Community](https://dev.to/panx/50-free-awesome-certificates-to-earn-in-2021-2l7g)
 - [📛 Awesome Badges - DEV Community](https://dev.to/envoy_/150-badges-for-github-pnk)
 
 ```yaml
+    # References to links on different topics per module
     volumes:
     - certifications:
         - cka
@@ -32,6 +36,12 @@ spec:
 ```yaml
         - aws_associated_architech
 ```
+
+```yaml
+    - kubernetes:
+```
+
+- [vmware-tanzu/k-bench: Workload Benchmark for Kubernetes](https://github.com/vmware-tanzu/k-bench)
 
 ```yaml
     - youtube:
