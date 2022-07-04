@@ -32,6 +32,8 @@ spec:
         - terraform
 ```
 
+- [Terraform Challenges - KodeKloud](https://kodekloud.com/courses/terraform-challenges/)
+
 ```yaml
         - aws_associated_architech
 ```
@@ -40,6 +42,7 @@ spec:
     - kubernetes:
 ```
 
+- [CNCF_TrailMap_latest.png (7653×8869)](https://raw.githubusercontent.com/cncf/trailmap/master/CNCF_TrailMap_latest.png)
 - [vmware-tanzu/k-bench: Workload Benchmark for Kubernetes](https://github.com/vmware-tanzu/k-bench)
 
 ```yaml
