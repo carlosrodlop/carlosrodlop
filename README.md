@@ -28,7 +28,6 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 
 ## 🔧 Technologies & Tools
 
-
 ![](https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Shell-Bash-informational?style=flat&logo=gnu-bash&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Cloud-AWS-informational?style=flat&logo=amazon-aws&logoColor=white&color=A0C65C)
 ![](https://img.shields.io/badge/Editor-Visual_Studio-informational?style=flat&logo=visualstudiocode&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Code-Java-informational?style=flat&logo=java&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Code-Groovy-informational?style=flat&logo=Apache+Groovy&logoColor=white&color=A0C65C)
 ![](https://img.shields.io/badge/Tools-Jenkins-informational?style=flat&logo=jenkins&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Tools-Docker-informational?style=flat&logo=docker&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Tools-Kubernetes-informational?style=flat&logo=kubernetes&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Tools-Terraform-informational?style=flat&logo=terraform&logoColor=white&color=A0C65C)
