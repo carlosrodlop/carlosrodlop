@@ -18,6 +18,7 @@ spec:
 - [tomhuang12/awesome-k8s-resources: A curated list of awesome Kubernetes tools and resources.](https://github.com/tomhuang12/awesome-k8s-resources)
 - [kamranahmedse/developer-roadmap: Roadmap to becoming a developer in 2022](https://github.com/kamranahmedse/developer-roadmap)
 - [70+ Free Awesome Certificates to Earn in 2021 - DEV Community](https://dev.to/panx/50-free-awesome-certificates-to-earn-in-2021-2l7g)
+- [DZone: RefCards](https://dzone.com/refcardz)
 
 ```yaml
     # References to links on different topics per module
@@ -38,12 +39,27 @@ spec:
         - aws_associated_architech
 ```
 
+- [IAM Policy Simulator](https://policysim.aws.amazon.com/home/index.jsp?#)
+
 ```yaml
     - kubernetes:
 ```
 
 - [CNCF_TrailMap_latest.png (7653×8869)](https://raw.githubusercontent.com/cncf/trailmap/master/CNCF_TrailMap_latest.png)
 - [vmware-tanzu/k-bench: Workload Benchmark for Kubernetes](https://github.com/vmware-tanzu/k-bench)
+- [AWS - EKS Best Practices Guides](https://aws.github.io/aws-eks-best-practices/)
+
+```yaml
+    - sre:
+```
+
+- [Google - Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)
+
+```yaml
+    - tooling:
+```
+
+- [Online IP Subnet Calculator](https://www.subnet-calculator.com/)
 
 ```yaml
     - youtube:
