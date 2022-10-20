@@ -4,10 +4,10 @@
 
 <table cellspacing="0" cellpadding="0" style="border: 0px">
 <tbody>
-<tr>
+<tr style="border: 0px">
 <img alt="Carlos" src="img/carlosrodlop.png">
-<tr>
 </tr>
+<tr style="border: 0px">
 <td>
 <a href="https://www.linkedin.com/in/carlosrodlop/">
     <img alt="Linkedin" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white">
