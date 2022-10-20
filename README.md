@@ -22,12 +22,12 @@ display: table;
 <div class="row">
   <div class="column">
     <a href="https://www.linkedin.com/in/carlosrodlop/">
-     <img alt="Linkedin" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" style="width:100%">
+     <img alt="Linkedin" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white">
     </a>
   </div>
   <div class="column">
     <a href="https://github.com/carlosrodlop/carlosrodlop/blob/main/AWESOME_POD.md">
-        <img alt="Awesome" src="img/awesome_badge.svg" style="width:100%">
+        <img alt="Awesome" src="img/awesome_badge.svg">
     </a>
   </div>
 </div>
