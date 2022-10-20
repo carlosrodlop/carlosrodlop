@@ -1,6 +1,6 @@
 <!-- https://rahuldkjain.github.io/gh-profile-readme-generator/ -->
 
-# Hi! I'm
+# Hi 👋,
 
 <table cellspacing="0" cellpadding="0">
 <tbody>
@@ -50,9 +50,7 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 
 ## GitHub
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=carlosrodlop&show_icons=true&locale=en&layout=compact" alt="carlosrodlop" /></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=carlosrodlop&show_icons=true&locale=en" alt="carlosrodlop" /></p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=carlosrodlop&" alt="carlosrodlop" /></p>
 
 ## Knowledge Sharing
 
