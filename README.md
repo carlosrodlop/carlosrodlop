@@ -1,31 +1,16 @@
 <!-- https://rahuldkjain.github.io/gh-profile-readme-generator/ -->
 
-<style>
-.column {
-float: right;
-width: 33.33%;
-padding: 5px;
-}
-.row::after {
-content: "";
-clear: both;
-display: table;
-}
-</style>
-
 # Hi 👋,
 
 <p><img align="center" src="img/carlosrodlop.png" alt="carlosrodlop log" /></p>
 
-<p align="right">
-
-<div class="row">
-  <div class="column">
+<div class="row" style="float: right; width: 33.33%; padding: 5px">
+  <div class="column" style="clear: both; display: table">
     <a href="https://www.linkedin.com/in/carlosrodlop/">
      <img alt="Linkedin" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white">
     </a>
   </div>
-  <div class="column">
+  <div class="column" style="clear: both; display: table">
     <a href="https://github.com/carlosrodlop/carlosrodlop/blob/main/AWESOME_POD.md">
         <img alt="Awesome" src="img/awesome_badge.svg">
     </a>
@@ -75,8 +60,8 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 - [DR CloudBees CI EKS with Velero](https://events.devopsworld.com/widget/cloudbees/devopsworld22/conferenceSessionDetails?tab.day=20220928&search=1040). Orlando, EEUU. 2022
 - [Combining Serverless Continuous Delivery With ChatOps](https://www.meetup.com/es-ES/SVQJUG/events/263195348/). Sevilla, Spain. 2019
 
-<div class="row">
-  <div class="column">
+<div class="row" style="float: right; width: 33.33%; padding: 5px">
+  <div class="column" style="clear: both; display: table">
         <img src="https://komarev.com/ghpvc/?username=carlosrodlop&label=Profile%20views&color=0e75b6&style=flat" alt="carlosrodlop">
     </div>
 </div>
