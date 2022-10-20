@@ -33,11 +33,12 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 
 ## 🔧 Technologies & Tools
 
-| Work Ecosystem |
-| -------------- |
+### Work Ecosystem
 
 ![](https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Shell-Bash-informational?style=flat&logo=gnu-bash&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Cloud-AWS-informational?style=flat&logo=amazon-aws&logoColor=white&color=A0C65C)
+
 ![](https://img.shields.io/badge/Editor-Visual_Studio-informational?style=flat&logo=visualstudiocode&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Code-Java-informational?style=flat&logo=java&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Code-Groovy-informational?style=flat&logo=Apache+Groovy&logoColor=white&color=A0C65C)
+
 ![](https://img.shields.io/badge/Tools-Jenkins-informational?style=flat&logo=jenkins&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Tools-Docker-informational?style=flat&logo=docker&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Tools-Kubernetes-informational?style=flat&logo=kubernetes&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Tools-Terraform-informational?style=flat&logo=terraform&logoColor=white&color=A0C65C)
 
 ### My Badges
@@ -54,17 +55,15 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 
 ## Knowledge Sharing
 
-| &#x270d; Blog & Writing |
-| ----------------------- |
+### &#x270d; Blog & Writing
 
-[DR CloudBees in EKS with Velero](https://www.cloudbees.com/blog/), 2022.
-[Support an Interview-As-Code Model](https://stories.jenkins.io/user-story/to-run-technical-simulations-for-developer-engineer-interviews/), 2020.
-[Troubleshooting Jenkins in Kubernetes](https://www.cloudbees.com/blog/apm-tools-jenkins-performance), 2020.
-[Template Catalog: Welcome to the Pipeline as Code Family](https://www.cloudbees.com/blog/pipeline-as-code), 2020.
-[My Experience as a Developer Support Engineer at CloudBees](https://www.cloudbees.com/blog/my-experience-developer-support-engineer-cloudbees), 2019.
+- [DR CloudBees in EKS with Velero](https://www.cloudbees.com/blog/), 2022.
+- [Support an Interview-As-Code Model](https://stories.jenkins.io/user-story/to-run-technical-simulations-for-developer-engineer-interviews/), 2020.
+- [Troubleshooting Jenkins in Kubernetes](https://www.cloudbees.com/blog/apm-tools-jenkins-performance), 2020.
+- [Template Catalog: Welcome to the Pipeline as Code Family](https://www.cloudbees.com/blog/pipeline-as-code), 2020.
+- [My Experience as a Developer Support Engineer at CloudBees](https://www.cloudbees.com/blog/my-experience-developer-support-engineer-cloudbees), 2019.
 
-| &#128172; Talks |
-| --------------- |
+### &#128172; Talks
 
-[DR CloudBees CI EKS with Velero](https://events.devopsworld.com/widget/cloudbees/devopsworld22/conferenceSessionDetails?tab.day=20220928&search=1040). Orlando, EEUU. 2022
-[Combining Serverless Continuous Delivery With ChatOps](https://www.meetup.com/es-ES/SVQJUG/events/263195348/). Sevilla, Spain. 2019
+- [DR CloudBees CI EKS with Velero](https://events.devopsworld.com/widget/cloudbees/devopsworld22/conferenceSessionDetails?tab.day=20220928&search=1040). Orlando, EEUU. 2022
+- [Combining Serverless Continuous Delivery With ChatOps](https://www.meetup.com/es-ES/SVQJUG/events/263195348/). Sevilla, Spain. 2019
