@@ -2,28 +2,10 @@
 
 # Hi 👋,
 
-<table cellspacing="0" cellpadding="0" style="border: 0px">
-<tbody>
-<tr style="border: 0px">
-<img alt="Carlos" src="img/carlosrodlop.png">
-</tr>
-<tr style="border: 0px">
-<td>
-<a href="https://www.linkedin.com/in/carlosrodlop/">
-    <img alt="Linkedin" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white">
-</a>
-</td>
-<td>
-<a href="https://github.com/carlosrodlop/carlosrodlop/blob/main/AWESOME_POD.md">
-    <img alt="Awesome" src="img/awesome_badge.svg">
-</a>
-</td>
-<td>
-<img src="https://komarev.com/ghpvc/?username=carlosrodlop&label=Profile%20views&color=0e75b6&style=flat" alt="carlosrodlop" />
-</td>
-</tr>
-</tbody>
-</table>
+![Carlos Logo](img/carlosrodlop.png)
+
+| [![linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlosrodlop/) | [![awesome](img/awesome_badge.svg)](https://github.com/carlosrodlop/carlosrodlop/blob/main/AWESOME_POD.md) | <img src="https://komarev.com/ghpvc/?username=carlosrodlop&label=Profile%20views&color=0e75b6&style=flat" alt="carlosrodlop" /> |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 
 ## Bio
 
