@@ -55,3 +55,6 @@ git push origin my-tag # it uploades it remotelly
 ## Delete
 git tag -d my-tag # it deletes it locally
 git push --delete origin my-tag # it deletes it remotely
+
+# Git Submodules: https://gist.github.com/gitaarik/8735255
+git submodule add git@github.com:org-example/repo-example.git libs/submodule-example
