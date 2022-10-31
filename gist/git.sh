@@ -58,3 +58,7 @@ git push --delete origin my-tag # it deletes it remotely
 
 # Git Submodules: https://gist.github.com/gitaarik/8735255
 git submodule add git@github.com:org-example/repo-example.git libs/submodule-example
+# https://stackoverflow.com/a/16162000
+git submodule deinit -f libs/example-repo
+rm -rf .git/modules/libs/example-repo
+git rm -f libs/example-repo 
