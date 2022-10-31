@@ -25,7 +25,7 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 
 ### My Badges
 
-<a href="https://certificates.cloudbees.com/4ed81b42-e8cf-4f94-8b7d-0c91b81ce0ca#gs.g5lwaa"><img src="img/badges/cd-ro-associate.png" alt="cb-cd-essentials" width="100"></a>
+<a href="https://certificates.cloudbees.com/4ed81b42-e8cf-4f94-8b7d-0c91b81ce0ca#gs.g5lwaa"><img src="img/badges/cd-ro-associate.png" alt="cd-ro-associate" width="100"></a>
 <a href="https://certificates.cloudbees.com/9945c321-c644-4272-a5f9-f867c649498b#gs.fmhv2t"><img src="img/badges/cb-cd-essentials.png" alt="cb-cd-essentials" width="100"></a>
 <a href="https://www.credly.com/badges/34eac3f4-61d4-43e6-b3c8-1694dcefbc49/linked_in?t=rcc75i"><img src="img/badges/terraform.png" alt="terraform" width="100"></a>
 <a href="https://certificates.cloudbees.com/4f8608d3-0e74-4c04-9e5c-3fa2123af47e"><img src="img/badges/cb-ci-essentials.png" alt="cb ci essentials" width="100"></a>
