@@ -4,10 +4,11 @@
 apiVersion: vInfinito
 kind: Pod
 metadata:
-  name: -awesome-list
+  name: my-attempt-to-do-a-creative-awesome-list
   labels:
     author: carlosrodlop
     scope: knowledge
+    topic: devops
 spec:
     # References to other awesome lists
     containers:
