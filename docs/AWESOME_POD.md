@@ -40,9 +40,9 @@ spec:
 - [aws-ia/terraform-aws-eks-blueprints: Configure and deploy complete EKS clusters.](https://github.com/aws-ia/terraform-aws-eks-blueprints)
 
 ```yaml
-        - aws_associated_architech
+        - aws
 ```
-
+- [Digital Cloud AWS Cheat Sheets](https://digitalcloud.training/aws-cheat-sheets/)
 - [IAM Policy Simulator](https://policysim.aws.amazon.com/home/index.jsp?#)
 
 ```yaml
