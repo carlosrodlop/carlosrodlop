@@ -1,6 +1,8 @@
-# Awesome Pod [![Awesome](img/awesome_badge.svg)](https://github.com/sindresorhus/awesome)
+# Awesome Pod [![Awesome](../img/awesome_badge.svg)](https://github.com/sindresorhus/awesome)
 
 ```yaml
+apiVersion: vInfinito
+kind: Pod
 metadata:
   name: -awesome-list
   labels:
