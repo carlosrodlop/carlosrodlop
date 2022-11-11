@@ -2,7 +2,7 @@
 
 ```yaml
 metadata:
-  name: my-awesome-list
+  name: -awesome-list
   labels:
     author: carlosrodlop
     scope: knowledge
