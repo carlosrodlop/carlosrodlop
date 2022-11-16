@@ -116,19 +116,39 @@ Temporary security credentials consist of the AWS access key ID, secret access k
   * You can provide temporary access to write to S3 bucket using facebook/google login to your mobile app users.
   * Supports guest users
 
-
 ### AWS Key Management Service (KMS)
 
-* AWS managed centralized key management service to create, manage and rotate customer master keys (CMKs) for encryption at rest.
-* You can create customer-managed `Symmetric` (single key for both encrypt and decrypt operations) or `Asymmetric` (public/private key pair for encrypt/decrypt or sign/verify operations) master keys
+* AWS managed centralized key management service to create, manage and rotate customer master keys (CMKs) for encryption at REST. Provides you with a central place to manage all keys.
+* Can integrate with most other AWS services to increase security and make it easier to encrypt your data.
 * You can enable automatic master key rotation once per year. Service keeps the older version of master key to decrypt old encrypted data.
-
+* Allows you to control access to the keys using things like IAM policies or key policies.
+* Encrypt/decrypt up to 4KB.
+* Pay per API call.
+* Validated under FIPS 140–2 (Level 2 ) security standard.
+* Types of Customer Master Keys (CMKs)
+  * `Customer Managed CMKs` → Keys that you have created in AWS, that you own and manage. You are responsible for managing their key policies, rotating them and enabling/disabling them.
+    * You can create customer-managed `Symmetric` (single key for both encrypt and decrypt operations) or `Asymmetric` (public/private key pair for encrypt/decrypt or sign/verify operations) master keys
+    * Symmetric CMKs
+      * With symmetric keys, the same key is used to encrypt and decrypt
+      * The key never leaves AWS unencrypted
+      * Must call the KMS API to use a symmetric key
+      * The AWS services that integrate with KMS use symmetric CMKs
+    * Asymmetric CMKs
+      * Asymmetric keys are mathematically related public and private key pairs.
+      * The private key never leaves AWS unencrypted.
+      * You can call the KMS API with the public key, which can be downloaded and used outside of AWS.
+      * AWS services that integrate with KMS DO NOT support asymmetric keys.
+  * `AWS Managed CMKs` → These are free and are created by an AWS service on your behalf and are managed for you. However, only that service can use them.
+  * `AWS Owned CMKs` → owned and managed by AWS and shared across many accounts.
 
 ### AWS CloudHSM
 
-* AWS managed dedicated hardware security model (HSM) in AWS Cloud
-* Enables you to securely generate, store, and manage your own cryptographic keys
-* Integrate with your application using industry-standard APIs, such as PKCS#11, Java Cryptography Extensions (JCE), and Microsoft CryptoNG (CNG) libraries.
+* Dedicated cloud-based Hardware Security Module (HSM) for creating, using and managing your own encryption keys (cryptographic keys) in AWS.
+* Conforms to FIPS 140–2 (level 3) security standard
+* No access to the AWS managed component and AWS does not have visibility or access to your keys.
+* Integrate with your application using industry-standard APIs, such as PKCS#11, Java Cryptography Extensions (JCE), and Microsoft CryptoNG (CNG) libraries (there are no AWS APIs for HSM)
+* CloudHSM runs within a VPC in your account
+* Keys are irretrievable if lost and can not be recovered.
 * Use case: Use KMS to create a CMKs in a custom key store and store non-extractable key material in AWS CloudHSM to get a full control on encryption keys
 
 ### AWS Systems Manager
