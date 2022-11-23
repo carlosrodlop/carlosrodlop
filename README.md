@@ -7,6 +7,8 @@
 | [![linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlosrodlop/) | [![awesome](img/awesome_badge.svg)](https://github.com/carlosrodlop/carlosrodlop/blob/main/docs/AWESOME_POD.md) | <img src="https://komarev.com/ghpvc/?username=carlosrodlop&label=Profile%20views&color=0e75b6&style=flat" alt="carlosrodlop" /> |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 
+Welcome to my personal space!
+
 ## Bio
 
 Automation Consultant embracing the DevOps culture. Background of Java Web and (Geo) Data Management and Analysis. Running CI/CD pipelines in the Cloud.
