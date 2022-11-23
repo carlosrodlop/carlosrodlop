@@ -4,3 +4,6 @@
 [submodule "src/config"]
 	path = src/config
 	url = git@github.com:carlosrodlop/carlosrodlop-conf.git
+[submodule "src/ps-env"]
+	path = src/ps-env
+	url = git@github.com:cloudbees/ps-crodriguezlopez-env.git
