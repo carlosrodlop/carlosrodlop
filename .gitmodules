@@ -1,3 +1,6 @@
+[submodule "src/secrets"]
+	path = src/secrets
+	url = git@github.com:carlosrodlop/carlosrodlop-secrets.git
 [submodule "src/config"]
 	path = src/config
-	url = git@github.com:carlosrodlop/carlosrodlop-config.git
+	url = git@github.com:carlosrodlop/carlosrodlop-conf.git
