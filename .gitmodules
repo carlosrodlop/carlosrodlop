@@ -7,3 +7,6 @@
 [submodule "src/ps-env"]
 	path = src/ps-env
 	url = git@github.com:cloudbees/ps-crodriguezlopez-env.git
+[submodule "docs/ps-docs"]
+	path = docs/ps-docs
+	url = git@github.com:carlosrodlop/docsite-ps.git
