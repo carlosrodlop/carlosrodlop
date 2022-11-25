@@ -395,7 +395,7 @@ Placement groups can span across AZs only, cannot span across regions
 * **Spread** - Different AZ, Distinct Rack, High Availability, Critical Applications, Limited to 7 instances per AZ per placement group.
 * **Partition** - Same or Different AZ, Different Rack (or Partition), Distributed Applications like Hadoop, Cassandra, Kafka etc, Upto 7 Partition per AZ
 
-#### AMI (Amazon Machine Image)
+#### AMI (Amazon Machine Image)
 
 * Customized image of an EC2 instance, having built-in OS, softwares, configurations, etc.
 * You can create an AMI from EC2 instance and launch a new EC2 instance from AMI.
