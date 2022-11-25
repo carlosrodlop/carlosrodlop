@@ -49,7 +49,6 @@ spec:
     - kubernetes:
 ```
 
-- [CNCF_TrailMap_latest.png (7653×8869)](https://raw.githubusercontent.com/cncf/trailmap/master/CNCF_TrailMap_latest.png)
 - [vmware-tanzu/k-bench: Workload Benchmark for Kubernetes](https://github.com/vmware-tanzu/k-bench)
 - [AWS - EKS Best Practices Guides](https://aws.github.io/aws-eks-best-practices/)
 - [Best practices  |  Kubernetes Engine Documentation  |  Google Cloud](https://cloud.google.com/kubernetes-engine/docs/best-practices)
@@ -60,6 +59,14 @@ spec:
 
 - [4 secrets management tools for Git encryption | Opensource.com](https://opensource.com/article/19/2/secrets-management-tools-git)
 - [Top 9 Git Secret Scanning Tools for DevSecOps - Spectral](https://spectralops.io/blog/top-9-git-secret-scanning-tools/#:~:text=Git%2DSecrets%20is%20an%20open,pattern%2C%20the%20commit%20is%20rejected.)
+
+
+```yaml
+    - Applications Landscape:
+```
+
+- [Continuous Delivery Landscape](https://landscape.cd.foundation/)
+- [Cloud Native Landscape](https://landscape.cncf.io/) 
 
 
 ```yaml
