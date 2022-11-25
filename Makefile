@@ -3,14 +3,19 @@ SHELL         := /bin/bash
 MAKEFLAGS     += --no-print-directory
 MKFILE_DIR    := $(abspath $(dir $(lastword $(MAKEFILE_LIST))))
 
-.PHONY: 
-submodule-update: ## Initialize, fetch and checkout any nested submodules
-submodule-update: 
+.PHONY:
+git-sub-update-all: ## Initialize, fetch and checkout any nested submodules
+git-sub-update-all: 
 	@git submodule update --init --recursive
 
-.PHONY: 
-sast-scan: ## SAST scan from https://slscan.io/en/latest/ for the root
-sast-scan: 
+.PHONY:
+git-resetToUpstrem: ## Update Repository to upstream. Parameter: R (Repository root). Example: R=docs/ps-docs make git-resetToUpstrem 
+git-resetToUpstrem:
+	@cd $(MKFILE_DIR)/$(R) && git fetch upstream; git reset --hard upstream/main; git push -f
+
+.PHONY:
+sast-scan-all: ## SAST scan from https://slscan.io/en/latest/ for the root
+sast-scan-all: 
 	@docker run --rm -e "WORKSPACE=$(PWD)" -v $(PWD):/app shiftleft/sast-scan scan --build
 
 ####################
