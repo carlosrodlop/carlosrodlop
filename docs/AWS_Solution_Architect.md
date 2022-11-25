@@ -416,14 +416,14 @@ Classic Load Balancer (old)	| HTTP, HTTPS, TCP |
 
 * Stickiness: works in CLB and ALB. Stickiness and its duration can be set at Target Group level. Doesn’t work with NLB
 
-#### Application Load Balancer (ALB)
+#### Application Load Balancer (ALB)
 
 * Routing based on hostname, request path, params, headers, source IP etc.
 * Support Request tracing, add `X-Amzn-Trace-Id` header before sending the request to target
 * Client IP and port can be find in `X-Forwarded-For` and `X-Forwarded-Porto` header
 integrate with WAF with rate-limiting (throttle) rules to prevent from DDoS attacks
 
-####  Network Load Balancer (NLB)
+#### Network Load Balancer (NLB)
 
 * Handle **volatile workloads** and **extreme low-latency**
 * Provide static IP/Elastic IP for the load balancer per AZ
