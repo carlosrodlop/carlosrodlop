@@ -1,3 +1,8 @@
 .DS_Store
 git-crypt-key
 reports
+#submodules
+src/ps-env
+src/secrets
+src/config
+docs/ps-doc
