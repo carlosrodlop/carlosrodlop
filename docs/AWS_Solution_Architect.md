@@ -1,6 +1,7 @@
-# References
+# References
 
-* https://digitalcloud.training/aws-cheat-sheets/
+After doing the cource from [Digital Training](https://digitalcloud.training/aws-cheat-sheets/), I reviwed the following resources to make this summary:
+
 * https://codingnconcepts.com/aws/aws-certified-solutions-architect-associate/#aws-infrastructure
 * https://github.com/kasukur/AWS_CCP_Notes/blob/main/AWS_Solution_Architecture_Associate.txt
 * http://clusterfrak.com/notes/certs/aws_saa_notes/
@@ -264,7 +265,7 @@ resource_type/resource, resource_type/resource/qualifier, resource_type/resource
   * We manage our keys
 	* KMS (Multi Tenant) and CloudHSM (Single Tenant, dedicate h/w, Mutli-AZ cluster)
 
-### AWS Systems Manager
+### AWS Systems Manager
 
 * `Parameter Store` is Secure and centralized serverless storage of configuration and secrets: passwords, database details, and license code, API Keys
     * `Parameter` value can be type String (plain text), StringList (comma separated) or SecureString (KMS encrypted data)
@@ -343,7 +344,112 @@ resource_type/resource, resource_type/resource/qualifier, resource_type/resource
 
 ### EC2
 
-## Autoscaling
+* Infrastructure as a Service (IaaS) - virtual machine on the cloud
+* You must provision nitro-based EC2 instance to achieve 64000 EBS IOPS. Max 32000 EBS IOPS with Non-Nitro EC2.
+* When you restart an EC2 instance, its public IP can change. Use `Elastic IP` to assign a fixed public IPv4 to your EC2 instance. By default, all AWS accounts are limited to five (5) Elastic IP addresses per Region.
+* Get EC2 instance metadata such as private & public IP from `http://169.254.169.254/latest/meta-data` and user-defined data from `http://169.254.169.254/latest/user-data` from inside the VM
+* Place all the EC2 instances in same AZ to reduce the data transfer cost
+EC2 Hibernate saves the contents of instance memory (RAM) to the Amazon EBS root volume. When the instance restarts, the RAM contents are reloaded, brings it to last running state, also known as pre-warm the instance. You can hibernate an instance only if it’s enabled for hibernation and it meets the hibernation prerequisites
+* Use VM Import/Export to import virtual machine image and convert to Amazon EC2 AMI to launch EC2 instances
+
+#### EC2 Instance Types
+
+You can choose EC2 instance type based on requirement for e.g. m5.2xlarge has Linux OS, 8 vCPU, 32GB RAM, EBS-Only Storage, Up to 10 Gbps Network bandwidth, Up to 4,750 Mbps IO Operations.
+
+| Instance Class 	| Usage Type  |  Usage Example 	| 
+|---	|---	|---	|
+|  T, M | General Purpose |  Web Server, Code Repo, Microservice, Small Database, Virtual Desktop, Dev Environment 	| 
+|  C 	| Compute Optimized  |  High Performance Computing (HPC), Batch Processing, Gaming Server, Scientific Modelling, CPU-based machine learning 	| 
+|  R, X, Z 	| Memory Optimized  |  In-memory Cache, High Performance Database, Real-time big data analytics	| 
+|  F, G, P 	| Accelerated Computing  |  High GPU, Graphics Intensive Applications, Machine Learning, Speech Recognition	| 
+|  D, H, I	| Storage Optimized  |  EC2 Instance Storage, High I/O Performance, HDFS, MapReduce File Systems, Spark, Hadoop, Redshift, Kafka, Elastic Search |
+
+####  EC2 Launch Types
+
+* **On-Demand** - pay as you use, pay per hour, costly
+* **Reserved** - up-front payment and reserve for 1 year or 3 year, two classes:-
+  * **Standard** unused instanced can be sold in AWS reserved instance marketplace
+  * **Convertible** can be exchanged for another Convertible Reserved Instance with different instance attributes
+* **Scheduled Reserved Instances** - reserve capacity that is scheduled to recur daily, weekly, or monthly, with a specified start time and duration, for a one-year term. After you complete your purchase, the instances are available to launch during the time windows that you specified.
+* **Spot Instances** - up-to 90% discount, cheapest useful for applications with flexible in timing, can handle interruptions and recover gracefully.
+  * **Spot blocks** can also be launched with a required duration, which are not interrupted due to changes in the Spot price
+  * **Spot Fleet** is a collection, or fleet, of Spot Instances, and optionally On-Demand Instances, which attempts to launch the number of Spot and On-Demand Instances to meet the specified target capacity
+* **Dedicated Instance** - Your instance runs on a dedicated hardware provide physical isolation, single-tenant
+* **Dedicated Hosts** - Your instances run on a dedicated physical server. More visibility how instances are placed on server. Let you use existing server-bound software licenses and address corporate compliance and regulatory requirements.
+
+Limits by account: 20 Reserved instances, 1152 vCPU On-demand standard instances, and 1440 vCPU spot instances. You can increase limit by submitting the EC2 limit increase request form.
+
+####  EC2 Enhanced Networking
+
+* Elastic Network Interface (ENI) is a virtual network card, which you attach to EC2 instance in same AZ. ENI has one primary private IPv4, one or more secondary private IPv4, one Elastic IP per private IPv4, one public IPv4, one or more IPv6, one or more security groups, a MAC address and a source/destination check flag
+  * While primary ENI cannot be detached from an EC2 instance, A secondary ENI with private IPv4 can be detached and attached to standby EC2 instance if primary EC2 becomes unreachable (failover)
+* Elastic Network Adapter (ENA) for C4, D2, and M4 EC2 instances, Upto 100 Gbps network speed.
+* Elastic Fabric Adapter (EFA) is ENA with additional OS-bypass functionality, which enables HPC and Machine Learning applications to bypass the operating system kernel and communicate directly with EFA device resulting in very high performance and low latency. for M5, C5, R5, I3, G4, metal EC2 instances.
+* Intel 82599 Virtual Function (VF) Interface for C3, C4, D2, I2, M4, and R3 EC2 instances, Upto 10 Gbps network speed.
+
+#### EC2 Placement Groups Strategy
+
+Placement groups can span across AZs only, cannot span across regions
+
+* **Cluster** - Same AZ, Same Rack, Low latency and High Network, High Performance Computing (HPC)
+* **Spread** - Different AZ, Distinct Rack, High Availability, Critical Applications, Limited to 7 instances per AZ per placement group.
+* **Partition** - Same or Different AZ, Different Rack (or Partition), Distributed Applications like Hadoop, Cassandra, Kafka etc, Upto 7 Partition per AZ
+
+#### AMI (Amazon Machine Image)
+
+* Customized image of an EC2 instance, having built-in OS, softwares, configurations, etc.
+* You can create an AMI from EC2 instance and launch a new EC2 instance from AMI.
+* AMI are built for a specific region and can be copied across regions
+
+## Elastic Load Balancing (ELB)
+
+* AWS load balancer provide a static DNS name provided for e.g. http://myalb-123456789.us-east-1.elb.amazonaws.com
+* AWS load balancer route the request to Target Groups. Target group can have one or more EC2 instances, IP Addresses or lambda functions.
+* Types of ELB 
+
+| Type 	| Protocol  
+|---	|---	|
+Application Load Balancer	| HTTP, HTTPS, WebSocket |
+Network Load Balancer	| TCP, UDP, TLS |
+Gateway Load Balancer |	Thirdparty appliances |
+Classic Load Balancer (old)	| HTTP, HTTPS, TCP |
+
+* Stickiness: works in CLB and ALB. Stickiness and its duration can be set at Target Group level. Doesn’t work with NLB
+
+#### Application Load Balancer (ALB)
+
+* Routing based on hostname, request path, params, headers, source IP etc.
+* Support Request tracing, add `X-Amzn-Trace-Id` header before sending the request to target
+* Client IP and port can be find in `X-Forwarded-For` and `X-Forwarded-Porto` header
+integrate with WAF with rate-limiting (throttle) rules to prevent from DDoS attacks
+
+####  Network Load Balancer (NLB)
+
+* Handle **volatile workloads** and **extreme low-latency**
+* Provide static IP/Elastic IP for the load balancer per AZ
+* allows registering targets by IP address
+* Use NLB with Elastic IP in front of ALBs when there is a requirement of whitelisting ALB
+
+## ASG (Auto Scaling Group)
+
+* Scale-out (add) or scale-in (remove) EC2 instances based on scaling policy - CPU, Network, Custom metric or Scheduled.
+* You configure the size of your Auto Scaling group by setting the minimum, maximum, and desired capacity. ASG run EC2 instances at desired capacity if no policy specified. Minimum and maximum capacity are boundaries within ASG scale-in or scale-out. min <= desired <= max
+* Instances are created in ASG using Launch Configuration (legacy) or Launch Template (newer)
+* You cannot change the launch configuration for an ASG, you must create a new launch configuration and update your ASG with it.
+* You can create ASG that launches both Spot and On-Demand Instances or multiple instance types using launch template, not possible with launch configuration.
+* Dynamic Scaling Policy
+  1. Target Tracking Scaling - can have more than one policy for e.g. add or remove capacity to keep the average aggregate CPU utilization of your Auto Scaling group at 40% and request count per target of your ALB target group at 1000 for your ASG. If both policy occurs at same time, use largest capacity for both scale-out and scale-in.
+  2. Simple Scaling - e.g. CloudWatch alarm CPUUtilization (>80%) - add 2 instances
+  3. Step Scaling - e.g. CloudWatch alarm CPUUtilization (60%-80%)- add 1, (>80%) - add 3 more, (30%-40%) - remove 1, (<30%) - remove 2 more
+  4. Scheduled Action - e.g. Increase min capacity to 10 at 5pm on Fridays
+* **Default Termination Policy** - Find AZ with most number of instances, and delete the one with oldest launch configuration, in case of tie, the one closest to next billing hour
+* **Cooldown period** is the amount of time to wait for previous scaling activity to take effect. Any scaling activity during cooldown period is ignored.
+* **Health check grace period** is the amount of wait time to check the health status of EC2 instance, which has just came into service to give enough time to warmup.
+* You can add lifecycle-hooks to ASG to perform custom action during:-
+  1. scale-out to run script, install softwares and send complete-lifecycle-action command to continue
+  2. scale-in e.g. download logs, take snapshot before termination
+
+### Lambda
 
 ## AWS Organization and Control Tower
 
