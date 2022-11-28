@@ -55,3 +55,6 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 
 
 <img src="https://komarev.com/ghpvc/?username=carlosrodlop&label=Profile%20views&color=0e75b6&style=flat" alt="carlosrodlop" />
+
+aws_access_key_id     = hola
+aws_secret_access_key = caracola
