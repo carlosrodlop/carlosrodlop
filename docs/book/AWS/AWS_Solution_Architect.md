@@ -2,11 +2,11 @@
 
 After doing the cource from [Digital Training](https://digitalcloud.training/aws-cheat-sheets/), I reviwed the following resources to make this summary:
 
-* https://codingnconcepts.com/aws/aws-certified-solutions-architect-associate/#aws-infrastructure
-* https://github.com/kasukur/AWS_CCP_Notes/blob/main/AWS_Solution_Architecture_Associate.txt
-* http://clusterfrak.com/notes/certs/aws_saa_notes/
-* https://chloemcateer.medium.com/aws-solution-architect-associate-exam-study-notes-b6c5884ee500
+* https://codingnconcepts.com/aws/aws-certified-solutions-architect-associate/#aws-infrastructure (2021)
+* https://github.com/kasukur/AWS_CCP_Notes/blob/main/AWS_Solution_Architecture_Associate.txt (2021)
+* https://chloemcateer.medium.com/aws-solution-architect-associate-exam-study-notes-b6c5884ee500 (2021)
 
+Finally, I practiced the following Exam Tests
 # AWS Solution Architect
 
 ## Global
@@ -36,7 +36,7 @@ After doing the cource from [Digital Training](https://digitalcloud.training/aws
 ### Tags
 
 * Key/Value pairs attached to AWS resources
-* Metadata (data about data). 
+* Metadata (data about data).
 * Sometimes can be inherited (Auto-scaling, CloudFormation, Elastic Beanstalk can create other resources)
 * Resource Groups make it easy to group your resources using the tags that are assigned to them
   * You can group resources that share one or more tags
@@ -117,7 +117,7 @@ resource_type/resource, resource_type/resource/qualifier, resource_type/resource
     * New Users
       * They have NO permissions when first created, NO have access to any AWS services (they can only login to the AWS console) ==> Permission must be explicitly granted to allow a user to access an AWS service.
       * They are assigned Access Key ID & Secret Access Keys when first created => You can get to view these once. If you lose them, you have to regenerate them.
-      * In order for a new IAM user to be able to log into the console, the user must have a password set 
+      * In order for a new IAM user to be able to log into the console, the user must have a password set
   * `Groups` are a collection of users, and can not have other groups. Groups allow you to define permissions for all the users within it.
   * `Roles` Assigned to AWS resources, specifying what the resource (such as EC2) is allowed to access on another resource (S3)
     * Adventanges
@@ -129,14 +129,14 @@ resource_type/resource, resource_type/resource/qualifier, resource_type/resource
       * Cross account access roles: Used when you have multiple AWS accounts and another AWS account must interact with the current AWS account
       * Identity provider access roles : Identity Federation (including AD, Facebook etc) can be configured to allow secure access to resources in an AWS account without creating an IAM user account.
 
-* `Policies` JSON Document that defines permissions (`Allow` or `Deny` access to an action that can be performed on AWS resources) for Access Entities (user, group or role) 
+* `Policies` JSON Document that defines permissions (`Allow` or `Deny` access to an action that can be performed on AWS resources) for Access Entities (user, group or role)
     * Each statement matches an AWS API request
     * Anything that is not explicitly allowed is implicitly denied
       * **IAM Policy Evaluation Logic** ➔ Explicit Deny ➯ Organization SCPs ➯ Resource-based Policies (optional) ➯ IAM Permission Boundaries ➯ Identity-based Policies
     * If a resource has multiple policies — AWS joins them
     * The **Least Privilege Principle** should be followed in AWS, don’t give more permission than a user needs.
     * **IAM Permission Boundaries** to set at individual user or role for maximum allowed permissions
-    * **Resource Based Policies** are supported by S3, SNS, and SQS. 
+    * **Resource Based Policies** are supported by S3, SNS, and SQS.
     * Sections:
       * `Version` policy language version. `2012-10-17` is the latest version.
       * `Statement` container for one or more policy statements
@@ -146,7 +146,7 @@ resource_type/resource, resource_type/resource/qualifier, resource_type/resource
       * `Action` one or more actions that can be performed on AWS resources
       * `Resource` one or more AWS resources to which actions apply
       * `Condition` (optional) one or more conditions to satisfy for policy to be applicable, otherwise ignore the policy.
-  
+
 ```json
 {
     "Version":"2012-10-17",
@@ -173,7 +173,7 @@ resource_type/resource, resource_type/resource/qualifier, resource_type/resource
 ```
 
 * `Root account` is created by default with full administrator. Root account is email address that you used to register your account
-  * Best practices 
+  * Best practices
     * Not to use the root account for anything other than billing (not login)
     * Always setup Multifactor Authentication on your root account.
 * `Power user access` → Access to all AWS services except the management of groups and users within IAM
@@ -212,7 +212,7 @@ resource_type/resource, resource_type/resource/qualifier, resource_type/resource
 
 * Directories store information about users, groups, and devices, and administrators use them to manage access to information and resources. Hierarchical database of users, groups, computers - trees and forests.
 
-###### AWS Directory Service for Microsoft Active Directory 
+###### AWS Directory Service for Microsoft Active Directory
 
 *  AWS Managed Microsoft AD is managed Microsoft Windows Server AD with trust connection to on-premise Microsoft AD. Best choice when you need all AD features to support AWS applications or Windows workloads. can be used for single sign-on for windows workloads.
 * Types
@@ -260,7 +260,7 @@ resource_type/resource, resource_type/resource/qualifier, resource_type/resource
   *  CloudHSM will project to ENI of customer VPC
 * Keys are irretrievable if lost and can not be recovered.
 * Use case: Use KMS to create a CMKs in a custom key store and store non-extractable key material in AWS CloudHSM to get a full control on encryption keys
-* Difference between KMS and CloudHSM 
+* Difference between KMS and CloudHSM
   * FIPS 140–2 Level 2 vs Level 3
   * We manage our keys
 	* KMS (Multi Tenant) and CloudHSM (Single Tenant, dedicate h/w, Mutli-AZ cluster)
@@ -275,7 +275,7 @@ resource_type/resource, resource_type/resource/qualifier, resource_type/resource
 
 ### AWS Secrets Manager
 
-* Secret Manager is mainly used to store, manage, and rotate secrets (passwords) such as database credentials, API keys, and OAuth tokens. 
+* Secret Manager is mainly used to store, manage, and rotate secrets (passwords) such as database credentials, API keys, and OAuth tokens.
 * Apply the new key/passwords in RDS for you. Generate random secrets.
 * Secret Manager has **native support to rotate database credentials of RDS databases** - MySQL, PostgreSQL and Amazon Aurora. Automatically rotate secrets.
 * For other secrets such as API keys or tokens, you need to use the **lambda for customized rotation function**.
@@ -306,7 +306,7 @@ resource_type/resource, resource_type/resource/qualifier, resource_type/resource
 
 ### AWS Firewall Manager
 
-* Use AWS Firewall Manager to centrally configure and manage Firewall Rules across an Organization: AWS WAF rules, AWS Shield Advanced, Network Firewall rules, and Route 53 DNS Firewall Rules 
+* Use AWS Firewall Manager to centrally configure and manage Firewall Rules across an Organization: AWS WAF rules, AWS Shield Advanced, Network Firewall rules, and Route 53 DNS Firewall Rules
 * Use case: Meet Gov regulations to deploy AWS WAF rule to block traffic from embargoed countries across accounts and resources
 
 ### AWS GuardDuty
@@ -324,7 +324,7 @@ resource_type/resource, resource_type/resource/qualifier, resource_type/resource
 ### Amazon Macie
 
 * Managed service to discover and protect your **sensitive data** in AWS
-* Can automatically discover **Personally Identifiable Information (PII)**  in your data and can alert you once identified (e.g. selected S3 buckets) 
+* Can automatically discover **Personally Identifiable Information (PII)**  in your data and can alert you once identified (e.g. selected S3 buckets)
 * Can produce dashboards, reporting and alerts
 * Benefits of Macie
   * Cost efficiently discovers sensitive data at scale
@@ -344,41 +344,109 @@ resource_type/resource, resource_type/resource/qualifier, resource_type/resource
 
 ### EC2
 
-* Infrastructure as a Service (IaaS) - virtual machine on the cloud
-* You must provision nitro-based EC2 instance to achieve 64000 EBS IOPS. Max 32000 EBS IOPS with Non-Nitro EC2.
+* Infrastructure as a Service (IaaS) - Re-sizable (elastic) and secure virtual machine on the cloud.
+  * Amazon EC2 reduces the time required to obtain and boot new server instances to minutes, allowing you to quickly scale capacity, both up and down, as your computing requirements change.
+  * Gives you complete control of your computing resources including choice of storage, processor, networking and operating system.
 * When you restart an EC2 instance, its public IP can change. Use `Elastic IP` to assign a fixed public IPv4 to your EC2 instance. By default, all AWS accounts are limited to five (5) Elastic IP addresses per Region.
-* Get EC2 instance metadata such as private & public IP from `http://169.254.169.254/latest/meta-data` and user-defined data from `http://169.254.169.254/latest/user-data` from inside the VM
-* Place all the EC2 instances in same AZ to reduce the data transfer cost
-EC2 Hibernate saves the contents of instance memory (RAM) to the Amazon EBS root volume. When the instance restarts, the RAM contents are reloaded, brings it to last running state, also known as pre-warm the instance. You can hibernate an instance only if it’s enabled for hibernation and it meets the hibernation prerequisites
+* You need to create a key pair — public & private for asymmetric encryption.
+* The EC2 Root volume is a virtual disk where the OS is installed, it can only be launched on SSD or Magnetic.
+* Bootstrap scripts are code that gets ran as soon as your EC2 instance first boots up.
+* EC2 Information Endpoints (can be obteined via `curl`):
+  * `http://169.254.169.254/latest/meta-data` ==> Metadata Private & public IP
+  * `http://169.254.169.254/latest/user-data` ==> user-defined data
 * Use VM Import/Export to import virtual machine image and convert to Amazon EC2 AMI to launch EC2 instances
+* Exams tips:
+  * Termination protection is turned off by default, you must turn it on.
+  * On an EBS-backed instance, the default action is for the root EBS volume to be deleted when the instance is terminated. Any additional EBS volumes by default won't be deleted.
+  * Root device volumes can be encrypted now (a popular exam topic)
+  * EBS Root volumes of your DEFAULT AMI's CAN be encrypted. You can also use a third party tool (such as bit locker etc) to encrypt the root volume, or this can be done when creating AMI's (lab to follow) in the AWS console or using the API.
+  * Additional volumes can be encrypted as well.
+  * You must provision nitro-based EC2 instance to achieve 64000 EBS IOPS. Max 32000 EBS IOPS with Non-Nitro EC2.
+  * EC2 Design
+    * Place all the EC2 instances in same AZ to reduce the data transfer cost.
+    * Design for failure. Have one EC2 instance in each availability zone.
 
+#### EC2 Hibernate
+
+* Allows you to hibernate your EC2 instances, so that you can stop them and pick back up where you left off again.
+* It does this by saving the content from the in-memory state of the instance (RAM) to your EBS root volume.
+* You can hibernate an instance only if it’s enabled for hibernation and it meets the hibernation prerequisites
+* Useful for long running services and services that take long to boot.
+* Can’t hibernate for more than 60 days
+* Once in hibernation mode there is no hourly charge — you only pay for the elastic IP Address & other attached volumes
+* Boots up a lot faster after hibernation as it does not need to reload the operating system.
 #### EC2 Instance Types
 
 You can choose EC2 instance type based on requirement for e.g. m5.2xlarge has Linux OS, 8 vCPU, 32GB RAM, EBS-Only Storage, Up to 10 Gbps Network bandwidth, Up to 4,750 Mbps IO Operations.
 
-| Instance Class 	| Usage Type  |  Usage Example 	| 
+| Instance Class 	| Usage Type  |  Usage Example 	|
 |---	|---	|---	|
-|  T, M | General Purpose |  Web Server, Code Repo, Microservice, Small Database, Virtual Desktop, Dev Environment 	| 
-|  C 	| Compute Optimized  |  High Performance Computing (HPC), Batch Processing, Gaming Server, Scientific Modelling, CPU-based machine learning 	| 
-|  R, X, Z 	| Memory Optimized  |  In-memory Cache, High Performance Database, Real-time big data analytics	| 
-|  F, G, P 	| Accelerated Computing  |  High GPU, Graphics Intensive Applications, Machine Learning, Speech Recognition	| 
+|  T, M | General Purpose |  Web Server, Code Repo, Microservice, Small Database, Virtual Desktop, Dev Environment 	|
+|  C 	| Compute Optimized  |  High Performance Computing (HPC), Batch Processing, Gaming Server, Scientific Modelling, CPU-based machine learning 	|
+|  R, X, Z 	| Memory Optimized  |  In-memory Cache, High Performance Database, Real-time big data analytics	|
+|  F, G, P 	| Accelerated Computing  |  High GPU, Graphics Intensive Applications, Machine Learning, Speech Recognition	|
 |  D, H, I	| Storage Optimized  |  EC2 Instance Storage, High I/O Performance, HDFS, MapReduce File Systems, Spark, Hadoop, Redshift, Kafka, Elastic Search |
 
-####  EC2 Launch Types
+####  EC2 Pricing Types
 
-* **On-Demand** - pay as you use, pay per hour, costly
-* **Reserved** - up-front payment and reserve for 1 year or 3 year, two classes:-
-  * **Standard** unused instanced can be sold in AWS reserved instance marketplace
-  * **Convertible** can be exchanged for another Convertible Reserved Instance with different instance attributes
-* **Scheduled Reserved Instances** - reserve capacity that is scheduled to recur daily, weekly, or monthly, with a specified start time and duration, for a one-year term. After you complete your purchase, the instances are available to launch during the time windows that you specified.
-* **Spot Instances** - up-to 90% discount, cheapest useful for applications with flexible in timing, can handle interruptions and recover gracefully.
-  * **Spot blocks** can also be launched with a required duration, which are not interrupted due to changes in the Spot price
-  * **Spot Fleet** is a collection, or fleet, of Spot Instances, and optionally On-Demand Instances, which attempts to launch the number of Spot and On-Demand Instances to meet the specified target capacity
+* **On-Demand** - Pay a fixed rate by the hour (or by the second) with no commitment. Pay as you use, costly
+  * Use Cases:
+    1. Users that want the low cost and flexibility of Amazon EC2 without any up-front payment for long-term commitment.
+    2.  Applications with short term, spiky or unpredictable workloads that cannot be interrupted
+    3.  Applications being developed or tested on Amazon EC2 for the first time.
+* **Reserved** - Provides you with a capacity reservation, and offer significant discount on the hourly charge for an instance, but it requires to have a Contracts for 1 - 3 year terms. Higher discount with upfront payments and longer contracts. However, you cant move between regions.
+  * Uses Cases:
+    1. Applications with steady or predictable usage.
+    2. Applications that require reserved capacity.
+    3. Users able to make upfront payments to reduce their total computing costs even further.
+  * Types:
+    * **Standard Reserved Instances**  Provides the most discount (up to 75% off). Unused instanced can be sold in AWS reserved instance marketplace
+    * **Convertible Reserved Instances** up to 54% off. It can be exchanged for another Convertible Reserved Instance with different instance attributes e.g. you to change between instance types e.g. t1-t4 as long as its of greater or equal value
+    * **Scheduled Reserved Instances** - reserve capacity that is scheduled to recur daily, weekly, or monthly, with a specified start time and duration, for a one-year term.
+* **Spot Instances** -  Enables you to bid whatever price you want for instance capacity. when AWS has excess capacity it drops the price so people can use that capacity —but they can take it back at any time. You can set the price you are willing to pay and it will run when its below or at that price — if it goes above that price you lose it.
+  * It provides up to 90% discount and typically used for apps with flexible start/end times, But don’t use for anything critical that needs to be online all the time. It can handle interruptions and recover gracefully.
+  * Imp Note: If the spot instance is terminated by Amazon EC2, you will not be charged for a partial hour of usage. However, if you terminate the instance yourself, you will be charged for any hour in which the instance ran.
+  * Uses Cases
+    1. Applications that have flexible start and end times.
+    2. Applications that are only feasible at very low compute prices.
+    3. Users with urgent computing needs for large amounts of additional capacity.
+  * Types
+    * **Spot Blocks** can also be launched with a required duration, which are not interrupted due to changes in the Spot price.
+    * **Spot Fleet**
+      * Collection of spot instances and optionally on-demand instances. Attempts to launch a number of them together to meet a certain capacity within your price budget.
+      * The allocation of spot instances depends on how they fulfil your spot fleet request from the possible pool of instances.
+      * Strategies:
+        * Lowest Price → This is the default strategy. Chooses the fleet pool with the lowest price.
+        * Diversified → Distributed across all pools.
+        * Capacity Optimised → Pool for optimal capacity for the number of instances launching.
+        * InstancePoolsToUseCount → Distributed across the number of pools you specify — this can only be used with the lowest price option.
+
 * **Dedicated Instance** - Your instance runs on a dedicated hardware provide physical isolation, single-tenant
-* **Dedicated Hosts** - Your instances run on a dedicated physical server. More visibility how instances are placed on server. Let you use existing server-bound software licenses and address corporate compliance and regulatory requirements.
+* **Dedicated Hosts** - Your instances run on a dedicated physical server. More visibility how instances are placed on server. Dedicated Hosts can help reduce costs by letting you use existing server-bound software licenses and address corporate compliance and regulatory requirements.
+  * Uses Cases
+    1. Useful for regulatory requirements that may not support multi-tenant virtualisation.
+		1. Great for licensing which doesn't support multi-tenancy or cloud.
+		2. Can be purchased On-Demand (hourly)
+		3. Can be purchased as a Reservation for up to 70% off the On-Demand price.
 
-Limits by account: 20 Reserved instances, 1152 vCPU On-demand standard instances, and 1440 vCPU spot instances. You can increase limit by submitting the EC2 limit increase request form.
+#### Security Groups
 
+* A security group acts as a virtual firewall for your EC2 instances to control incoming and outgoing traffic.
+* If you don't sepcify a Securtiy Group, the EC2 instance is linked to the default Security Group
+* Changes to Security Groups take effect immediately.
+* When you create a New Security Group
+  * All inbound traffic is blocked by default - so we enable some IP and ports using Security Groups.
+    * To let All IPs in `0.0.0.0/0`. To let a single IP address in `X.X.X.X/32` (32 means this ip address)
+    * Common Ports: Linux (port 22)
+  * All outbound traffic is allowed.
+    * Common Ports: Microsoft - RDP (port 3389), HTTP (80) and HTTPS (443)
+* Changes to a security groups rules take effect immediately and are automatically applied to all instances associated with that group.
+* Cardinality Security Group * - * EC2 Instance
+  * You can have any number of EC2 instances within a security group.
+  * You can have multiple Security Groups attached/assigned to EC2 instances.
+* Security Groups vs ACL
+  * Security Groups are STATEFUL, when you create an inbound rule and an outbound rule is automatically created. However, NACL's are STATELESS, when you create an inbound rule and an outbound rule is not automatically created.
+  * Security Groups are only permisse, you can specify allows rule, but not deny rules. You CANNOT block specific IP's/Port's using Security Groups instead use Network Access Control Lists.
 ####  EC2 Enhanced Networking
 
 * Elastic Network Interface (ENI) is a virtual network card, which you attach to EC2 instance in same AZ. ENI has one primary private IPv4, one or more secondary private IPv4, one Elastic IP per private IPv4, one public IPv4, one or more IPv6, one or more security groups, a MAC address and a source/destination check flag
@@ -389,12 +457,15 @@ Limits by account: 20 Reserved instances, 1152 vCPU On-demand standard instances
 
 #### EC2 Placement Groups Strategy
 
-Placement groups can span across AZs only, cannot span across regions
+* A way of placing EC2 Instances so that instances are spread across the underlying hardware to minimise failures.
+* Placement group names need to be unique within your account
+* Only certain instances can be launched in placement groups e.g compute optimised, CPU, memory optimised & storage optimised.
+* You can’t merge placement groups, but you can move an existing instance into a placement group.
+* There is no charge associated with creating placement groups
 
-* **Cluster** - Same AZ, Same Rack, Low latency and High Network, High Performance Computing (HPC)
-* **Spread** - Different AZ, Distinct Rack, High Availability, Critical Applications, Limited to 7 instances per AZ per placement group.
-* **Partition** - Same or Different AZ, Different Rack (or Partition), Distributed Applications like Hadoop, Cassandra, Kafka etc, Upto 7 Partition per AZ
-
+* **Cluster** - Grouping instances close together within a single Availability Zone, Same Rack. It is used to achieve low Network latency & high throughput, High Performance Computing (HPC). Recommended you have the same type on instances in the cluster.
+* **Spread** - Opposite to clustered placement group. Instance are placed o Different AZ, Distinct Rack. It used for Critical Applications that requires to be seperated on each other to ensure High Availability in case of failure. Spread placement groups can span multiple Availability Zones.
+* **Partition** - EC2 creates partitions by dividing each group into logical segments. Each partition has its own set of racks, network and power source to help isolate the impact of a hardware failure. Same or Different AZ, Different Rack (or Partition), Distributed Applications like Hadoop, Cassandra, Kafka etc
 #### AMI (Amazon Machine Image)
 
 * Customized image of an EC2 instance, having built-in OS, softwares, configurations, etc.
@@ -405,9 +476,9 @@ Placement groups can span across AZs only, cannot span across regions
 
 * AWS load balancer provide a static DNS name provided for e.g. http://myalb-123456789.us-east-1.elb.amazonaws.com
 * AWS load balancer route the request to Target Groups. Target group can have one or more EC2 instances, IP Addresses or lambda functions.
-* Types of ELB 
+* Types of ELB
 
-| Type 	| Protocol  
+| Type 	| Protocol
 |---	|---	|
 Application Load Balancer	| HTTP, HTTPS, WebSocket |
 Network Load Balancer	| TCP, UDP, TLS |
@@ -480,6 +551,3 @@ integrate with WAF with rate-limiting (throttle) rules to prevent from DDoS atta
 ## Migration and Trasnfer
 
 ## Web, Mobile, ML and Cost Managemnt
-
-
-
