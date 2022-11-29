@@ -1,5 +1,8 @@
 .DS_Store
+#git-crypt
 git-crypt-key
+#sops
+key.txt
 reports
 #submodules
 src/ps-env
