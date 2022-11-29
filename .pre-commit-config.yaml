@@ -18,7 +18,17 @@ repos:
     - id: check-merge-conflict
     - id: check-case-conflict
     - id: check-docstring-first
+    - id: check-executables-have-shebangs
+    - id: check-shebang-scripts-are-executable
+    - id: detect-aws-credentials
+    - id: detect-private-key
 - repo: https://github.com/zricethezav/gitleaks
   rev: v8.15.1
   hooks:
     - id: gitleaks
+- repo: https://github.com/yuvipanda/pre-commit-hook-ensure-sops
+  rev: v1.0
+  hooks:
+    - id: sops-encryption
+      # Uncomment to exclude all markdown files from encryption
+      # exclude: *.\.md
