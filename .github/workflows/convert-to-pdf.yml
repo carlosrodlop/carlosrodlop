@@ -17,8 +17,8 @@ jobs:
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_dir: docs/book/
-          output_dir: pdfs
+          output_dir: docs/book/
       - uses: actions/upload-artifact@v3
         with:
           name: docs
-          path: pdfs
+          path: docs/book/
