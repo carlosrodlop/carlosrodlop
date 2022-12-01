@@ -377,6 +377,8 @@ Steps: You first authenticate user using `Cognito User Pools` and then exchange 
   * Can help you meet regulatory compliance
   * Great for PCI-DSS(credit card payments) and preventing theft
 
+![Amazon Macie](https://d1.awsstatic.com/reInvent/reinvent-2022/macie/Product-Page-Diagram_Amazon-Macie.a51550cca0a731ba2e4a26e8463ed5f5a81202e3.png)
+
 ### AWS Config
 
 * Managed service that provides you with an AWS resource inventory, configuration history, and configuration change notifications to enable security and governance. Assess, audit, and evaluate configurations of your AWS resources in multi-region, multi-account
