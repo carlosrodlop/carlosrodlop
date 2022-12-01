@@ -20,7 +20,7 @@ jobs:
         with:
           input_dir: docs/book/AWS/AWS_Solution_Architect.md
           output_dir: docs/book/AWS/
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v3
         with:
-          name: docs
-          path: pdfs
+          name: pdf
+          path: docs/book/AWS/
