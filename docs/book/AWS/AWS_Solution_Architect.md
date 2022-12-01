@@ -234,7 +234,6 @@ resource_type/resource, resource_type/resource/qualifier, resource_type/resource
   * Can use multiple AD Connectors to spread the load to match performance needs
   * Cannot be used across different AWS accounts
 
-
 ###### No Compatible with Microsft Active Directory
 
 * `Cloud Directory`
@@ -560,6 +559,8 @@ Classic Load Balancer (old)	| HTTP, HTTPS, TCP | Both Layer 7 and Layer 4 |
 * Best suitable for protocol TCP, UDP, TLS | Layer 4 (Transport layer)
 * Use case: when extreme performance is required: Handle **volatile workloads** and **extreme low-latency**. Static IP Address.
 
+![Network Load Balancer](https://d1.awsstatic.com/Digital%20Marketing/House/1up/products/elb/Product-Page-Diagram_Elastic-Load-Balancing_NLB_HIW%402x.2f8ded8b565042980c4ad5f8ec57d6b2fafe54ba.png)
+
 #### Gateway Load Balancer (GLB)
 
 * Thirdparty appliances, virtual applications e.g. firewalls | Layer 3
@@ -570,6 +571,8 @@ Classic Load Balancer (old)	| HTTP, HTTPS, TCP | Both Layer 7 and Layer 4 |
 * It can operate at both Layer 7 (Application layer) and Layer 4 (Transport layer).
 * Use Case: Test & Dev to keep costs low.
 * It is not very intelligent — it can’t route traffic based on content like Application Load Balancers.
+
+
 ## ASG (Auto Scaling Group)
 
 * Scale-out (add) or scale-in (remove) EC2 instances based on scaling policy - CPU, Network, Custom metric or Scheduled.
