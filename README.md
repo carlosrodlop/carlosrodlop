@@ -4,8 +4,8 @@
 
 ![Carlos Logo](img/carlosrodlop.png)
 
-| [![linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlosrodlop/) | [![awesome](img/awesome_badge.svg)](https://github.com/carlosrodlop/carlosrodlop/blob/main/docs/AWESOME_POD.md) | <img alt="gitleaks badge" src="https://img.shields.io/badge/protected%20by-gitleaks-blue"> |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| [![linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlosrodlop/) | [![awesome](img/awesome_badge.svg)](https://github.com/carlosrodlop/carlosrodlop/blob/main/docs/AWESOME_POD.md) | <img alt="gitleaks badge" src="https://img.shields.io/badge/protected%20by-gitleaks-blue"> | [book GHA status ](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/convert-to-pdf.yml/badge.svg) |
+
 
 ## Bio
 
