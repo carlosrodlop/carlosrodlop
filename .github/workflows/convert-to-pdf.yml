@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
-          input_dir: docs/book/
+          input_dir: docs/book/**.md
           output_dir: docs/book/
       - uses: actions/upload-artifact@v3
         with:

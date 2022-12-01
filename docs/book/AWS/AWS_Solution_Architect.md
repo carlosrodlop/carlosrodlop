@@ -354,6 +354,8 @@ Steps: You first authenticate user using `Cognito User Pools` and then exchange 
 * Read VPC Flow Logs, DNS Logs, and CloudTrail events. Apply machine learning algorithms and anomaly detections to discover threats
 * Can protect against CryptoCurrency attacks
 
+![AWS GuardDuty](https://d1.awsstatic.com/Security/Amazon-GuardDuty/Amazon-GuardDuty_HIW.057a144483974cb73ab5f3f87a50c7c79f6521fb.png)
+
 ### Amazon Inspector
 
 * Automated Security Assessment service for **EC2 instances** by installing an agent in the OS of EC2 instance.
