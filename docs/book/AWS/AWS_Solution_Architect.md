@@ -104,6 +104,9 @@ resource_type/resource, resource_type/resource/qualifier, resource_type/resource
 ### IAM (Global Service)
 
 * AWS Identity and Access Management Service (AWS IAM) is used to securely control **individual and group access to AWS resources**.
+
+![IAM](https://d1.awsstatic.com/product-marketing/IAM/iam-how-it-works-diagram.04a2c4e4a1e8848155840676fa97ff2146d19012.png)
+
 * IAM is global (so region isn’t a factor)
 * It offers centralized control over your AWS account. It enables shared access to your AWS account.
 * Granular Permissions (can set different permissions for different people/ different resources)
