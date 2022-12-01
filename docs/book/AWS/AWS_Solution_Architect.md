@@ -203,31 +203,66 @@ resource_type/resource, resource_type/resource/qualifier, resource_type/resource
 * SAML 2.0 (old) to integrate Active Directory/ADFS, use AssumeRoleWithSAML STS API
 * Custom Identity Broker used when identity provider is not compatible to SAML 2.0, use AssumeRole or GetFederationToken STS API
 * Web Identity Federation is used to sign in using well-known external identity provider (IdP), such as login with Amazon, Facebook, Google, or any OpenID Connect (OIDC)-compatible IdP. Get the ID token from IdP, use AWS Cognito api to exchange ID token with cognito token, use AssumeRoleWithWebIdentity STS API to get temp security credential to access AWS resources
-* AWS Cognito (`Cognito Identity Pools`) is recommended identity provider by Amazon
-   * You first authenticate user using `Cognito User Pools` and then exchange token with `Cognito Identity Pools` which further use `AWS STS` to generate temporary AWS credentials to access AWS Resources.
-   * You can provide temporary access to write to S3 bucket using facebook/google login to your mobile app users.
-  * Supports guest users
+* AWS Cognito (`Amazon Cognito Federated Identities`) is recommended identity provider by Amazon
 * Amazon Single Sign On gives single sign on token to access AWS, no need to call STS API
+
 ##### AWS Directory Service
 
 * Directories store information about users, groups, and devices, and administrators use them to manage access to information and resources. Hierarchical database of users, groups, computers - trees and forests.
 
-###### AWS Directory Service for Microsoft Active Directory
+###### Compatible with Microsft Active Directory
 
-*  AWS Managed Microsoft AD is managed Microsoft Windows Server AD with trust connection to on-premise Microsoft AD. Best choice when you need all AD features to support AWS applications or Windows workloads. can be used for single sign-on for windows workloads.
-* Types
-  * Use AD Connector is proxy service to redirect requests to on-premise Microsoft AD. Best choice to use existing on-premise AD with compatible AWS services.
-  * Use Simple AD  is standalone AWS managed compatible AD powered by Samba 4 with basic directory features. You cannot connect it to on-premise AD. Best choice for basic directory features.
+* `Managed Microsoft Active Directory`
+  * It is managed Microsoft Windows Server AD with trust connection to on-premise Microsoft AD.
+  * Best choice when you need all AD features to support AWS applications or Windows workloads.
+  * Easily migrate on-premise workloads as it is built on actual Microsoft AD, so does not require any replication of existing directory to the cloud.
+  * Highly available as directories are deployed across multiple Availability Zones and failovers are detected automatically.
+  * A common use case would be to extend your on-premise using AD Trust with AWS Managed Microsoft AD so that both your on-premises and cloud directories remain separated, but it allows your users access AWS as needed.
 
-###### Amazon Cognito (Cognito User Pools (CUP))
+* `Simple AD`
+  * Use Simple AD  is standalone AWS managed compatible AD powered by Samba 4 with basic directory features (Enables a subset of the features Managed Mircosoft AD)
+  * You cannot connect it to on-premise AD.
+  * Best choice for basic directory features.
+  * Can be used for Linux workloads that need LDAP
 
-* User Pools is a **user directory** for sign-up and sign-in to mobile and web applications.
-* Use to **authenticate** mobile app users through **user pool directory**, or federated through third-party identity provider (IdP). The user pool manages the overhead of handling the tokens that are returned from social sign-in through Facebook, Google, Amazon, and Apple, and from OpenID Connect (OIDC) and SAML IdPs.
+* `AD Connector`
+  * It is proxy service to redirect requests to on-premise Microsoft AD, without caching information in the cloud.
+  * Best choice to use existing on-premise AD with compatible AWS services.
+  * Can use multiple AD Connectors to spread the load to match performance needs
+  * Cannot be used across different AWS accounts
+
+
+###### No Compatible with Microsft Active Directory
+
+* `Cloud Directory`
+  * Cloud-native directories for organizing Hierarchies of data along **multiple dimensions** fully managed by AWS
+  * Can have multiple hierarchies with hundreds/millions of objects
+  * Some common use cases include: directories for organisational charts, course catalogs, and device registries.
+
+* `Amazon Cognito`
+  * It control uses authentication (sign-up and sign-in) + access (premissions) for **mobile and web applications**. Supports guest users.
+  * The two main components of Amazon Cognito are:
+
+a. `User pools`: User directories in Amazon Cognito. Options for authetication
+      * Directly through Amazon Cognito.
+      * Through social identity providers like Google, Facebook, Amazon, or Apple, and through SAML identity providers.
+
+  In any case, menber of the user pool have a directory profile that you can access through a Software Development Kit (SDK)
+
+![Amazon Cognito, User pools](https://docs.aws.amazon.com/images/cognito/latest/developerguide/images/scenario-authentication-cup.png)
+
+b. `Identity pools`: Cognito elements grant users temporary credentials to other AWS services (e.g., Amazon S3 and DynamoDB).
+
+Steps: You first authenticate user using `Cognito User Pools` and then exchange token with `Cognito Identity Pools` which further use `AWS STS` to generate temporary AWS credentials to access AWS Resources.
+  * AWS Security Token Service (AWS STS) as a web service that enables you to request temporary, limited-privilege credentials for AWS Identity and Access Management (IAM) users or for users you authenticate (federated users)
 
 ### AWS Key Management Service (KMS)
 
 * AWS managed centralized key management service to create, manage and rotate customer master keys (CMKs) for encryption at REST. Provides you with a central place to manage all keys.
 * Can integrate with most other AWS services to increase security and make it easier to encrypt your data.
+
+![AWS Key Management Service (KMS)](https://d1.awsstatic.com/Security/aws-kms/Group%2017aws-kms.6dc3dbbbe5b75b46c4f62218d0531e5bed7276ce.png)
+
 * You can enable automatic master key rotation once per year. Service keeps the older version of master key to decrypt old encrypted data.
 * Allows you to control access to the keys using things like IAM policies or key policies.
 * Encrypt/decrypt up to 4KB.
@@ -474,33 +509,62 @@ You can choose EC2 instance type based on requirement for e.g. m5.2xlarge has Li
 
 ## Elastic Load Balancing (ELB)
 
-* AWS load balancer provide a static DNS name provided for e.g. http://myalb-123456789.us-east-1.elb.amazonaws.com
-* AWS load balancer route the request to Target Groups. Target group can have one or more EC2 instances, IP Addresses or lambda functions.
+* Designed to help balance the load of incoming traffic by distributing it across multiple targets/destinations.
+  * Target group (ALB o CLB) can have one or more EC2 instances, IP Addresses, lambda functions.
+* It makes the traffic Scale and Fault Tolerant (It can balance load across one or more Availability Zones)
+* Internal Load Balancers are load balancers that are inside private subnets
+* Load Balancers have their own static DNS name (e.g. http://myalb-123456789.us-east-1.elb.amazonaws.com) — you will NEVER be given an IP address
+* If you need the IPv4 address of your end user, look for the `X-Forwarded-For` header.
+* `Health Checks`
+  * Instances monitored by ELB are reported as; InService, or OutofService
+  * Health Checks check the instance health by talking to it.
+  * `504 Error` means that the gateway has timed out. This means that the application not responding within the idle timeout period.
+* Advanced Load Balancers Theory
+  * `Stickiness` (a.k.a. Session Affinity):
+    * Allows you to bind a users session to a specific instance, ensuring all requests in that specific session are sent to the same instance.
+    * Use Cases:
+      * A user trying to visit a website behind a classic load balancer and essentially what's happening is it's just sending all the traffic to one EC2 instance. Answer: Disable Sticky session.
+      * If you have got an EC2 instance or an application, where you're writing to an EC2 instance like local disk, then of course you would want to enable Sticky.
+    * It works in CLB and ALB. (It doesn’t work with NLB)
+  * `Cross Zone load Balancing`
+    * It enables EC2 instances to get equal share of traffic/load across multiple AZs
+    * Use Cases:
+      *
+  * `Path Patterns` → can direct traffic to different EC2 instances based on request URL.
+
+
 * Types of ELB
 
-| Type 	| Protocol
-|---	|---	|
-Application Load Balancer	| HTTP, HTTPS, WebSocket |
-Network Load Balancer	| TCP, UDP, TLS |
-Gateway Load Balancer |	Thirdparty appliances |
-Classic Load Balancer (old)	| HTTP, HTTPS, TCP |
-
-* Stickiness: works in CLB and ALB. Stickiness and its duration can be set at Target Group level. Doesn’t work with NLB
+| Type 	| Protocol | OSI Layer |
+|---	|---	|--- |
+Application Load Balancer	| HTTP, HTTPS, WebSocket | Layer 7 (Application layer) |
+Network Load Balancer	| TCP, UDP, TLS | Layer 4 (Transport layer) |
+Gateway Load Balancer |	Thirdparty appliances, virtual applications e.g. firewalls| Layer 3 |
+Classic Load Balancer (old)	| HTTP, HTTPS, TCP | Both Layer 7 and Layer 4 |
 
 #### Application Load Balancer (ALB)
 
-* Routing based on hostname, request path, params, headers, source IP etc.
-* Support Request tracing, add `X-Amzn-Trace-Id` header before sending the request to target
-* Client IP and port can be find in `X-Forwarded-For` and `X-Forwarded-Porto` header
-integrate with WAF with rate-limiting (throttle) rules to prevent from DDoS attacks
+* Best suitable for protocol HTTP, HTTPS, WebSocket | Layer 7 (Application layer)
+* Routes traffic based on request content (hostname, request path, params, headers, source IP etc.).
+* Use Case: It is **Intelligent** and can send specific requests to specific servers.
+
+![Application Load Balancer](https://d1.awsstatic.com/Digital%20Marketing/House/1up/products/elb/Product-Page-Diagram_Elastic-Load-Balancing_ALB_HIW%402x.cb3ce6cfd5dd549c99645ed51eef9e8be8a27aa3.png)
 
 #### Network Load Balancer (NLB)
 
-* Handle **volatile workloads** and **extreme low-latency**
-* Provide static IP/Elastic IP for the load balancer per AZ
-* allows registering targets by IP address
-* Use NLB with Elastic IP in front of ALBs when there is a requirement of whitelisting ALB
+* Best suitable for protocol TCP, UDP, TLS | Layer 4 (Transport layer)
+* Use case: when extreme performance is required: Handle **volatile workloads** and **extreme low-latency**. Static IP Address.
 
+#### Gateway Load Balancer (GLB)
+
+* Thirdparty appliances, virtual applications e.g. firewalls | Layer 3
+* Automatically scales virtual appliances based on demand.
+
+#### Classic Load Balancers (Previos Generation)
+
+* It can operate at both Layer 7 (Application layer) and Layer 4 (Transport layer).
+* Use Case: Test & Dev to keep costs low.
+* It is not very intelligent — it can’t route traffic based on content like Application Load Balancers.
 ## ASG (Auto Scaling Group)
 
 * Scale-out (add) or scale-in (remove) EC2 instances based on scaling policy - CPU, Network, Custom metric or Scheduled.
