@@ -297,6 +297,9 @@ Steps: You first authenticate user using `Cognito User Pools` and then exchange 
   *  CloudHSM will operate inside its own VPC dedicated to CloudHSM
   *  CloudHSM will project to ENI of customer VPC
 * Keys are irretrievable if lost and can not be recovered.
+
+![AWS CloudHSM](https://d1.awsstatic.com/whiteboard-graphics/products/CloudHSM/product-page-diagram_AWS-CloudHSM_HIW.76ce14889e22d8861a6a9fff0b5664516ed1bddd.png)
+
 * Use case: Use KMS to create a CMKs in a custom key store and store non-extractable key material in AWS CloudHSM to get a full control on encryption keys
 * Difference between KMS and CloudHSM
   * FIPS 140–2 Level 2 vs Level 3
