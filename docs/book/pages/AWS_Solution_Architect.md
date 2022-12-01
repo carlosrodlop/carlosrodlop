@@ -543,7 +543,12 @@ You can choose EC2 instance type based on requirement for e.g. m5.2xlarge has Li
   * `Cross Zone load Balancing`
     * It enables EC2 instances to get equal share of traffic/load across multiple AZs
     * Use Cases:
-      *
+      * With No Cross Zone Load Balancing, we got a user and we are using Route 53 for our DNS,    which is splitting of our traffic 50/50 and sending the requests to EC2's in two diff AZ's.
+			Each AC has a Load Balancer, The first AZ has 4 EC2 instances and the second has only one EC2 instance.
+
+				Because we don't have Cross Zone Load Balancing enabled - First AZ will split 50% to 4 instances and the second AZ receives 50% on 1 instance.
+
+				When we enable Cross Zone Load Balancing: The Load balancer will distribute the load evenly among instances on both AZ's.
   * `Path Patterns` → can direct traffic to different EC2 instances based on request URL.
 
 * Types of ELB
