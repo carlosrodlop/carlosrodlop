@@ -2,10 +2,10 @@
 
 After doing the cource from [Digital Training](https://digitalcloud.training/aws-cheat-sheets/), I reviwed the following resources to make this summary:
 
-* https://aws.amazon.com/
-* https://codingnconcepts.com/aws/aws-certified-solutions-architect-associate/#aws-infrastructure (2021)
-* https://github.com/kasukur/AWS_CCP_Notes/blob/main/AWS_Solution_Architecture_Associate.txt (2021)
-* https://chloemcateer.medium.com/aws-solution-architect-associate-exam-study-notes-b6c5884ee500 (2021)
+* [Amazon Docs](https://aws.amazon.com/)
+* [AWS Certified Solutions Architect Associate (SAA-C02) Exam Notes - Coding N Concepts](https://codingnconcepts.com/aws/aws-certified-solutions-architect-associate/#aws-infrastructure)
+* [AWS\_CCP\_Notes/AWS\_Solution\_Architecture\_Associate.txt at main · kasukur/AWS\_CCP\_Notes](https://github.com/kasukur/AWS_CCP_Notes/blob/main/AWS_Solution_Architecture_Associate.txt)
+* [AWS Solution Architect Associate Exam Study Notes | by Chloe McAteer | Medium](https://chloemcateer.medium.com/aws-solution-architect-associate-exam-study-notes-b6c5884ee500)
 
 Finally, I practiced the following Exam Tests
 # AWS Solution Architect
