@@ -532,7 +532,6 @@ You can choose EC2 instance type based on requirement for e.g. m5.2xlarge has Li
       *
   * `Path Patterns` → can direct traffic to different EC2 instances based on request URL.
 
-
 * Types of ELB
 
 | Type 	| Protocol | OSI Layer |
