@@ -2,6 +2,7 @@
 
 After doing the cource from [Digital Training](https://digitalcloud.training/aws-cheat-sheets/), I reviwed the following resources to make this summary:
 
+* https://aws.amazon.com/
 * https://codingnconcepts.com/aws/aws-certified-solutions-architect-associate/#aws-infrastructure (2021)
 * https://github.com/kasukur/AWS_CCP_Notes/blob/main/AWS_Solution_Architecture_Associate.txt (2021)
 * https://chloemcateer.medium.com/aws-solution-architect-associate-exam-study-notes-b6c5884ee500 (2021)
