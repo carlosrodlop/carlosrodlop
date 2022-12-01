@@ -368,6 +368,8 @@ Steps: You first authenticate user using `Cognito User Pools` and then exchange 
   * `Network Reachability` rules package checks for unintended network accessibility of EC2 instances
   * `Host Assessment rules` package checks for vulnerabilities and insecure configurations on EC2 instance. Includes Common Vulnerabilities and Exposures (CVE), Center for Internet Security (CIS) Operating System configuration benchmarks, and security best practices.
 
+![](https://d1.awsstatic.com/reInvent/re21-pdp-tier1/amazon-inspector/Amazon-Inspector_HIW%402x.c26d455cb7e4e947c5cb2f9a5e0ab0238a445227.png)
+
 ### Amazon Macie
 
 * Managed service to discover and protect your **sensitive data** in AWS
@@ -388,6 +390,8 @@ Steps: You first authenticate user using `Cognito User Pools` and then exchange 
 * You are notified via SNS for any configuration change
 * Integrated with CloudTrail, provide resource configuration history
 * Use case: Customers need to comply with standards like PCI-DSS (Payment Card Industry Data Security Standard) or HIPAA (U.S. Health Insurance Portability and Accountability Act) can use this service to assess compliance of AWS infra configurations
+
+![](https://d1.awsstatic.com/config-diagram-092122.974fe2a4cb6aae1fe564fdbbe30ab55841a9858e.png)
 
 ## Compute
 
@@ -545,11 +549,14 @@ You can choose EC2 instance type based on requirement for e.g. m5.2xlarge has Li
     * Use Cases:
       * With No Cross Zone Load Balancing, we got a user and we are using Route 53 for our DNS,    which is splitting of our traffic 50/50 and sending the requests to EC2's in two diff AZ's.
 			Each AC has a Load Balancer, The first AZ has 4 EC2 instances and the second has only one EC2 instance.
-
-				Because we don't have Cross Zone Load Balancing enabled - First AZ will split 50% to 4 instances and the second AZ receives 50% on 1 instance.
-
-				When we enable Cross Zone Load Balancing: The Load balancer will distribute the load evenly among instances on both AZ's.
-  * `Path Patterns` → can direct traffic to different EC2 instances based on request URL.
+        * Because we don't have Cross Zone Load Balancing enabled - First AZ will split 50% to 4 instances and the second AZ receives 50% on 1 instance.
+        * When we enable Cross Zone Load Balancing: The Load balancer will distribute the load evenly among instances on both AZ's.
+      * We got a user and we are using Route 53 for our DNS, which is sending all the requests (100%) to a Load Balancer in AZ1, The first AZ1 has 4 EC2 instances and the second has only one EC2 instance.
+        * Route 53's 100% traffic is sent to the only load balancer in US-EAST-1A and no traffic is being sent to US-EAST-1B.
+        * In this scenario, we enable Cross Zone Load Balancing to distribute the traffic evenly between US-EAST-1A and US-EAST-1B
+  * `Path Patterns` (path-based routing) → can direct traffic to different EC2 instances based on request URL (path). For Example: you can route general requests to one target group and requests to render images to another target group
+    * Use Case: We got a user and we are using Route 53 for our DNS, which is sending all the requests (100%) to a Load Balancer in AZ1, The first AZ1 has 4 EC2 instances and the second has only one EC2 instance.
+      * www.myurl.com should go to AZ1 and www.myurl.com/images should go to the media instances in AZ2. In this instance, we enable Path Patterns.
 
 * Types of ELB
 
@@ -579,6 +586,8 @@ Classic Load Balancer (old)	| HTTP, HTTPS, TCP | Both Layer 7 and Layer 4 |
 
 * Thirdparty appliances, virtual applications e.g. firewalls | Layer 3
 * Automatically scales virtual appliances based on demand.
+
+![Gateway](https://d1.awsstatic.com/Digital%20Marketing/House/1up/products/elb/Product-Page-Diagram_Elastic-Load-Balancing_GWLB_HIW%402x.58547db68b537b4aa4b0cdf7e593a6415d588a09.png)
 
 #### Classic Load Balancers (Previos Generation)
 
