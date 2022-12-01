@@ -344,6 +344,8 @@ Steps: You first authenticate user using `Cognito User Pools` and then exchange 
     * Presence of a script
 * Pay for what you use, based on the number of rules you have and requests your applications receive.
 
+![AWS WAF](https://d1.awsstatic.com/Product-Page-Diagram_AWS-Web-Application-Firewall%402x.5f24d1b519ed1a88b7278c5d4cf7e4eeaf9b75cf.png)
+
 ### AWS Firewall Manager
 
 * Use AWS Firewall Manager to centrally configure and manage Firewall Rules across an Organization: AWS WAF rules, AWS Shield Advanced, Network Firewall rules, and Route 53 DNS Firewall Rules
