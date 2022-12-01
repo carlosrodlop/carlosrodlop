@@ -8,7 +8,7 @@ on:
     paths:
       #- 'docs/**.md'
       #- 'docs/images/**'
-      - docs/book/AWS/AWS_Solution_Architect.md
+      - docs/book/**.md
 
 jobs:
   converttopdf:
@@ -18,9 +18,9 @@ jobs:
       - uses: actions/checkout@v2
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
-          input_dir: docs/book/AWS/AWS_Solution_Architect.md
-          output_dir: docs/book/AWS/
+          input_dir: docs/book/**.md
+          output_dir: docs/book/
       - uses: actions/upload-artifact@v3
         with:
           name: pdf
-          path: docs/book/AWS/
+          path: docs
