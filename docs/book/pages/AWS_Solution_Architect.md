@@ -1,6 +1,6 @@
 # References
 
-After doing the cource from [Digital Training](https://digitalcloud.training/aws-cheat-sheets/), I reviwed the following resources to make this summary:
+After doing the course from [Digital Training](https://digitalcloud.training/aws-cheat-sheets/), I reviwed the following resources to make this summary:
 
 * [Amazon Docs](https://aws.amazon.com/)
 * [AWS Certified Solutions Architect Associate (SAA-C02) Exam Notes - Coding N Concepts](https://codingnconcepts.com/aws/aws-certified-solutions-architect-associate/#aws-infrastructure)
@@ -391,7 +391,7 @@ Steps: You first authenticate user using `Cognito User Pools` and then exchange 
 * Integrated with CloudTrail, provide resource configuration history
 * Use case: Customers need to comply with standards like PCI-DSS (Payment Card Industry Data Security Standard) or HIPAA (U.S. Health Insurance Portability and Accountability Act) can use this service to assess compliance of AWS infra configurations
 
-![](https://d1.awsstatic.com/config-diagram-092122.974fe2a4cb6aae1fe564fdbbe30ab55841a9858e.png)
+![AWS Config](https://d1.awsstatic.com/config-diagram-092122.974fe2a4cb6aae1fe564fdbbe30ab55841a9858e.png)
 
 ## Compute
 
@@ -519,6 +519,7 @@ You can choose EC2 instance type based on requirement for e.g. m5.2xlarge has Li
 * **Cluster** - Grouping instances close together within a single Availability Zone, Same Rack. It is used to achieve low Network latency & high throughput, High Performance Computing (HPC). Recommended you have the same type on instances in the cluster.
 * **Spread** - Opposite to clustered placement group. Instance are placed o Different AZ, Distinct Rack. It used for Critical Applications that requires to be seperated on each other to ensure High Availability in case of failure. Spread placement groups can span multiple Availability Zones.
 * **Partition** - EC2 creates partitions by dividing each group into logical segments. Each partition has its own set of racks, network and power source to help isolate the impact of a hardware failure. Same or Different AZ, Different Rack (or Partition), Distributed Applications like Hadoop, Cassandra, Kafka etc
+
 #### AMI (Amazon Machine Image)
 
 * Customized image of an EC2 instance, having built-in OS, softwares, configurations, etc.
@@ -597,24 +598,88 @@ Classic Load Balancer (old)	| HTTP, HTTPS, TCP | Both Layer 7 and Layer 4 |
 
 ## ASG (Auto Scaling Group)
 
-* Scale-out (add) or scale-in (remove) EC2 instances based on scaling policy - CPU, Network, Custom metric or Scheduled.
-* You configure the size of your Auto Scaling group by setting the minimum, maximum, and desired capacity. ASG run EC2 instances at desired capacity if no policy specified. Minimum and maximum capacity are boundaries within ASG scale-in or scale-out. min <= desired <= max
-* Instances are created in ASG using Launch Configuration (legacy) or Launch Template (newer)
-* You cannot change the launch configuration for an ASG, you must create a new launch configuration and update your ASG with it.
-* You can create ASG that launches both Spot and On-Demand Instances or multiple instance types using launch template, not possible with launch configuration.
-* Dynamic Scaling Policy
-  1. Target Tracking Scaling - can have more than one policy for e.g. add or remove capacity to keep the average aggregate CPU utilization of your Auto Scaling group at 40% and request count per target of your ALB target group at 1000 for your ASG. If both policy occurs at same time, use largest capacity for both scale-out and scale-in.
-  2. Simple Scaling - e.g. CloudWatch alarm CPUUtilization (>80%) - add 2 instances
-  3. Step Scaling - e.g. CloudWatch alarm CPUUtilization (60%-80%)- add 1, (>80%) - add 3 more, (30%-40%) - remove 1, (<30%) - remove 2 more
-  4. Scheduled Action - e.g. Increase min capacity to 10 at 5pm on Fridays
-* **Default Termination Policy** - Find AZ with most number of instances, and delete the one with oldest launch configuration, in case of tie, the one closest to next billing hour
-* **Cooldown period** is the amount of time to wait for previous scaling activity to take effect. Any scaling activity during cooldown period is ignored.
-* **Health check grace period** is the amount of wait time to check the health status of EC2 instance, which has just came into service to give enough time to warmup.
-* You can add lifecycle-hooks to ASG to perform custom action during:-
+* Monitors and scales applications to optimise performance and costs.
+* It Can be used across a number of different services including EC2 instances and Spot Fleets, ECS tasks, Aurora replicas and DynamoDB tables.
+
+![ASG](https://d1.awsstatic.com/product-marketing/AutoScaling/aws-auto-scaling-how-it-works-diagram.d42779c774d634883bdcd0463de7bd86f6e2231d.png)
+
+* Instances are created in ASG using Launch Configuration (Legacy) or Launch Template (Recommended option)
+  * You can create ASG that launches both Spot and On-Demand Instances or multiple instance types using launch template, not possible with launch configuration.
+  * You cannot change the launch configuration for an ASG, you must create a new launch configuration and update your ASG with it.
+* You can add Lifecycle Hooks to ASG to perform custom action during:-
   1. scale-out to run script, install softwares and send complete-lifecycle-action command to continue
   2. scale-in e.g. download logs, take snapshot before termination
 
+### Scaling options
+
+Auto Scaling offers both dynamic scaling and predictive scaling options:
+
+#### Dynamic Scaling
+
+* Dynamic scaling scales the capacity of your Auto Scaling group as traffic changes occur.
+* Types Dynamic Scaling Policies => Increase and decrease the current capacity of the group based on ...
+  * Target tracking scaling: A `Amazon CloudWatch metric` and a `target value` (it can combine more than one target). Health checks are performed to ensure resource level is maintained.
+    * Use Case: Keep the average aggregate CPU utilization of your Auto Scaling group at 40% (and request count per target of your ALB target group at 1000)
+  * Step scaling: A set of scaling adjustments, known as `step adjustments`, that vary based on the size of the alarm breach.
+    * CloudWatch alarm CPUUtilization (60%-80%)- add 1, (>80%) - add 3 more, (30%-40%) - remove 1, (<30%) - remove 2 more
+  * Simple scaling: A `single scaling adjustment`, with a `cooldown period` between each scaling activity.
+    * CloudWatch alarm CPUUtilization (>80%) - add 2 instances
+
+#### Predictive scaling
+
+Predictive is only available for EC2 auto scaling groups and the scaling can work in a number of ways:
+
+* Set **Maximum Capacity**: You specify minimum and maximum instances or desired capacity required and EC2 autoscaling manages the progress of creating/terminating based on what you have specified. min <= desired <= max
+
+* Scale Based on a **Schedule**: Scaling performed as a function of time to reflect forecasted load.
+For example, if you know there will be increased load on the application at 9am every morning you can choose to scale at this time
+
+* Scale based on **Load forecasting**: Auto Scaling analyses the history of your applications load for up to 14 days and then uses this predict to the load for the next 2 days.
+
 ### Lambda
+
+* FaaS (Function as a Service), Serverless. You don’t have to worry about OS or scaling (scale on demand)
+* Lambda function supports many languages such as Node.js, Python, Java, C#, Golang, Ruby, etc.
+* It is cheaper than EC2. There is no charge when your code is not running. What determines price for Lambda?
+  * Request Pricing (Free Tier: 1 million requests per month)
+  * Duration Pricing and resource (memory) usage
+  * Additional Charges: if your lambda uses other AWS services or transfers data. For example, If your lambda function reads and writes data to or from Amazon S3, you will be billed for the read/write requests and the data stored in Amazon S3
+* You are charged based on number of requests (first million free), execution time  usage. Cheaper than EC2.
+* AWS Lambda integrates with other AWS services to invoke functions or take other actions ==> Method of Invocation:
+  * Lambda polling: For services that generate a queue or data stream, you set up an event source mapping in Lambda to have Lambda poll the queue or a data stream.
+    * Services: Amazon Managed Streaming for Apache Kafka, Self-managed Apache Kafka, Amazon DynamoDB, Amazon Kinesis, Amazon MQ, Amazon Simple Queue Service
+  * Event-driven: Some services generate events (JSON documents) that can invoke your Lambda function.
+    * Synchronous
+      * Services: Elastic Load Balancing (Application Load Balancer), Amazon Cognito, Amazon Lex, Amazon Alexa, Amazon API Gateway, Amazon CloudFront (Lambda@Edge), Amazon Kinesis Data Firehose, AWS Step Functions
+      * Common Use Case: Respond to incoming HTTP requests using API Gateway.
+    * Asynchronous
+      * Common Use Case
+        * Services: Amazon Simple Storage Service, Amazon Simple Notification Service, Amazon Simple Email Service, AWS CloudFormation, Amazon CloudWatch Logs, Amazon CloudWatch Events, AWS CodeCommit, AWS Config, AWS IoT Events
+        * In response to resource **lifecycle events**, such as with Amazon Simple Storage Service (Amazon S3).
+        * **On a Schedule** with Amazon EventBridge (CloudWatch Events).
+
+## Application Integration
+
+### SQS (Amazon Simple Queue Service)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## AWS Organization and Control Tower
 
@@ -630,9 +695,6 @@ Classic Load Balancer (old)	| HTTP, HTTPS, TCP | Both Layer 7 and Layer 4 |
 ## Block and File Storage
 
 ## Docker Container and ECS
-
-## Serveless Applications
-
 
 ## Databases y Analytics
 
