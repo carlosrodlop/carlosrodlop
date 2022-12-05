@@ -1,7 +1,7 @@
 FROM ubuntu:20.04 AS base
 SHELL ["/bin/bash", "-c"]
 
-LABEL   maintainer="Carlos Rodriguez Lopez <crodriguezlopez@cloudbees.com>" \
+LABEL   maintainer="Carlos Rodriguez Lopez <it.carlosrodlop@gmail.com>" \
     version="1.1" \
     updated_at=2022-11-3
 
