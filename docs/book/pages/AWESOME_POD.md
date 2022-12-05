@@ -1,4 +1,4 @@
-# Awesome Pod [![Awesome](../img/awesome_badge.svg)](https://github.com/sindresorhus/awesome)
+# Awesome Pod [![Awesome](/img/awesome_badge.svg)](https://github.com/sindresorhus/awesome)
 
 ```yaml
 apiVersion: vInfinito
@@ -23,6 +23,7 @@ spec:
 - [kamranahmedse/developer-roadmap: Roadmap to becoming a developer in 2022](https://github.com/kamranahmedse/developer-roadmap)
 - [70+ Free Awesome Certificates to Earn in 2021 - DEV Community](https://dev.to/panx/50-free-awesome-certificates-to-earn-in-2021-2l7g)
 - [DZone: RefCards](https://dzone.com/refcardz)
+- [GitHub - bregman-arie/devops-exercises: Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualization. DevOps Interview Questions](https://github.com/bregman-arie/devops-exercises)
 
 ```yaml
     # References to links on different topics per module
@@ -66,7 +67,7 @@ spec:
 ```
 
 - [Continuous Delivery Landscape](https://landscape.cd.foundation/)
-- [Cloud Native Landscape](https://landscape.cncf.io/) 
+- [Cloud Native Landscape](https://landscape.cncf.io/)
 
 
 ```yaml
@@ -74,6 +75,7 @@ spec:
 ```
 
 - [Google - Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)
+- [Linkedin - School Of SRE](https://linkedin.github.io/school-of-sre/)
 
 ```yaml
     - tooling:
