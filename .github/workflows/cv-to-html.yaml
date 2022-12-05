@@ -28,21 +28,7 @@ jobs:
           resume_filepath: docs/cv/resume.json
           # modifies the index.html in-place
           output_filepath: docs/cv/resume.html
-      - name: Commit published HTML
-        id: commit
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          if [ -n "$(git status --porcelain docs/cv/resume.html)" ]; then
-            git add docs/cv/resume.html
-            git commit -m "[ci skip] chore(docs/cv/resume.html): update resume page"
-            echo ::set-output name=exit_code::0
-          else
-            echo ::set-output name=exit_code::1
-          fi
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        if: steps.commit.outputs.exit_code == 0
+      - uses: actions/upload-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          name: cv
+          path: docs/cv/resume.html
