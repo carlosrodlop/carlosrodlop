@@ -37,10 +37,6 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=carlosrodlop&" alt="carlosrodlop" /></p>
 
-### GitHub Actions CI
-
-![Book GHA status](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/convert-to-pdf.yml/badge.svg)
-
 ## Knowledge Sharing
 
 ### &#x270d; Blog & Writing
@@ -56,6 +52,7 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 - [DR CloudBees CI EKS with Velero](https://events.devopsworld.com/widget/cloudbees/devopsworld22/conferenceSessionDetails?tab.day=20220928&search=1040). Orlando, EEUU. 2022
 - [Combining Serverless Continuous Delivery With ChatOps](https://www.meetup.com/es-ES/SVQJUG/events/263195348/). Sevilla, Spain. 2019
 
+<hr>
 
 | <img alt="gitleaks badge" src="https://img.shields.io/badge/protected%20by-gitleaks-blue"> | <img src="https://komarev.com/ghpvc/?username=carlosrodlop&label=Profile%20views&color=0e75b6&style=flat" alt="carlosrodlop" /> |
 |---| ---|
