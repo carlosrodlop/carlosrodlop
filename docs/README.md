@@ -12,5 +12,5 @@ Other company submodules might be linked at the moment because I am currently wo
 
 ## Automations
 
-* [![Book GHA status](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/convert-to-pdf.yml/badge.svg)](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/convert-to-pdf.yml)
+* [![Book GHA status](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/convert-to-pdf.yml/badge.svg)](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/book-to-pdf.yml)
 *
