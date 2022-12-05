@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sh -c "ls -la"
+sh -c "cd docs/cv && ls -la"
