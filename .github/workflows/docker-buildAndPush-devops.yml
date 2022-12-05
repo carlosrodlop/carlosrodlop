@@ -5,21 +5,21 @@
 
 name: Publish DevOps Docker Image
 
-env:
-  REGISTRY: ghcr.io
-  IMAGE_SUFFIX: devops
-  IMAGE_NAME: ${{ github.repository }}.${{ env.IMAGE_SUFFIX }}
-
 # Controls when the action will run.
 on:
   # Triggers the workflow on push events but only for the master branch
   push:
     branches: [ master ]
     paths:
-      - .docker/${{ env.IMAGE_SUFFIX }}/**
+      - .docker/devops/**
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_SUFFIX: devops
+  IMAGE_NAME: ${{ github.repository }}.${{ env.IMAGE_SUFFIX }}
 
 jobs:
   push_to_registry:
