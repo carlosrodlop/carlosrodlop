@@ -4,4 +4,4 @@ RUN apk add make texlive
 
 ENV TEXMF /usr/share/texmf-dist
 
-COPY actions/entrypoint.sh /entrypoint.sh
+COPY .docker/cv/actions/entrypoint.sh /entrypoint.sh
