@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sh -c "echo hola"
+sh -c "ls -la"
