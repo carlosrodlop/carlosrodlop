@@ -25,7 +25,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           rm docs/book/README.md
-          pages=( $( ls . | grep .md) )
+          pages=( $( ls docs/book/ | grep .md) )
           diagrams=( $( ls docs/book/diagrams | grep .png) )
           cat <<EOT >> docs/book/README.md
           # Index
