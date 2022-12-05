@@ -33,7 +33,7 @@ jobs:
               echo "* [$page]($page)"
             done
           }
-          function printDiagram {
+          function printDiagrams {
             for diagram in "${diagrams[@]}"
             do
               echo "* [$diagram](https://github.com/carlosrodlop/carlosrodlop/blob/main/docs/book/diagrams/${diagram})"
