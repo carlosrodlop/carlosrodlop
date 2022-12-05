@@ -27,13 +27,13 @@ jobs:
           rm docs/book/README.md
           pages=( $( ls docs/book/ | grep .md) )
           diagrams=( $( ls docs/book/diagrams | grep .png) )
-          function printPages {
+          printPages () {
             for page in "${pages[@]}"
             do
               echo "* [$page]($page)"
             done
           }
-          function printDiagrams {
+          printDiagrams () {
             for diagram in "${diagrams[@]}"
             do
               echo "* [$diagram](https://github.com/carlosrodlop/carlosrodlop/blob/main/docs/book/diagrams/${diagram})"
@@ -47,6 +47,7 @@ jobs:
 
           ## Diagrams
           $(printDiagrams)
+
           EOT
           if [ -n "$(git status --porcelain docs/book/README.md)" ]; then
             git add docs/book/README.md
