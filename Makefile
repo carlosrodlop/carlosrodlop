@@ -5,18 +5,24 @@ MKFILE_DIR    := $(abspath $(dir $(lastword $(MAKEFILE_LIST))))
 
 .PHONY:
 git-sub-update-all: ## Initialize, fetch and checkout any nested submodules
-git-sub-update-all: 
+git-sub-update-all:
 	@git submodule update --init --recursive
 
 .PHONY:
-git-resetToUpstrem: ## Update Repository to upstream. Parameter: R (Repository root). Example: R=docs/ps-docs make git-resetToUpstrem 
+git-resetToUpstrem: ## Update Repository to upstream. Parameter: R (Repository root). Example: R=docs/ps-docs make git-resetToUpstrem
 git-resetToUpstrem:
 	@cd $(MKFILE_DIR)/$(R) && git fetch upstream; git reset --hard upstream/main; git push -f
 
 .PHONY:
 sast-scan-all: ## SAST scan from https://slscan.io/en/latest/ for the root
-sast-scan-all: 
+sast-scan-all:
 	@docker run --rm -e "WORKSPACE=$(PWD)" -v $(PWD):/app shiftleft/sast-scan scan --build
+
+.PHONY:
+run-docker-devops: ## Run image from Dockerfile.devops
+run-docker-devops:
+	cat src/secrets/files/github/gh_token.txt | docker login ghcr.io --username carlosrodlop --password-stdin
+	docker run ghcr.io/carlosrodlop/devops:main
 
 ####################
 ## Common targets
