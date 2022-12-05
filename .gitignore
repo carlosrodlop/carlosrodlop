@@ -9,3 +9,5 @@ src/ps-env
 src/secrets
 src/config
 docs/ps-doc
+v_kube
+v_tmp
