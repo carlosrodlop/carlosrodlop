@@ -1,7 +1,4 @@
 # Carlosrodlop's book
-
-![Book GHA status](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/convert-to-pdf.yml/badge.svg)
-
 ## Index
 
 ### Notes

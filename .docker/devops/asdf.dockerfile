@@ -40,7 +40,7 @@ RUN mkdir .antigen
 RUN curl -L git.io/antigen > .antigen/antigen.zsh
 COPY .zshrc .zshrc
 
-RUN git clone --depth 1 https://github.com/asdf-vm/asdf.git .asdf 
+RUN git clone --depth 1 https://github.com/asdf-vm/asdf.git .asdf
 COPY .tool-versions .tool-versions
 RUN source ~/.asdf/asdf.sh && \
     asdf plugin add awscli && \
