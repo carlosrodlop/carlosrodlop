@@ -15,19 +15,22 @@ jobs:
     if: "! contains(github.event.head_commit.message, '[ci skip]')"
     steps:
       - run: echo "${{ github.event.head_commit.message }}"
-
-  build:
+  checkout:
     runs-on: ubuntu-latest
     needs: check_run
     steps:
       - uses: actions/checkout@v2
+  build:
+    runs-on: ubuntu-latest
+    needs: checkout
+    steps:
       - name: Create Book README.md
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           rm docs/book/README.md
           pages=( $( ls . | grep .md) )
-          diagrams=( $( ls diagrams | grep .png) )
+          diagrams=( $( ls docs/book/diagrams | grep .png) )
           cat <<EOT >> docs/book/README.md
           # Index
 
@@ -44,6 +47,10 @@ jobs:
           else
             echo ::set-output name=exit_code::1
           fi
+  push:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
       - name: Push changes
         uses: ad-m/github-push-action@master
         if: steps.commit.outputs.exit_code == 0
