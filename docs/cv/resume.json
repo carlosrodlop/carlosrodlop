@@ -91,7 +91,6 @@
   "education": [
     {
       "area": "Information Technology",
-      "courses": [],
       "endDate": "2015-12-31",
       "institution": "Universidad de Sevilla",
       "score": "Master's degree (MSc)",
@@ -100,10 +99,6 @@
     },
     {
       "area": "Information Technology",
-      "courses": [
-        "Code Academy - Java Script",
-        "Code Academy - Jquery"
-      ],
       "endDate": "2013-12-31",
       "institution": "IES Punta del Verde",
       "score": "Vocational Education and Training (VET)",
@@ -112,7 +107,6 @@
     },
     {
       "area": "Information Technology",
-      "courses": [],
       "endDate": "2006-12-31",
       "institution": "Universidad de Sevilla",
       "score": "Master's degree (MSc)",
@@ -121,9 +115,6 @@
     },
     {
       "area": "Geology/Earth Science, General",
-      "courses": [
-        "FEUN - Teamwork & Project Management"
-      ],
       "endDate": "2005-12-31",
       "institution": "Universidad Pablo de Olavide",
       "score": "Bachelor of Science (BSc)",
@@ -131,12 +122,7 @@
       "studyType": "Environmental Science"
     }
   ],
-  "interests": [],
   "languages": [
-    {
-      "fluency": "Native Speaker",
-      "language": "es"
-    },
     {
       "fluency": "Full Professional",
       "language": "English"
@@ -150,136 +136,6 @@
     "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json",
     "version": "v1.0.0"
   },
-  "projects": [
-    {
-      "endDate": "2016-03-31",
-      "name": "Cloudbees Jenkins Platform",
-      "startDate": "2016-03-31",
-      "summary": null,
-      "url": "https://www.cloudbees.com/"
-    },
-    {
-      "endDate": "2015-12-31",
-      "name": "EVA 2.0: Vodafone | Spain",
-      "startDate": "2015-12-31",
-      "summary": "\u2022 Effective time worked in the project:  November 2015 - Currently.\n\u2022 Business Domain: Telecom\n\u2022 Technologies (OS Windows 10): BackEnd: J2EE 8: JSF (PrimeFaces), EJB, JPA (Eclipselink), ; SOA: JAW-XS (SOAP); FrontEnd: JS  (Jquery); DBMS: Oracle; Application server: WebLogic; Continuous integration: Jenkins, Sonar, Maven, SVN; Project  Management: RedMine; UML: Enterprise Architect.\n\u2022 Responsibilities: \n- Define and Develop SOAP Web Services for integration with 3rd party application\n- Define and Develop the application Data Structure using JPA.\n- Define and Develop Unit Testing for continuos integration.",
-      "url": null
-    },
-    {
-      "endDate": "2015-10-31",
-      "name": "ONO Web Portal | Spain",
-      "startDate": "2015-10-31",
-      "summary": "\u2022 Effective time worked in the project:  2 month.\n\u2022 Business Domain: Telecom.\n\u2022 Technologies (OS Windows 10): BackEnd: J2EE 7. Apache Tomcat managing: Liferay Portal CE 5.x (for desktops access), JSF + Spring (for mobile access); SOA: JAW-XS (SOAP); FrontEnd: JS (JQuery); DBMS: MySQL; Application Server: JBOSS; Continuos Integration: Maven, SVN, Jenkins; Project Management: RedMine\n\u2022 Responsabilities:\n- Portlet Development for Liferay portal.\n- Bug fixing of existing modules",
-      "url": "https://www.ono.es/"
-    },
-    {
-      "endDate": "2015-05-31",
-      "name": "VUV: eGovernment Ecuador | Ecuador",
-      "startDate": "2015-05-31",
-      "summary": "\u2022 Effective time worked in the project:  3 months.\n\u2022 Business Domain: Public Administration / eGoverment.\n\u2022 Technologies (OS Ubuntu 14): JEE, Liferay - Tomcat Bundle, OpenLayers, Jquery, AlloyUI, Bootstrap, JSP, AJAX, mySQL, RedMine.\n\u2022 Methodology and standards: Scrum (Agile)\n\u2022 Responsibilities: \n- Portlet Development for Liferay portal.\n- Structures and Template Development (ADT) for Liferay portal.",
-      "url": null
-    },
-    {
-      "endDate": "2013-06-30",
-      "name": "Map Viewer at Municipal scale for the Andalusia Region  | Spain",
-      "startDate": "2013-06-30",
-      "summary": "\u2022 Effective time worked in the project: 3 months.\n\u2022 Business Domain: Public Administration  / Spatial Data Infrastructure (SDI).\n\u2022 Technologies (OS Windows XP): Apache Tomcat, Geoserver, JEE, Javascript, Jquery, JqueryUI, OpenLayers, RedMine.\n\u2022 Responsibilities: \n- Definition and integration of technological components. Integration with other applications. Testing.\n- Analysis of user requirements and Design of the solution. Writing of relevant Technical documentation.\n- Development of the Web Map Viewer.",
-      "url": null
-    },
-    {
-      "endDate": "2013-06-30",
-      "name": "iCOM | World Wide",
-      "startDate": "2013-06-30",
-      "summary": "\u2022 Effective time worked in the project:  23 months.\n\u2022 Business Domain: Transport / Civil Aviation / Electronic Flight Bag.\n\u2022 Technologies (OS Ubuntu 12): \nBackEnd: J2EE 7. Corporate Portal Liferay Portal EE 6.2. Tomcat Bundle.\nArchitecture SOA with Red Hat JBoss SOA\u00adP 5, BPM.\nFrontEnd: JS (Jquery and Alloy).\nDBMS: MySQL.\nGIS PostgreSQL\u00adPostGIS 2.0\nMobility Application:\n- Phase I: Objective\u00adC, iOS7, CocoaPods, CoreData, iOS 7\n- Beta Phase: Android 4.3.\nGIS Viewer:\n- Phase I: Maply \u00ad WhirlyGlobe\n- Beta Phase: OpenLayers 2.12 on Android WebView\nGeographic Data Server:\n- Phase I: ETL module rendering maps Mapnik; Data processing with\nGDAL, NumPy and GRASS. PaaS: Amazon Web Services. Docker Container.\n- Beta Phase: Geoserver\nIntegration Environment (Jenkins, Sonar, Nexus, SVN, GIT)\nProject Management: RedMine\n\u2022 Methodology and standards: Scrum (Agile), INSPIRE, OGC,  ISO19915,  ISO19919.\n\u2022 Responsibilities:\n- Technical communications with Eurocontrol.\n- Analysis and Implementation of User Requirements.\n- Development of systems analysis in their technical phase. Drafting of relevant documentation.\n- Development of a Map Viewer and its associated API for events management within the context of Mobile Application Webview.\n- Development of the GIS back-end. Automatization of CRUD processes by PL/PgSQL.\n- Design and Development of the Application Layer List.\n- Portlet Development for Liferay portal.",
-      "url": "https://www.youtube.com/watch?t=18&v=diGXv01zAFk"
-    },
-    {
-      "endDate": "2012-11-30",
-      "name": "eCommerce Amalia Lopez SL | Spain",
-      "startDate": "2012-11-30",
-      "summary": "\u2022 Effective time worked in the project: 3 months.\n\u2022 Business Domain: Promotions and Marketing / eCommerce.\n\u2022 Technologies: PHP, Javascript, Magento, WordPress, MySQL, Talend Data Integration\n\u2022 Award: Creativity Award 2013 by FYVAR.\n\u2022 Responsibilities: \n- Project and Team management. Two people in charge: 2 (a Web Designer and a Web Developer).\n- Development of systems\u2019 analysis in their technical phase. Drafting of relevant documentation.\n- Hosting and Server Maintenance.\n- Web Design and Web content production.\n- ETL projects for batch loads of the Catalog of products.",
-      "url": "http://www.amalialopez.com/"
-    },
-    {
-      "name": "Ad\u2019Diriyyah Comprehensive Development Plan  | Saudi Arabia",
-      "startDate": "",
-      "summary": "\u2022 Effective time worked in the project: 9 months.\n\u2022 Business Domain: Master planning.\n\u2022 Technologies (OS Windows XP): GIS: ArcGIS Desktop, ArcGIS for Spatial Analyst, ArcGIS for 3D Analyst, ArcGIS for Network Analyst; CAD: AutoCAD.\n\u2022 Roles and responsibilities: \n- Design and Management of Database, including conversions between CAD and GIS formats.\n- Geoprocessing and Data Analysis, including Spatial, 3D and Network Analysis.\n- Data capture and Orthophoto interpretation. Importing of LIDAR data for DEM building.\n- Result distribution: Maps and Reports.",
-      "url": "http://www.happoldconsulting.com/projects/project/addiriyyah-comprehensive-development-plan-196/"
-    },
-    {
-      "name": "Consulting for the Partners Site of the Environmental Information Network of Andalusia (REDIAM) | Spain",
-      "startDate": "",
-      "summary": "\u2022 Effective time worked in the project: 12 months.\n\u2022 Business Domain: Public Administration / Environmental Policy and Governance / Spatial Data Infrastructure (SDI).\n\u2022 Technologies (OS Windows XP): GIS tools: ArcGIS for Desktop; Project Management: MS Project.\n\u2022 Methodology and standards: M\u00e9trica 3, INSPIRE, OGC, NEM.\n\u2022 Responsibilities: \n- Development of the Consulting workflow/methodology.\n- Technical Communication and Coordination Entities involved (universities, research groups and foundations).\n- Arranging and conducting meetings and Projects Conference.\n- Report Writing (Tracking Projects, minutes of Meeting and Closure Project-Findings).\n- Data Quality Control.\n- Characterization of valuable data products and its integration.\n- Design and development of e-learning. Topics covered: Data Modelling, Metadata, Basic Cartography, and ArcGIS.",
-      "url": "http://www.juntadeandalucia.es/medioambiente/site/rediam/menuitem.5232fbb493a195cf8ca78ca731525ea0/?vgnextoid=d23da7215670f210VgnVCM1000001325e50aRCRD"
-    },
-    {
-      "name": "GIS Desktop viewer for the York University | United Kingdom",
-      "startDate": "",
-      "summary": "\u2022 Effective time worked in the project: 4 months.\n\u2022 Business Domain: Utilities.\n\u2022 Technologies (OS Windows XP): GIS: ArcGIS for Desktop, ArcGIS Publisher; CAD: AutoCAD.\n\u2022 Responsibilities: \n- Design and Management of Database, including conversions between CAD and GIS formats.\n- Analysis, Design and Development of a GIS Desktop viewer based on ArcGIS Publisher.",
-      "url": null
-    },
-    {
-      "name": "Implementation of LocalGIS for the Valladolid Council  | Spain",
-      "startDate": "",
-      "summary": "\u2022 Effective time worked in the project: 3 months.\n\u2022 Business Domain: Public Administration / Spatial Data Infrastructure (SDI). \n\u2022 Technologies (OS Windows XP): JEE, LocalGIS, MapServer.\n\u2022 Methodology and standards: M\u00e9trica 3, INSPIRE, OGC, NEM.\n\u2022 Responsibilities: \n- Implementation of the LocalGIS in the Town Halls within Regional Ministry of Valladolid.\n- Design and Conducting LocalGIS lessons for end and admin users.",
-      "url": "http://www.diputaciondevalladolid.es/ayuntamientos/aytos-urbanismo/localgis/"
-    },
-    {
-      "name": "Jeddah Strategic Development Plan  | Saudi Arabia",
-      "startDate": "",
-      "summary": "\u2022 Effective time worked in the project: 6 months\n\u2022 Business Domain: Master planning\n\u2022 Technologies (OS Windows XP): GIS: ArcGIS Desktop, ArcGIS for Spatial Analyst, ArcGIS for 3D Analyst, ArcGIS for Network Analyst; DBMS: Oracle Spatial, ArcSDE; GIS Server: ArcIMS; CAD: AutoCAD.\n\u2022 Responsibilities: \n- Integration of CAD designs into the GIS database\n- Geoprocessing and Data Analysis, including Spatial and Network Analysis. Model Builder for Processes automatization.\n- Result distribution: Maps and Reports.",
-      "url": "http://www.happoldconsulting.com/projects/project/jeddah-strategic-development-plan-195/"
-    },
-    {
-      "name": "Leith Docks Development Environmental Assessment | United Kingdom",
-      "startDate": "",
-      "summary": "\u2022 Effective time worked in the project: 3 months.\n\u2022 Business Domain: Environmental Policy and Governance / Telecom.\n\u2022 Technologies (OS Windows XP): GIS: ArcGIS for Desktop; CAD: AutoCAD.\n\u2022 Responsibilities: \n- Design and Management of Database, including conversions between CAD and GIS formats.\n- Geoprocessing and Data Analysis.\n- Result distribution: Maps.",
-      "url": "http://www.leithdocksdevelopment.com/home.asp"
-    },
-    {
-      "name": "Organization, Standardization and Development of Derived Products from packages of Environmental Information of REDIAM | Spain",
-      "startDate": "",
-      "summary": "\u2022 Effective time worked in the project: 12 months\n\u2022 Business Domain: Public Administration / Environmental policy and governance / Spatial Data Infrastructure (SDI).\n\u2022 Technologies (OS Windows XP): ArcGIS for Desktop, gvSIG, MapServer, Oracle, Pentaho Data Integration (Kettle).\n\u2022 Methodology and standards: M\u00e9trica 3, INSPIRE, OGC, NEM.\n\u2022 Responsibilities: \n- Data quality checking and standardization.\n- Development of GIS Derived Products: Geographic Web Services, Maps and Reports.\n- Database Modelling.\n- Batch loading by ETL projects.",
-      "url": null
-    },
-    {
-      "name": "Public Transport Accessibility Level (PTAL) Meridian Water  | United Kingdom",
-      "startDate": "",
-      "summary": "\u2022 Effective time worked in the project: 2 months.\n\u2022 Business Domain: Master planning / Transport.\n\u2022 Technologies (OS Windows XP): : GIS: ArcGIS for Desktop; ArcGIS Desktop, ArcGIS for Spatial Analyst, ArcGIS for Network Analyst; CAD: AutoCAD.\n\u2022 Responsibilities: \n- Design and Management of Database, including conversions between CAD and GIS formats.\n- Geoprocessing and Data Analysis, including Spatial and Network Analysis. \n- Data capture and Orthophoto interpretation.\n- Result distribution: Maps and Reports.",
-      "url": null
-    },
-    {
-      "name": "Spatial Data Infrastructure (SDI) for the Cuenca Municipality | Spain",
-      "startDate": "",
-      "summary": "\u2022 Effective time worked in the project: 12 months.\n\u2022 Business Domain: Public Administration / Spatial Data Infrastructure (SDI).\n\u2022 Technologies (OS Windows XP): JEE, ArcGIS for Desktop, LocalGIS, GeoServer, MapServer, GeoNetwork, PostgreSQL/PostGIS, Talend Data Integration.\n\u2022 Methodology and standards: M\u00e9trica 3, INSPIRE, OGC, NEM.\n\u2022 Responsibilities: \n- Definition and integration of technological components.\n- Development of the GIS back-end, including OGC Standards Implementation (WMS, WFS, CWS).\n- Design and Management of Database, including ETL projects. Data Cataloguing (Metadata files).\n- Development of GIS Derived Products: Web Services and Maps.",
-      "url": null
-    },
-    {
-      "name": "Strategic Planning for the New Stadium of Tottenham Hotspur Football Club  | United Kingdom",
-      "startDate": "",
-      "summary": "\u2022 Effective time worked in the project: 2 months.\n\u2022 Business Domain: Master planning / Transport.\n\u2022 Technologies (OS Windows XP): : GIS: ArcGIS for Desktop; ArcGIS Desktop, ArcGIS for Spatial Analyst, ArcGIS for Network Analyst; CAD: AutoCAD.\n\u2022 Responsibilities: \n- Design and Management of Database, including conversions between CAD and GIS formats.\n- Geoprocessing and Data Analysis, including Spatial and Network Analysis.\n- Data capture and Orthophoto interpretation.\n- Result distribution: Maps and Reports.",
-      "url": null
-    },
-    {
-      "name": "The Olympics 2012, London | United Kingdom",
-      "startDate": "",
-      "summary": "\u2022 Effective time worked in the project: 2 years.\n\u2022 Business Domain: The Olympics / Master planning.\n\u2022 Technologies (OS Windows XP): GIS: ArcGIS Desktop, ArcGIS for Spatial Analyst, ArcGIS for 3D Analyst, ArcGIS for Network Analyst; DBMS: Oracle Spatial, ArcSDE; GIS Server: ArcIMS; 3D Render: ArcScene; CAD: AutoCAD.\n\u2022 Responsibilities: \n- Design and Management of Database, including conversions between CAD and GIS formats. \n- Geoprocessing and Data Analysis, including Spatial and Network Analysis. Model Builder for Processes automatization.\n- Importing of LIDAR data for DEM building.\n- 3D Modelling of the Masterplan. \n- Result distribution: Web Services, Maps and Reports.",
-      "url": "http://www.burohappold.com/projects/project/london-2012-olympic-stadium-132/"
-    },
-    {
-      "name": "Transport Network of the Beijing Financial District | China",
-      "startDate": "",
-      "summary": "\u2022 Effective time worked in the project: 2 months.\n\u2022 Business Domain: Transport.\n\u2022 Technologies (OS Windows XP): GIS: ArcGIS Desktop, ArcGIS for Spatial Analyst, ArcGIS for 3D Analyst, ArcGIS for Network Analyst; CAD: AutoCAD.\n\u2022 Responsibilities: \n- Design and Management of Database, including conversions between CAD and GIS formats.\n- Geoprocessing and Data Analysis, including Spatial, 3D and Network Analysis.\n- Data capture and Orthophoto interpretation.\n- Result distribution: Maps, 3D Representations/Diagrams and Reports.",
-      "url": null
-    },
-    {
-      "name": "Urban Environment Subsystem for REDIAM | Spain",
-      "startDate": "",
-      "summary": "\u2022 Effective time worked in the project: 3 months.\n\u2022 Business Domain: Public Administration / Environmental policy and governance / Spatial Data Infrastructure (SDI).\n\u2022 Technologies (OS Windows XP): GIS: ArcGIS for Desktop; DBMS: Oracle; UML: MS Visio\n\u2022 Methodology and standards: UML.\n\u2022 Responsibilities: \n- Development of systems\u2019 analysis in their technical phase. Drafting of relevant documentation.\n- Database Design and Modelling.\n- Data quality checking.",
-      "url": "http://www.juntadeandalucia.es/medioambiente/site/rediam/menuitem.04dc44281e5d53cf8ca78ca731525ea0/?vgnextoid=928dd8cb9b1ec110VgnVCM1000001325e50aRCRD&vgnextchannel=ccd97d087270f210VgnVCM1000001325e50aRCRD&vgnextfmt=rediam&lr=lang_es"
-    }
-  ],
-  "publications": [],
   "references": [
     {
       "name": "Arnaud H\u00e9ritier",
@@ -292,22 +148,6 @@
     {
       "name": "Juan Antonio \u00c1lvarez",
       "reference": "Carlos has carried out a very good project in our Web and Mobile software development Master. He has designed and deployed several Restful Web Services consumed by an iOS application in order to offer a simulated service for available tables in geo-located restaurants."
-    },
-    {
-      "name": "Diego Jordano M\u00e1rquez",
-      "reference": "Carlos was a great classmate. It is very pleasant to work with him, always gets the goals, works very well in a team and motivate others. It is a great coordinator and is always one step ahead."
-    },
-    {
-      "name": "Manuel Brey Gim\u00e9nez",
-      "reference": "Carlos ha impartido en BC3 Formaci\u00f3n cursos de SIG, demostrando en todo momento su alta formaci\u00f3n y experiencia en la materia, as\u00ed como una gran implicaci\u00f3n con la empresa y los alumnos.\r\n\r\nPor parte de BC3 Formaci\u00f3n, ha cumplido ampliamente nuestras expectativas, desarrollando su trabajo de manera seria y responsable. Por supuesto, cuenta con nuestra total confianza para futuras colaboraciones."
-    },
-    {
-      "name": "Cayetano Benavent Vi\u00f1uales",
-      "reference": "Carlos desarroll\u00f3 las labores encomendadas de forma muy competente."
-    },
-    {
-      "name": "Jos\u00e9 Ram\u00f3n Hern\u00e1ndez",
-      "reference": "Trabaj\u00f3 en Cibernos en el departamento de SIG y demostr\u00f3 ser una persona muy competente en su puesto, cumpliendo todas las responsabilidades y tareas que se le encargaron. \r\n\r\nEs un gran Profesional, muy serio en su trabajo, responsable y posee muy buenas aptitudes y actitudes as\u00ed como un gran  afan de superaci\u00f3n.\r\n \r\nSu conducta fue siempre la de una persona responsable y digna de toda confianza."
     },
     {
       "name": "Simon Woddy",
@@ -598,7 +438,6 @@
       "name": "CloudBees",
       "position": "Technical Success Manager | DevOps Consultant",
       "startDate": "2021-09-30",
-      "summary": "- Dedicated CloudBees CI Consultant for EMEA customers subscribed to the Technical Success Manager Program. Customers located in Spain, France, Romania and Sweden for the following industries: Banks/Financial and IT Hardware Manufacturers.\n- Providing expert advice about the following topics: CI Pipelines with Jenkins engine, Cloud (mainly AWS), Kubernetes, Containers\n- Increasing adoption of CloudBees Enterprise Features on the the top of Open Source core\n- Preparation/Presentation of Demos\n- Contributor of the CloudBees certification program",
       "url": "https://www.linkedin.com/company/cloudbees/"
     },
     {
@@ -608,7 +447,6 @@
       "name": "CloudBees",
       "position": "Staff Development Support Engineer",
       "startDate": "2019-11-30",
-      "summary": "- Lead position in the described responsibilities for the Senior Support Engineer role\n- Advocating for CloudBees CI by creating media content (including demos) for CloudBees and Jenkins CI Blogs, focusing on Best Practices and Troubleshooting scenarios (refer to the linked pages)\n- Tooling: Design, Development and Implementation for a Technical Simulation Framework for CloudBees Support Engineers candidates",
       "url": "https://www.linkedin.com/company/cloudbees/"
     },
     {
@@ -618,7 +456,6 @@
       "name": "CloudBees",
       "position": "Senior Development Support Engineer",
       "startDate": "2016-03-31",
-      "summary": "- Support worldwide customers (focus on EMEA) in any Technical/Functional issues/aspects/questions about any of the product suite (see https://www.cloudbees.com/products) and those technologies capable of being integrated with CloudBees ecosystem (mainly Docker, AWS EC2, Kubernetes, Git SCM)\n- Improve the quality of CloudBees Products and Jenkins Community by reproducing/reporting Bugs and Request For Enhancements.\n- Groovy scripting automation task for customers.\n- Contribution to Development of Support Tooling (mainly with JAVA, Bash scripting).\n- One of the major contributor for the CloudBees Knowledge Base (see https://support.cloudbees.com/hc/en-us)\n- Contributions to CloudBees Official Documentation (see https://go.cloudbees.com/docs/)\n- Contributions to CloudBees Jenkins Engineer certification exam\n- Collaboration across different Team within the company\n- Interacting and Participation with the Jenkins community and CloudBees customers in worldwide  forums. FOSDEM 2018, 2019 and 2021 as well as  Jenkins World SF 2019.\n\nCases Management Lifecycle\n-------------------------------------------------------------------\nTriage > Understand Customer needs > Require Data > Analysis/Troubleshooting > Solution > Ensure Customer Satisfaction > Create Knowledge and/or Tooling",
       "url": "https://www.linkedin.com/company/cloudbees/"
     },
     {
@@ -628,7 +465,6 @@
       "name": "GMV",
       "position": "Software Analyst / Developer",
       "startDate": "2015-10-31",
-      "summary": "Responsibilities\n-------------------------------------------------------------------\n- Design and Develop new applications;\n- Bug fixes of existing applications;\n- Design and Develop testing for Continuous Integration;\n- Design and Develop data structures;\n- Integrate with 3rd party applications by web services;\n- Participate and assist in application architecture functions;\n- Participate and assist in documentation for the projects (Analysis and Design).",
       "url": "https://www.linkedin.com/company/gmv/"
     },
     {
@@ -638,7 +474,6 @@
       "name": "AMATECH Group",
       "position": "Software Analyst / Developer",
       "startDate": "2013-06-30",
-      "summary": "Responsibilities\n------------------------------------------------------------------- \n- Design and Develop new applications;\n- Design and Develop data structures;\n- Integrate with 3rd party applications and data providers by web services;\n- Participate and assist in application architecture functions;\n- Participate and assist in documentation for the projects (Analysis and Design);\n- Meetings with clients to discuss about application requirements, presenting possible solutions;\n- Meetings with 3rd party companies to ensure integrity of their development with ours;\n- In charge of the elaboration of all documents needed for the European Satellite Navigation Competition (ESNC) in 2014.",
       "url": "https://www.linkedin.com/company/amatechgroup/"
     },
     {
@@ -648,7 +483,6 @@
       "name": "Fujitsu",
       "position": "Developer Internship",
       "startDate": "2013-03-31",
-      "summary": "Responsibilities\n------------------------------------------------------------------- \n- Bug fixes of existing applications;\n- Design and Develop of testing for Continuous Integration.",
       "url": "https://www.linkedin.com/company/fujitsu/"
     },
     {
@@ -658,7 +492,6 @@
       "name": "A+L",
       "position": "Web Master",
       "startDate": "2012-09-30",
-      "summary": "Responsibilities\n------------------------------------------------------------------- \n- Analysis and Design of the E-commerce site;\n- Project and Team management. Two people in charge: a Designer and a Developer;\n- Web site and Server Maintenance;\n- Regulate and manage access rights of different users on website;\n- Web Design and Web content production;\n- Develop of ETL projects for batch loads of the Catalog of products;\n- Examine and analyze site traffic;\n- Usability Test from different user agents.",
       "url": "https://www.linkedin.com/company/a-l/"
     },
     {
@@ -668,7 +501,6 @@
       "name": "Abengoa",
       "position": "Data Analyst",
       "startDate": "2009-01-31",
-      "summary": "Responsibilities as Functional Analyst\n------------------------------------------------------------------- \n- Write projects proposals for public and private bids, regarding any GIS aspect involved: technological components needed for the solution, data flows and work planning;\n- Write reports about project status, risks and issues; \n- Develop of prototypes;\n- Interview with clients to define application requirements;\n- Implement final solutions into client offices.\n\nResponsibilities as Data Analyst\n------------------------------------------------------------------- \n- Install and configure open source servlets for Spatial Data Infrastructures (SDI);\n- Define data model for different business domains;\n- Develop of ETL projects. Extract, Transform and Load (ETL) heterogeneous data into DBMS;\n- Convert raw data into useful information using different techniques: Zonal statistics, Network analysis, 3D analysis, etc;\n- Publish results on Web Services according to OGC standards;\n- Data validations according to QA standards;\n- Provide with relevant open data to the projects;\n- Metadata according to ISO standars.",
       "url": "https://www.linkedin.com/company/abengoa/"
     },
     {
@@ -678,7 +510,6 @@
       "name": "BC3 Formaci\u00f3n",
       "position": "Software Instructor",
       "startDate": "2010-10-31",
-      "summary": "BC3 Academy was the ESRI Authorized Learning Centre (ALC) of Seville in 2010.\nResponsibilities\n------------------------------------------------------------------- \n- Design courses contents according to the users needs. From university students to advanced users;\n- Conduct the designed courses.",
       "url": "https://www.linkedin.com/company/bc3ingenieria/"
     },
     {
@@ -688,7 +519,6 @@
       "name": "Buro Happold",
       "position": "Data Analyst",
       "startDate": "2006-08-31",
-      "summary": "Responsibilities\n------------------------------------------------------------------- \n- Define data model for different business domains;\n- Develop of ETL projects. Extract, Transform and Load (ETL) heterogeneous data into DBMS;\n- Convert raw data into useful information using different techniques: Zonal statistics, Network analysis, 3D analysis, etc;\n- Publish results on documents such as Maps, Charts, Graphs and Tables, as well as on Web Services;\n- Presentations of the GIS capabilities across the company;\n- Data validations according to QA standards;\n- Provide with relevant open data to the projects;\n- Metadata.",
       "url": "https://www.linkedin.com/company/buro-happold/"
     },
     {
@@ -698,7 +528,6 @@
       "name": "Consejer\u00eda de Obras P\u00fablicas y Transporte,  Junta de Andaluc\u00eda",
       "position": "Data Technician (internship)",
       "startDate": "2006-06-30",
-      "summary": "Responsibilities\n------------------------------------------------------------------- \n- Design and Develop of tools within GIS Desktop applications;\n- Develop of ETL projects. Extract, Transform and Load (ETL) heterogeneous data into DBMS;",
       "url": "https://www.linkedin.com/company/junta-de-andalucia/"
     }
   ]
