@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
-          input_dir: docs/book/**
+          input_dir: docs/book
           output_dir: docs/book/pdf
           images_dir: img
       - uses: actions/upload-artifact@v3
