@@ -5,4 +5,3 @@
 * [AWS_Solution_Architect.md](AWS_Solution_Architect.md)
 
 ## Diagrams
-
