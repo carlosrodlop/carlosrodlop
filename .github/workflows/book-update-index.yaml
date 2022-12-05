@@ -31,10 +31,10 @@ jobs:
           # Index
 
           ## Pages
-          printf '* %s\n' "${pages[@]}"
+          $(printf '* %s\n' "${pages[@]}")
 
           ## Diagrams
-          printf '* %s\n' "${diagrams[@]}"
+          $(printf '* %s\n' "${diagrams[@]}")
           EOT
           if [ -n "$(git status --porcelain docs/book/README.md)" ]; then
             git add docs/book/README.md
