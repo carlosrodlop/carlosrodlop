@@ -598,11 +598,10 @@ Classic Load Balancer (old)	| HTTP, HTTPS, TCP | Both Layer 7 and Layer 4 |
 
 ## ASG (Auto Scaling Group)
 
-* Monitors and scales applications to optimise performance and costs.
-* It Can be used across a number of different services including EC2 instances and Spot Fleets, ECS tasks, Aurora replicas and DynamoDB tables.
-
 ![ASG](https://d1.awsstatic.com/product-marketing/AutoScaling/aws-auto-scaling-how-it-works-diagram.d42779c774d634883bdcd0463de7bd86f6e2231d.png)
 
+* Monitors and scales applications to optimise performance and costs.
+* It Can be used across a number of different services including EC2 instances and Spot Fleets, ECS tasks, Aurora replicas and DynamoDB tables.
 * Instances are created in ASG using Launch Configuration (Legacy) or Launch Template (Recommended option)
   * You can create ASG that launches both Spot and On-Demand Instances or multiple instance types using launch template, not possible with launch configuration.
   * You cannot change the launch configuration for an ASG, you must create a new launch configuration and update your ASG with it.
@@ -658,52 +657,82 @@ For example, if you know there will be increased load on the application at 9am 
         * In response to resource **lifecycle events**, such as with Amazon Simple Storage Service (Amazon S3).
         * **On a Schedule** with Amazon EventBridge (CloudWatch Events).
 
+* Lambda limitations:
+  * Execution time can’t exceed 900 seconds or 15 min
+  * Min required memory is 128MB and can go till 10GB with 1-MB increment
+  * `/temp` directory size to download file can’t exceed 512 MB
+  * Max environment variables size can be 4KB
+  * Compressed `.zip` and uncompressed code can’t exceed 50MB and 250MB respectively
+
 ## Application Integration
 
 ### SQS (Amazon Simple Queue Service)
 
+![SQS](https://d1.awsstatic.com/product-page-diagram_Amazon-SQS%402x.8639596f10bfa6d7cdb2e83df728e789963dcc39.png)
 
+* Fully managed, distributed Message Queue service that can be used for micro-services, distributed applications and serverless applications. In other words, a temporary repository for messages that are awaiting processing.
+* It **decouples infraestructure** (acts like a buffer between) the software component producing/saving data and the component receiving data for processing.
+* Specification for Standard SQS:
+  * SQS guarantees that your messages will be processed at least once.
+  * Can have unlimited number of messages waiting in queue
+  * Default retention period is 4 days (min 1 min. and max 14 days)
+  * Can send message upto 256KB in size (To send messages larger than 256 KB -up tp 2GB- using library allows you to send an Amazon SQS message that contains a reference to a message payload in Amazon S3)
+  * Unlimited throughput and low latency (<10ms on publish and receive)
+  * Can have duplicate messages (At least once delivery)
+  * Can have out of order messages (best effort ordering)
+* Consumer (can be EC2 instance or lambda function) **poll** the messages in batches (upto 10 messages) and delete them from queue after processing. If don’t delete, they stay in Queue and may process multiple times.
+  * Polling types:
+    * Short Polling (`ReceiveMessageWaitTimeSeconds` = 0) — Keeps polling queue looking for work, even if it’s empty.
+    * Long Polling (`ReceiveMessageWaitTimeSeconds` > 0) - Reduces the number of empty responses by allowing Amazon SQS to wait until a message is available before sending a response to a ReceiveMessage request, helps to reduce the cost.
+  * Visibility Timeout — the amount of time the message is invisible in the queue after reader picks it up. It prevents other consumers from receiving and processing the same message. The message is then deleted. If the job hasn’t completed it becomes visible in the queue again (can be max 12 hours).
+    * Use Case: If you are getting messages delivered twice, the cause could be your visibility timeout is too low.
 
+There are two types of queues: Standard & FIFO
 
+#### Standard Queues
 
+* Default queue type.
+* Nearly unlimited number of API calls per second
+* Guarantees message delivered at least once
+* Occasionally more than one copy of a message might be delivered out of order. However, standard queues provide **best-effort ordering** which ensures that messages are generally delivered in the same order as they are sent
 
+#### FIFO Queues
 
+* First in First Out => The order in which the messages are sent is preserved.
+* Has high throughput
+* Limits: support up to 3,000 transactions per API batch call.
+* Processed exactly once and duplicates are not introduced to the queue.
 
+### SNS (Amazon Simple Notification Service)
 
+* Fully managed Messaging Service that allows yo **push** (Instantaneous) messages on SNS topic and all topic subscribers receive those messages.
+* Can group multiple recipients through topics.
+* Highly available as all messages stored across multiple regions
+* One topic can support deliveries to multiple endpoint types - for example, you can group together iOS, Android and SMS recipients, When you publish once to a topic, SNS delivers appropriately formatted copies of your message to each subscriber.
+* Inexpensive, pay-as-you-go model with no up-front costs.
+#### A2A (PubSub model)
 
+* Allows for many-to-many messaging between distributed systems, microservices and other AWS Services
+* Event driven.
+* Decouple messages publishers from subscriber with a topic
+* You can setup a Subscription Filter Policy which is JSON policy to send the filtered messages to specific subscribers.
+* Subscribers can be Kinesis Data Firehose, SQS, HTTP, HTTPS, Lambda, Email, Email-JSON, SMS Messages, Mobile Notifications.
 
+![A2A](https://d1.awsstatic.com/Product-Page-Diagram_Amazon-SNS_Event-Driven-SNS-Compute%402x.03cb54865e1c586c26ee73f9dff0dc079125e9dc.png)
 
+#### A2P
 
+* Lets you send messages to your **customers** with SMS texts, push notifications, and email.
 
+![A2P_1](https://d1.awsstatic.com/Product-Page-Diagram_Amazon-SNS-SMS%402x.f499caaae8a9877fbefb4d9cf4768d030dc282da.png)
 
+![A2P_2](https://d1.awsstatic.com/Product-Page-Diagram_Amazon-SNS-Mobile-Push%402x.08ac920f6c0bcf10c713be9e423b13e6fd9bd50c.png)
 
+### Amazon MQ
 
+* Amazon managed Apache ActiveMQ
+* Migrate an existing message broker using MQTT protocol to AWS.
 
+## Storage
 
-
-## AWS Organization and Control Tower
-
-
-## VPC
-
-
-## S3
-
-
-## DNS, Catching and Performance
-
-## Block and File Storage
-
-## Docker Container and ECS
-
-## Databases y Analytics
-
-## Deployment and Management
-
-## Monitoring, Loggin and Auditing
-
-## Security in the Cloud
-
-## Migration and Trasnfer
-
-## Web, Mobile, ML and Cost Managemnt
+### S3 (Simple Storage Service)
