@@ -3,12 +3,13 @@ SHELL ["/bin/bash", "-c"]
 
 LABEL   maintainer="Carlos Rodriguez Lopez <it.carlosrodlop@gmail.com>" \
     version="1.1" \
-    updated_at=2022-11-3
+    updated_at=2022-12-5
 
 # Tooling
 WORKDIR /root
 
-ENV HD_BIND=0.0.0.0
+ENV HD_BIND=0.0.0.0 \
+    IMAGE_ROOT_PATH=.docker/devops/
 
 RUN apt-get update -y && \
     # Installation additional repositories
@@ -38,10 +39,10 @@ RUN apt-get update -y && \
 
 RUN mkdir .antigen
 RUN curl -L git.io/antigen > .antigen/antigen.zsh
-COPY .zshrc .zshrc
+COPY ${IMAGE_ROOT_PATH}/.zshrc .zshrc
 
 RUN git clone --depth 1 https://github.com/asdf-vm/asdf.git .asdf
-COPY .tool-versions .tool-versions
+COPY ${IMAGE_ROOT_PATH}/ .tool-versions
 RUN source ~/.asdf/asdf.sh && \
     asdf plugin add awscli && \
     asdf plugin add eksctl && \
