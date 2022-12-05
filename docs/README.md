@@ -3,7 +3,7 @@
 This Mono-repo aims to be my entry point for daily work, where I am to do everything as code:
 
 * `docs/book` (Public) Personal Notes on Tech
-* `docs/cv` (Public) CV
+* `docs/cv` (Public) CV (Inspired in [mszep/pandoc\_resume: The Markdown Resume](https://github.com/mszep/pandoc_resume))
 * `src/config` (Private) Configuration of my workstation
 * `src/secrets` (Private) Encrypted secrets
 * `src/gist` (Public) Bucket for code
