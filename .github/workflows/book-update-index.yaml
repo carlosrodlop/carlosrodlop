@@ -25,9 +25,17 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          rm docs/book/README.md
+          pages=( $( ls . | grep .md) )
+          diagrams=( $( ls diagrams | grep .png) )
           cat <<EOT >> docs/book/README.md
-          line 1
-          line 2
+          # Index
+
+          ## Pages
+          printf '* %s\n' "${array[@]}"
+
+          ## Diagrams
+          printf '* %s\n' "${diagrams[@]}"
           EOT
           if [ -n "$(git status --porcelain docs/book/README.md)" ]; then
             git add docs/book/README.md
