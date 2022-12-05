@@ -16,7 +16,7 @@ Automation Consultant embracing the DevOps culture. Background of Java Web and (
 
 Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional Service Team, helping customers to love more our CI/CD products!
 
-## 🔧 Technologies & Tools
+## My 🔧
 
 ### Work Ecosystem
 
