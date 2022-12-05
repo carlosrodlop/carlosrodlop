@@ -14,7 +14,9 @@ Other company submodules might be linked at the moment because I am currently wo
 
 ### Docs
 
-* [![Book GHA status](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/book-to-pdf.yml/badge.svg)](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/book-to-pdf.yml)
-* [![CV to PDF](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-pdf.yml/badge.svg)](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-pdf.yml)
+* [![Book to PDF](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/book-to-pdf.yml/badge.svg)](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/book-to-pdf.yml)
+* [![CV to HTML](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-html.yaml/badge.svg)](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-html.yaml)
 
 ### Docker Images
+
+* [![Push Devops Image](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/docker-buildAndPush-devops.yml/badge.svg)](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/docker-buildAndPush-devops.yml)

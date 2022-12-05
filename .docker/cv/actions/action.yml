@@ -1,7 +1,0 @@
-# action.yml
-name: 'Texlive Build'
-description: 'Build a document using texlive'
-runs:
-  using: 'docker'
-  image: 'docker://ghcr.io/carlosrodlop/carlosrodlop.cv:main'
-  entrypoint: '/entrypoint.sh'
