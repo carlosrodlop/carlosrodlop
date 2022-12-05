@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sh -c "cd /docs/cv && make pdf"
+sh -c "echo hola"
