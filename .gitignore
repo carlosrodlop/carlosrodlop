@@ -8,6 +8,6 @@ reports
 src/ps-env
 src/secrets
 src/config
-docs/ps-doc
+docs/ps-docs
 v_kube
 v_tmp
