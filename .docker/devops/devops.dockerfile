@@ -9,7 +9,7 @@ LABEL   maintainer="Carlos Rodriguez Lopez <it.carlosrodlop@gmail.com>" \
 WORKDIR /root
 
 ENV HD_BIND=0.0.0.0 \
-    IMAGE_ROOT_PATH=.docker/devops/
+    IMAGE_ROOT_PATH=.docker/devops
 
 RUN apt-get update -y && \
     # Installation additional repositories
@@ -42,7 +42,7 @@ RUN curl -L git.io/antigen > .antigen/antigen.zsh
 COPY ${IMAGE_ROOT_PATH}/.zshrc .zshrc
 
 RUN git clone --depth 1 https://github.com/asdf-vm/asdf.git .asdf
-COPY ${IMAGE_ROOT_PATH}/ .tool-versions
+COPY ${IMAGE_ROOT_PATH}/.tool-versions .tool-versions
 RUN source ~/.asdf/asdf.sh && \
     asdf plugin add awscli && \
     asdf plugin add eksctl && \
