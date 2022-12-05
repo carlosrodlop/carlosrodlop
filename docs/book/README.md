@@ -13,7 +13,7 @@
 
 ### Certification
 
-* [AWS Solution Architect](/docs/book/pages/AWS_Solution_Architect.md)
+* [AWS Solution Architect](/docs/book/AWS_Solution_Architect.md)
 * [CloudBees CD](/docs/book/diagrams/CD.drawio)
 * [Terraform](/docs/book/diagrams/Terraform.png)
 * [CKA - Architecture](/docs/book/diagrams/CKA-Architecture-Components.png)
@@ -21,4 +21,4 @@
 
 ### References
 
-* [![awesome](/img/awesome_badge.svg)](/docs/book/pages/AWESOME_POD.md)
+* [![awesome](/img/awesome_badge.svg)](/docs/book/AWESOME_POD.md)
