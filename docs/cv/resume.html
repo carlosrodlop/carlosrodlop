@@ -850,35 +850,1442 @@ During our collaboration, Carlos had something like a super power to read minds,
 I really felt that, whenever we discussed, we were completing each-other&#x27;s ideas on the implementation. Carlos provided us with great documentation and even feature expansions, taking into account restrictions that applied to our environment, which were far from standard.
 I will really miss our meetings and mindreading sessions :)
 
-For all the above and more, Carlos earns my highest recommendation.</p>
-					<p class="name">
-						<strong>— Andrei Alexandru Gheorghe</strong>
-					</p>
-				</blockquote>
-			</div>
-			<div class="col-sm-12">
-				<blockquote class="reference">
-					<p>Carlos has carried out a very good project in our Web and Mobile software development Master. He has designed and deployed several Restful Web Services consumed by an iOS application in order to offer a simulated service for available tables in geo-located restaurants.</p>
-					<p class="name">
-						<strong>— Juan Antonio Álvarez</strong>
-					</p>
-				</blockquote>
-			</div>
-			<div class="col-sm-12">
-				<blockquote class="reference">
-					<p>Carlos worked in my GIS team with Buro Happold Engineers Limited for two and half years between 2006 and 2009.  Throughout that time he worked conscientiously, both as part of the core team and independently, supporting projects with many different disciplines across the practise.
+/* Layouts */
+.page {
+  background: white;
+  width: 612px;
+  min-height: 792px;
+  display: block;
+  margin: 0 auto;
+  border-top: 10px solid #56817A;
+  padding: 36px 22px 30px 34px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
 
-From the outset Carlos demonstrated a high degree of technical capability and consistently produced innovative solutions and excellent output.
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-He was a popular member of staff and I would not hesitate in recommending him for a position in any organisation.</p>
-					<p class="name">
-						<strong>— Simon Woddy</strong>
-					</p>
-				</blockquote>
-			</div>
-			</div>
-		</div>
-	</section>
+.left-column {
+  float: left;
+  width: 160px;
+  margin-right: 20px;
+  word-wrap: break-word;
+}
+
+.right-column {
+  width: auto;
+  overflow: hidden;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+@media print {
+  body {
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 36px 0 30px;
+    box-shadow: none;
+  }
+
+  .page .resume-header,
+  .page .resume-content {
+    padding: 0 22px 0 34px;
+  }
+
+  .container {
+    page-break-inside: avoid;
+  }
+
+  .work-container .item {
+    page-break-inside: avoid;
+  }
+
+  .fa-external-link {
+    display: none;
+  }
+}
+
+/* Components */
+.info-tag-container {
+  margin-bottom: 5px;
+}
+
+.info-tag-container .fa {
+  font-size: 14px;
+  width: 12px;
+  margin-right: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.info-tag-container .fa.fa-map-marker {
+  font-size: 16px;
+}
+
+.info-tag-container .fa.fa-mobile {
+  font-size: 18px;
+}
+
+.info-tag-container .fa.fa-envelope-o {
+  font-size: 12px;
+}
+
+.info-tag-container .fa.fa-desktop {
+  font-size: 11px;
+}
+
+.info-tag-container .fa.fa-external-link {
+  width: auto;
+  font-size: inherit;
+  vertical-align: text-top;
+}
+
+.info-tag-container .info-text {
+  font-size: 12px;
+  text-transform: none;
+  display: inline-block;
+  vertical-align: middle;
+  width: 139px;
+}
+
+.references-container .fa {
+  font-size: 14px;
+}
+
+.education-container .location {
+  padding-bottom: 6px;
+  font-weight: 400;
+}
+
+.education-container .specialization {
+  text-transform: none;
+  font-style: italic;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-skill {
+  font-size: 80%;
+}
+
+.skill {
+  margin: .15em;
+  padding: .15em;
+  background: ghostwhite;
+  border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+  <main id="resume" class="page">
+    <header class="resume-header clearfix">
+        <div class="profile-header pull-left">
+            <h1>♾️  Carlos Rodriguez Lopez</h1>
+            <h2>DᴇᴠOᴘs, Aᴜᴛᴏᴍᴀᴛɪᴏɴ &amp; Cʟᴏᴜᴅ | Kubernetes, Terraform and Jenkins</h2>
+        </div>
+        <div class="profile-pic pull-right">
+        </div>
+    </header>
+    <div class="resume-content">
+      <aside class="left-column">
+        <div class="container about-container">
+            <div class="title">
+                <h3>About</h3>
+                <div class="keyline"></div>
+            </div>
+                <div class="info-tag-container">
+                    <i class="fa fa-map-marker"></i>
+
+                        <h6 class="info-text">    ES</h6>
+                </div>
+
+
+                <div class="info-tag-container">
+                    <i class="fa fa-envelope-o"></i>
+
+                        <h6 class="info-text">
+                            <a href="mailto:it.carlosrodlop@gmail.com" target="_blank">
+                                it.carlosrodlop@gmail.com
+                            </a>
+                        </h6>
+                </div>
+
+
+
+                                <div class="info-tag-container">
+                                    <i class="fa fa-linkedin-square"></i>
+
+                                        <h6 class="info-text">
+                                            <a href="https://www.linkedin.com/in/ACoAAAUnFu8B8e1xOUBVfZY3QW-0jyrOaRjwwPM/" target="_blank">
+                                                ACoAAAUnFu8B8e1xOUBVfZY3QW-0jyrOaRjwwPM
+                                            </a>
+                                        </h6>
+                                </div>
+        </section>
+            <div class="skills-container">
+                    <section class="container">
+                            <div class="title">
+                                <h3>Bash</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Amazon Web Services (AWS)</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Terraform</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Kubernetes</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Jenkins</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>DevOps</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Linux</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Software Development</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Databases</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Web Services</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Data Analysis</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>ETL</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Scrum</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>GIS</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Java</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Groovy</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>JavaScript</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>PL/SQL</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>JSP</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>JSF</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>WordPress</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Google App Engine</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>SQL</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Geoprocessing</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>OpenLayers</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Mac</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>PostgreSQL</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Bootstrap</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>UML</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>GeoServer</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Subversion</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Liferay</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>OGC</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>HTML</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Quantum GIS</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Cascading Style Sheets (CSS)</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>AlloyUI</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Magento</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Google Maps</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>ArcGIS</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Git</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>SDI</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>jQuery</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>MySQL</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Windows</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>CSS</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>PostGIS</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Customer Service</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>ESRI</h3>
+                                <div class="keyline"></div>
+                            </div>            </section>
+            </div>
+            <div class="container languages-container">
+                <div class="title">
+                    <h3>Languages</h3>
+                    <div class="keyline"></div>
+                </div>
+                <ul class="minimal">
+                        <li>
+                            <h6>es <em>(Native Speaker)</em></h6>
+                        </li>
+                        <li>
+                            <h6>English <em>(Full Professional)</em></h6>
+                        </li>
+                        <li>
+                            <h6>Spanish <em>(Native Speaker)</em></h6>
+                        </li>
+                </ul>
+            </div>
+      </aside>
+      <div class="right-column">
+                <div class="container summary-container">
+                    <div class="title">
+                        <h3>Summary</h3>
+                        <div class="keyline"></div>
+                    </div>            <p class="summary">
+                        Check it out in my GitHub profile here https://github.com/carlosrodlop
+                    </p>
+                </div>
+        <div class="container work-container">
+            <div class="title">
+                <h3>Experience</h3>
+                <div class="keyline"></div>
+            </div>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">07/2022</span>
+                                <span class="endDate"> - Present</span>
+                        </h5>
+                    </div>
+
+                    <h4>Senior Professional Services Consultant</h4>
+
+
+                    <p class="summary">- Designing and Review Statement of Work for Services Engagement with CloudBees customers
+        - Implementing Consulting activities in relation to Installation, Migration and Pipeline Development for CloudBees Products</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">09/2021</span>
+                                <span class="endDate"> - 07/2022</span>
+                        </h5>
+                    </div>
+
+                    <h4>Technical Success Manager | DevOps Consultant</h4>
+
+
+                    <p class="summary">- Dedicated CloudBees CI Consultant for EMEA customers subscribed to the Technical Success Manager Program. Customers located in Spain, France, Romania and Sweden for the following industries: Banks/Financial and IT Hardware Manufacturers.
+        - Providing expert advice about the following topics: CI Pipelines with Jenkins engine, Cloud (mainly AWS), Kubernetes, Containers
+        - Increasing adoption of CloudBees Enterprise Features on the the top of Open Source core
+        - Preparation/Presentation of Demos
+        - Contributor of the CloudBees certification program</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">11/2019</span>
+                                <span class="endDate"> - 08/2021</span>
+                        </h5>
+                    </div>
+
+                    <h4>Staff Development Support Engineer</h4>
+
+
+                    <p class="summary">- Lead position in the described responsibilities for the Senior Support Engineer role
+        - Advocating for CloudBees CI by creating media content (including demos) for CloudBees and Jenkins CI Blogs, focusing on Best Practices and Troubleshooting scenarios (refer to the linked pages)
+        - Tooling: Design, Development and Implementation for a Technical Simulation Framework for CloudBees Support Engineers candidates</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">03/2016</span>
+                                <span class="endDate"> - 11/2019</span>
+                        </h5>
+                    </div>
+
+                    <h4>Senior Development Support Engineer</h4>
+
+
+                    <p class="summary">- Support worldwide customers (focus on EMEA) in any Technical/Functional issues/aspects/questions about any of the product suite (see https://www.cloudbees.com/products) and those technologies capable of being integrated with CloudBees ecosystem (mainly Docker, AWS EC2, Kubernetes, Git SCM)
+        - Improve the quality of CloudBees Products and Jenkins Community by reproducing/reporting Bugs and Request For Enhancements.
+        - Groovy scripting automation task for customers.
+        - Contribution to Development of Support Tooling (mainly with JAVA, Bash scripting).
+        - One of the major contributor for the CloudBees Knowledge Base (see https://support.cloudbees.com/hc/en-us)
+        - Contributions to CloudBees Official Documentation (see https://go.cloudbees.com/docs/)
+        - Contributions to CloudBees Jenkins Engineer certification exam
+        - Collaboration across different Team within the company
+        - Interacting and Participation with the Jenkins community and CloudBees customers in worldwide  forums. FOSDEM 2018, 2019 and 2021 as well as  Jenkins World SF 2019.
+
+        Cases Management Lifecycle
+        -------------------------------------------------------------------
+        Triage &gt; Understand Customer needs &gt; Require Data &gt; Analysis/Troubleshooting &gt; Solution &gt; Ensure Customer Satisfaction &gt; Create Knowledge and/or Tooling</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">10/2015</span>
+                                <span class="endDate"> - 03/2016</span>
+                        </h5>
+                    </div>
+
+                    <h4>Software Analyst / Developer</h4>
+
+
+                    <p class="summary">Responsibilities
+        -------------------------------------------------------------------
+        - Design and Develop new applications;
+        - Bug fixes of existing applications;
+        - Design and Develop testing for Continuous Integration;
+        - Design and Develop data structures;
+        - Integrate with 3rd party applications by web services;
+        - Participate and assist in application architecture functions;
+        - Participate and assist in documentation for the projects (Analysis and Design).</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">06/2013</span>
+                                <span class="endDate"> - 10/2015</span>
+                        </h5>
+                    </div>
+
+                    <h4>Software Analyst / Developer</h4>
+
+
+                    <p class="summary">Responsibilities
+        -------------------------------------------------------------------
+        - Design and Develop new applications;
+        - Design and Develop data structures;
+        - Integrate with 3rd party applications and data providers by web services;
+        - Participate and assist in application architecture functions;
+        - Participate and assist in documentation for the projects (Analysis and Design);
+        - Meetings with clients to discuss about application requirements, presenting possible solutions;
+        - Meetings with 3rd party companies to ensure integrity of their development with ours;
+        - In charge of the elaboration of all documents needed for the European Satellite Navigation Competition (ESNC) in 2014.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">03/2013</span>
+                                <span class="endDate"> - 06/2013</span>
+                        </h5>
+                    </div>
+
+                    <h4>Developer Internship</h4>
+
+
+                    <p class="summary">Responsibilities
+        -------------------------------------------------------------------
+        - Bug fixes of existing applications;
+        - Design and Develop of testing for Continuous Integration.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">09/2012</span>
+                                <span class="endDate"> - 03/2013</span>
+                        </h5>
+                    </div>
+
+                    <h4>Web Master</h4>
+
+
+                    <p class="summary">Responsibilities
+        -------------------------------------------------------------------
+        - Analysis and Design of the E-commerce site;
+        - Project and Team management. Two people in charge: a Designer and a Developer;
+        - Web site and Server Maintenance;
+        - Regulate and manage access rights of different users on website;
+        - Web Design and Web content production;
+        - Develop of ETL projects for batch loads of the Catalog of products;
+        - Examine and analyze site traffic;
+        - Usability Test from different user agents.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">01/2009</span>
+                                <span class="endDate"> - 05/2012</span>
+                        </h5>
+                    </div>
+
+                    <h4>Data Analyst</h4>
+
+
+                    <p class="summary">Responsibilities as Functional Analyst
+        -------------------------------------------------------------------
+        - Write projects proposals for public and private bids, regarding any GIS aspect involved: technological components needed for the solution, data flows and work planning;
+        - Write reports about project status, risks and issues;
+        - Develop of prototypes;
+        - Interview with clients to define application requirements;
+        - Implement final solutions into client offices.
+
+        Responsibilities as Data Analyst
+        -------------------------------------------------------------------
+        - Install and configure open source servlets for Spatial Data Infrastructures (SDI);
+        - Define data model for different business domains;
+        - Develop of ETL projects. Extract, Transform and Load (ETL) heterogeneous data into DBMS;
+        - Convert raw data into useful information using different techniques: Zonal statistics, Network analysis, 3D analysis, etc;
+        - Publish results on Web Services according to OGC standards;
+        - Data validations according to QA standards;
+        - Provide with relevant open data to the projects;
+        - Metadata according to ISO standars.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">10/2010</span>
+                                <span class="endDate"> - 10/2011</span>
+                        </h5>
+                    </div>
+
+                    <h4>Software Instructor</h4>
+
+
+                    <p class="summary">BC3 Academy was the ESRI Authorized Learning Centre (ALC) of Seville in 2010.
+        Responsibilities
+        -------------------------------------------------------------------
+        - Design courses contents according to the users needs. From university students to advanced users;
+        - Conduct the designed courses.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">08/2006</span>
+                                <span class="endDate"> - 01/2009</span>
+                        </h5>
+                    </div>
+
+                    <h4>Data Analyst</h4>
+
+
+                    <p class="summary">Responsibilities
+        -------------------------------------------------------------------
+        - Define data model for different business domains;
+        - Develop of ETL projects. Extract, Transform and Load (ETL) heterogeneous data into DBMS;
+        - Convert raw data into useful information using different techniques: Zonal statistics, Network analysis, 3D analysis, etc;
+        - Publish results on documents such as Maps, Charts, Graphs and Tables, as well as on Web Services;
+        - Presentations of the GIS capabilities across the company;
+        - Data validations according to QA standards;
+        - Provide with relevant open data to the projects;
+        - Metadata.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">06/2006</span>
+                                <span class="endDate"> - 07/2006</span>
+                        </h5>
+                    </div>
+
+                    <h4>Data Technician (internship)</h4>
+
+
+                    <p class="summary">Responsibilities
+        -------------------------------------------------------------------
+        - Design and Develop of tools within GIS Desktop applications;
+        - Develop of ETL projects. Extract, Transform and Load (ETL) heterogeneous data into DBMS;</p>
+
+                </section>
+        </div>
+        <div class="container project-container">
+            <div class="title">
+                <h3>Open Source Projects</h3>
+                <div class="keyline"></div>
+            </div>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="https://www.cloudbees.com/" target="_blank">
+                                    Cloudbees Jenkins Platform
+                                        <span class="sublink">∙ <a href="https://www.cloudbees.com/" target="_blank" class="sublink">https://www.cloudbees.com/</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">03/2016</span>
+                                <span class="endDate"> - 03/2016</span>
+                        </h5>
+                    </div>
+
+
+
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                EVA 2.0: Vodafone | Spain
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">12/2015</span>
+                                <span class="endDate"> - 12/2015</span>
+                        </h5>
+                    </div>
+
+
+
+                    <p class="summary">• Effective time worked in the project:  November 2015 - Currently.
+        • Business Domain: Telecom
+        • Technologies (OS Windows 10): BackEnd: J2EE 8: JSF (PrimeFaces), EJB, JPA (Eclipselink), ; SOA: JAW-XS (SOAP); FrontEnd: JS  (Jquery); DBMS: Oracle; Application server: WebLogic; Continuous integration: Jenkins, Sonar, Maven, SVN; Project  Management: RedMine; UML: Enterprise Architect.
+        • Responsibilities:
+        - Define and Develop SOAP Web Services for integration with 3rd party application
+        - Define and Develop the application Data Structure using JPA.
+        - Define and Develop Unit Testing for continuos integration.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="https://www.ono.es/" target="_blank">
+                                    ONO Web Portal | Spain
+                                        <span class="sublink">∙ <a href="https://www.ono.es/" target="_blank" class="sublink">https://www.ono.es/</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">10/2015</span>
+                                <span class="endDate"> - 10/2015</span>
+                        </h5>
+                    </div>
+
+
+
+                    <p class="summary">• Effective time worked in the project:  2 month.
+        • Business Domain: Telecom.
+        • Technologies (OS Windows 10): BackEnd: J2EE 7. Apache Tomcat managing: Liferay Portal CE 5.x (for desktops access), JSF + Spring (for mobile access); SOA: JAW-XS (SOAP); FrontEnd: JS (JQuery); DBMS: MySQL; Application Server: JBOSS; Continuos Integration: Maven, SVN, Jenkins; Project Management: RedMine
+        • Responsabilities:
+        - Portlet Development for Liferay portal.
+        - Bug fixing of existing modules</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                VUV: eGovernment Ecuador | Ecuador
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">05/2015</span>
+                                <span class="endDate"> - 05/2015</span>
+                        </h5>
+                    </div>
+
+
+
+                    <p class="summary">• Effective time worked in the project:  3 months.
+        • Business Domain: Public Administration / eGoverment.
+        • Technologies (OS Ubuntu 14): JEE, Liferay - Tomcat Bundle, OpenLayers, Jquery, AlloyUI, Bootstrap, JSP, AJAX, mySQL, RedMine.
+        • Methodology and standards: Scrum (Agile)
+        • Responsibilities:
+        - Portlet Development for Liferay portal.
+        - Structures and Template Development (ADT) for Liferay portal.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                Map Viewer at Municipal scale for the Andalusia Region  | Spain
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">06/2013</span>
+                                <span class="endDate"> - 06/2013</span>
+                        </h5>
+                    </div>
+
+
+
+                    <p class="summary">• Effective time worked in the project: 3 months.
+        • Business Domain: Public Administration  / Spatial Data Infrastructure (SDI).
+        • Technologies (OS Windows XP): Apache Tomcat, Geoserver, JEE, Javascript, Jquery, JqueryUI, OpenLayers, RedMine.
+        • Responsibilities:
+        - Definition and integration of technological components. Integration with other applications. Testing.
+        - Analysis of user requirements and Design of the solution. Writing of relevant Technical documentation.
+        - Development of the Web Map Viewer.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="https://www.youtube.com/watch?t&#x3D;18&amp;v&#x3D;diGXv01zAFk" target="_blank">
+                                    iCOM | World Wide
+                                        <span class="sublink">∙ <a href="https://www.youtube.com/watch?t&#x3D;18&amp;v&#x3D;diGXv01zAFk" target="_blank" class="sublink">https://www.youtube.com/watch?t&#x3D;18&amp;v&#x3D;diGXv01zAFk</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">06/2013</span>
+                                <span class="endDate"> - 06/2013</span>
+                        </h5>
+                    </div>
+
+
+
+                    <p class="summary">• Effective time worked in the project:  23 months.
+        • Business Domain: Transport / Civil Aviation / Electronic Flight Bag.
+        • Technologies (OS Ubuntu 12):
+        BackEnd: J2EE 7. Corporate Portal Liferay Portal EE 6.2. Tomcat Bundle.
+        Architecture SOA with Red Hat JBoss SOA­P 5, BPM.
+        FrontEnd: JS (Jquery and Alloy).
+        DBMS: MySQL.
+        GIS PostgreSQL­PostGIS 2.0
+        Mobility Application:
+        - Phase I: Objective­C, iOS7, CocoaPods, CoreData, iOS 7
+        - Beta Phase: Android 4.3.
+        GIS Viewer:
+        - Phase I: Maply ­ WhirlyGlobe
+        - Beta Phase: OpenLayers 2.12 on Android WebView
+        Geographic Data Server:
+        - Phase I: ETL module rendering maps Mapnik; Data processing with
+        GDAL, NumPy and GRASS. PaaS: Amazon Web Services. Docker Container.
+        - Beta Phase: Geoserver
+        Integration Environment (Jenkins, Sonar, Nexus, SVN, GIT)
+        Project Management: RedMine
+        • Methodology and standards: Scrum (Agile), INSPIRE, OGC,  ISO19915,  ISO19919.
+        • Responsibilities:
+        - Technical communications with Eurocontrol.
+        - Analysis and Implementation of User Requirements.
+        - Development of systems analysis in their technical phase. Drafting of relevant documentation.
+        - Development of a Map Viewer and its associated API for events management within the context of Mobile Application Webview.
+        - Development of the GIS back-end. Automatization of CRUD processes by PL/PgSQL.
+        - Design and Development of the Application Layer List.
+        - Portlet Development for Liferay portal.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="http://www.amalialopez.com/" target="_blank">
+                                    eCommerce Amalia Lopez SL | Spain
+                                        <span class="sublink">∙ <a href="http://www.amalialopez.com/" target="_blank" class="sublink">http://www.amalialopez.com/</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">11/2012</span>
+                                <span class="endDate"> - 11/2012</span>
+                        </h5>
+                    </div>
+
+
+
+                    <p class="summary">• Effective time worked in the project: 3 months.
+        • Business Domain: Promotions and Marketing / eCommerce.
+        • Technologies: PHP, Javascript, Magento, WordPress, MySQL, Talend Data Integration
+        • Award: Creativity Award 2013 by FYVAR.
+        • Responsibilities:
+        - Project and Team management. Two people in charge: 2 (a Web Designer and a Web Developer).
+        - Development of systems’ analysis in their technical phase. Drafting of relevant documentation.
+        - Hosting and Server Maintenance.
+        - Web Design and Web content production.
+        - ETL projects for batch loads of the Catalog of products.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="http://www.happoldconsulting.com/projects/project/addiriyyah-comprehensive-development-plan-196/" target="_blank">
+                                    Ad’Diriyyah Comprehensive Development Plan  | Saudi Arabia
+                                        <span class="sublink">∙ <a href="http://www.happoldconsulting.com/projects/project/addiriyyah-comprehensive-development-plan-196/" target="_blank" class="sublink">http://www.happoldconsulting.com/projects/project/addiriyyah-comprehensive-development-plan-196/</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+
+
+
+                    <p class="summary">• Effective time worked in the project: 9 months.
+        • Business Domain: Master planning.
+        • Technologies (OS Windows XP): GIS: ArcGIS Desktop, ArcGIS for Spatial Analyst, ArcGIS for 3D Analyst, ArcGIS for Network Analyst; CAD: AutoCAD.
+        • Roles and responsibilities:
+        - Design and Management of Database, including conversions between CAD and GIS formats.
+        - Geoprocessing and Data Analysis, including Spatial, 3D and Network Analysis.
+        - Data capture and Orthophoto interpretation. Importing of LIDAR data for DEM building.
+        - Result distribution: Maps and Reports.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="http://www.juntadeandalucia.es/medioambiente/site/rediam/menuitem.5232fbb493a195cf8ca78ca731525ea0/?vgnextoid&#x3D;d23da7215670f210VgnVCM1000001325e50aRCRD" target="_blank">
+                                    Consulting for the Partners Site of the Environmental Information Network of Andalusia (REDIAM) | Spain
+                                        <span class="sublink">∙ <a href="http://www.juntadeandalucia.es/medioambiente/site/rediam/menuitem.5232fbb493a195cf8ca78ca731525ea0/?vgnextoid&#x3D;d23da7215670f210VgnVCM1000001325e50aRCRD" target="_blank" class="sublink">http://www.juntadeandalucia.es/medioambiente/site/rediam/menuitem.5232fbb493a195cf8ca78ca731525ea0/?vgnextoid&#x3D;d23da7215670f210VgnVCM1000001325e50aRCRD</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+
+
+
+                    <p class="summary">• Effective time worked in the project: 12 months.
+        • Business Domain: Public Administration / Environmental Policy and Governance / Spatial Data Infrastructure (SDI).
+        • Technologies (OS Windows XP): GIS tools: ArcGIS for Desktop; Project Management: MS Project.
+        • Methodology and standards: Métrica 3, INSPIRE, OGC, NEM.
+        • Responsibilities:
+        - Development of the Consulting workflow/methodology.
+        - Technical Communication and Coordination Entities involved (universities, research groups and foundations).
+        - Arranging and conducting meetings and Projects Conference.
+        - Report Writing (Tracking Projects, minutes of Meeting and Closure Project-Findings).
+        - Data Quality Control.
+        - Characterization of valuable data products and its integration.
+        - Design and development of e-learning. Topics covered: Data Modelling, Metadata, Basic Cartography, and ArcGIS.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                GIS Desktop viewer for the York University | United Kingdom
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+
+
+
+                    <p class="summary">• Effective time worked in the project: 4 months.
+        • Business Domain: Utilities.
+        • Technologies (OS Windows XP): GIS: ArcGIS for Desktop, ArcGIS Publisher; CAD: AutoCAD.
+        • Responsibilities:
+        - Design and Management of Database, including conversions between CAD and GIS formats.
+        - Analysis, Design and Development of a GIS Desktop viewer based on ArcGIS Publisher.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="http://www.diputaciondevalladolid.es/ayuntamientos/aytos-urbanismo/localgis/" target="_blank">
+                                    Implementation of LocalGIS for the Valladolid Council  | Spain
+                                        <span class="sublink">∙ <a href="http://www.diputaciondevalladolid.es/ayuntamientos/aytos-urbanismo/localgis/" target="_blank" class="sublink">http://www.diputaciondevalladolid.es/ayuntamientos/aytos-urbanismo/localgis/</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+
+
+
+                    <p class="summary">• Effective time worked in the project: 3 months.
+        • Business Domain: Public Administration / Spatial Data Infrastructure (SDI).
+        • Technologies (OS Windows XP): JEE, LocalGIS, MapServer.
+        • Methodology and standards: Métrica 3, INSPIRE, OGC, NEM.
+        • Responsibilities:
+        - Implementation of the LocalGIS in the Town Halls within Regional Ministry of Valladolid.
+        - Design and Conducting LocalGIS lessons for end and admin users.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="http://www.happoldconsulting.com/projects/project/jeddah-strategic-development-plan-195/" target="_blank">
+                                    Jeddah Strategic Development Plan  | Saudi Arabia
+                                        <span class="sublink">∙ <a href="http://www.happoldconsulting.com/projects/project/jeddah-strategic-development-plan-195/" target="_blank" class="sublink">http://www.happoldconsulting.com/projects/project/jeddah-strategic-development-plan-195/</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+
+
+
+                    <p class="summary">• Effective time worked in the project: 6 months
+        • Business Domain: Master planning
+        • Technologies (OS Windows XP): GIS: ArcGIS Desktop, ArcGIS for Spatial Analyst, ArcGIS for 3D Analyst, ArcGIS for Network Analyst; DBMS: Oracle Spatial, ArcSDE; GIS Server: ArcIMS; CAD: AutoCAD.
+        • Responsibilities:
+        - Integration of CAD designs into the GIS database
+        - Geoprocessing and Data Analysis, including Spatial and Network Analysis. Model Builder for Processes automatization.
+        - Result distribution: Maps and Reports.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="http://www.leithdocksdevelopment.com/home.asp" target="_blank">
+                                    Leith Docks Development Environmental Assessment | United Kingdom
+                                        <span class="sublink">∙ <a href="http://www.leithdocksdevelopment.com/home.asp" target="_blank" class="sublink">http://www.leithdocksdevelopment.com/home.asp</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+
+
+
+                    <p class="summary">• Effective time worked in the project: 3 months.
+        • Business Domain: Environmental Policy and Governance / Telecom.
+        • Technologies (OS Windows XP): GIS: ArcGIS for Desktop; CAD: AutoCAD.
+        • Responsibilities:
+        - Design and Management of Database, including conversions between CAD and GIS formats.
+        - Geoprocessing and Data Analysis.
+        - Result distribution: Maps.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                Organization, Standardization and Development of Derived Products from packages of Environmental Information of REDIAM | Spain
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+
+
+
+                    <p class="summary">• Effective time worked in the project: 12 months
+        • Business Domain: Public Administration / Environmental policy and governance / Spatial Data Infrastructure (SDI).
+        • Technologies (OS Windows XP): ArcGIS for Desktop, gvSIG, MapServer, Oracle, Pentaho Data Integration (Kettle).
+        • Methodology and standards: Métrica 3, INSPIRE, OGC, NEM.
+        • Responsibilities:
+        - Data quality checking and standardization.
+        - Development of GIS Derived Products: Geographic Web Services, Maps and Reports.
+        - Database Modelling.
+        - Batch loading by ETL projects.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                Public Transport Accessibility Level (PTAL) Meridian Water  | United Kingdom
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+
+
+
+                    <p class="summary">• Effective time worked in the project: 2 months.
+        • Business Domain: Master planning / Transport.
+        • Technologies (OS Windows XP): : GIS: ArcGIS for Desktop; ArcGIS Desktop, ArcGIS for Spatial Analyst, ArcGIS for Network Analyst; CAD: AutoCAD.
+        • Responsibilities:
+        - Design and Management of Database, including conversions between CAD and GIS formats.
+        - Geoprocessing and Data Analysis, including Spatial and Network Analysis.
+        - Data capture and Orthophoto interpretation.
+        - Result distribution: Maps and Reports.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                Spatial Data Infrastructure (SDI) for the Cuenca Municipality | Spain
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+
+
+
+                    <p class="summary">• Effective time worked in the project: 12 months.
+        • Business Domain: Public Administration / Spatial Data Infrastructure (SDI).
+        • Technologies (OS Windows XP): JEE, ArcGIS for Desktop, LocalGIS, GeoServer, MapServer, GeoNetwork, PostgreSQL/PostGIS, Talend Data Integration.
+        • Methodology and standards: Métrica 3, INSPIRE, OGC, NEM.
+        • Responsibilities:
+        - Definition and integration of technological components.
+        - Development of the GIS back-end, including OGC Standards Implementation (WMS, WFS, CWS).
+        - Design and Management of Database, including ETL projects. Data Cataloguing (Metadata files).
+        - Development of GIS Derived Products: Web Services and Maps.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                Strategic Planning for the New Stadium of Tottenham Hotspur Football Club  | United Kingdom
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+
+
+
+                    <p class="summary">• Effective time worked in the project: 2 months.
+        • Business Domain: Master planning / Transport.
+        • Technologies (OS Windows XP): : GIS: ArcGIS for Desktop; ArcGIS Desktop, ArcGIS for Spatial Analyst, ArcGIS for Network Analyst; CAD: AutoCAD.
+        • Responsibilities:
+        - Design and Management of Database, including conversions between CAD and GIS formats.
+        - Geoprocessing and Data Analysis, including Spatial and Network Analysis.
+        - Data capture and Orthophoto interpretation.
+        - Result distribution: Maps and Reports.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="http://www.burohappold.com/projects/project/london-2012-olympic-stadium-132/" target="_blank">
+                                    The Olympics 2012, London | United Kingdom
+                                        <span class="sublink">∙ <a href="http://www.burohappold.com/projects/project/london-2012-olympic-stadium-132/" target="_blank" class="sublink">http://www.burohappold.com/projects/project/london-2012-olympic-stadium-132/</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+
+
+
+                    <p class="summary">• Effective time worked in the project: 2 years.
+        • Business Domain: The Olympics / Master planning.
+        • Technologies (OS Windows XP): GIS: ArcGIS Desktop, ArcGIS for Spatial Analyst, ArcGIS for 3D Analyst, ArcGIS for Network Analyst; DBMS: Oracle Spatial, ArcSDE; GIS Server: ArcIMS; 3D Render: ArcScene; CAD: AutoCAD.
+        • Responsibilities:
+        - Design and Management of Database, including conversions between CAD and GIS formats.
+        - Geoprocessing and Data Analysis, including Spatial and Network Analysis. Model Builder for Processes automatization.
+        - Importing of LIDAR data for DEM building.
+        - 3D Modelling of the Masterplan.
+        - Result distribution: Web Services, Maps and Reports.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                Transport Network of the Beijing Financial District | China
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+
+
+
+                    <p class="summary">• Effective time worked in the project: 2 months.
+        • Business Domain: Transport.
+        • Technologies (OS Windows XP): GIS: ArcGIS Desktop, ArcGIS for Spatial Analyst, ArcGIS for 3D Analyst, ArcGIS for Network Analyst; CAD: AutoCAD.
+        • Responsibilities:
+        - Design and Management of Database, including conversions between CAD and GIS formats.
+        - Geoprocessing and Data Analysis, including Spatial, 3D and Network Analysis.
+        - Data capture and Orthophoto interpretation.
+        - Result distribution: Maps, 3D Representations/Diagrams and Reports.</p>
+
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="http://www.juntadeandalucia.es/medioambiente/site/rediam/menuitem.04dc44281e5d53cf8ca78ca731525ea0/?vgnextoid&#x3D;928dd8cb9b1ec110VgnVCM1000001325e50aRCRD&amp;vgnextchannel&#x3D;ccd97d087270f210VgnVCM1000001325e50aRCRD&amp;vgnextfmt&#x3D;rediam&amp;lr&#x3D;lang_es" target="_blank">
+                                    Urban Environment Subsystem for REDIAM | Spain
+                                        <span class="sublink">∙ <a href="http://www.juntadeandalucia.es/medioambiente/site/rediam/menuitem.04dc44281e5d53cf8ca78ca731525ea0/?vgnextoid&#x3D;928dd8cb9b1ec110VgnVCM1000001325e50aRCRD&amp;vgnextchannel&#x3D;ccd97d087270f210VgnVCM1000001325e50aRCRD&amp;vgnextfmt&#x3D;rediam&amp;lr&#x3D;lang_es" target="_blank" class="sublink">http://www.juntadeandalucia.es/medioambiente/site/rediam/menuitem.04dc44281e5d53cf8ca78ca731525ea0/?vgnextoid&#x3D;928dd8cb9b1ec110VgnVCM1000001325e50aRCRD&amp;vgnextchannel&#x3D;ccd97d087270f210VgnVCM1000001325e50aRCRD&amp;vgnextfmt&#x3D;rediam&amp;lr&#x3D;lang_es</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+
+
+
+                    <p class="summary">• Effective time worked in the project: 3 months.
+        • Business Domain: Public Administration / Environmental policy and governance / Spatial Data Infrastructure (SDI).
+        • Technologies (OS Windows XP): GIS: ArcGIS for Desktop; DBMS: Oracle; UML: MS Visio
+        • Methodology and standards: UML.
+        • Responsibilities:
+        - Development of systems’ analysis in their technical phase. Drafting of relevant documentation.
+        - Database Design and Modelling.
+        - Data quality checking.</p>
+
+                </section>
+        </div>
+        <div class="container education-container">
+            <div class="title">
+            <h3>Education</h3>
+            <div class="keyline"></div>
+        </div>
+            <section class="item">
+                <div class="section-header clearfix">
+            <h3 class="bold pull-left">
+                    Universidad de Sevilla
+            </h3>
+            <h5 class="italic pull-right">
+                    <span class="startDate">12/2014</span>
+                    <span class="endDate"> - 12/2015</span>
+            </h5>
+        </div>
+
+                <h4>Web &amp; Mobile Software Development Information Technology</h4>
+
+              </section>
+
+            <section class="item">
+                <div class="section-header clearfix">
+            <h3 class="bold pull-left">
+                    IES Punta del Verde
+            </h3>
+            <h5 class="italic pull-right">
+                    <span class="startDate">12/2010</span>
+                    <span class="endDate"> - 12/2013</span>
+            </h5>
+        </div>
+
+                <h4>Software Development Information Technology</h4>
+
+
+                <ul class="two-column">
+                    <li>Code Academy - Java Script</li>
+                    <li>Code Academy - Jquery</li>
+                </ul>
+            </section>
+
+            <section class="item">
+                <div class="section-header clearfix">
+            <h3 class="bold pull-left">
+                    Universidad de Sevilla
+            </h3>
+            <h5 class="italic pull-right">
+                    <span class="startDate">12/2005</span>
+                    <span class="endDate"> - 12/2006</span>
+            </h5>
+        </div>
+
+                <h4>Geographic Information Systems (GIS) Information Technology</h4>
+
+              </section>
+
+            <section class="item">
+                <div class="section-header clearfix">
+            <h3 class="bold pull-left">
+                    Universidad Pablo de Olavide
+            </h3>
+            <h5 class="italic pull-right">
+                    <span class="startDate">12/2000</span>
+                    <span class="endDate"> - 12/2005</span>
+            </h5>
+        </div>
+
+                <h4>Environmental Science Geology/Earth Science, General</h4>
+
+
+                <ul class="two-column">
+                    <li>FEUN - Teamwork &amp; Project Management</li>
+                </ul>
+            </section>
+        </div>
+        <div class="container volunteer-container">
+            <div class="title">
+                <h3>Volunteer</h3>
+                <div class="keyline"></div>
+            </div>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h3 class="bold pull-left">
+                            Diputacion Foral de Bizkaia
+                    </h3>
+                    <h5 class="italic pull-right">
+                    </h5>
+                </div>
+                <h5>Environmental Technician, The Urkiola Natural Park, Bizkaia and Árava, Spain</h5>
+
+
+            </section>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h3 class="bold pull-left">
+                            Murcia Leadership
+                    </h3>
+                    <h5 class="italic pull-right">
+                    </h5>
+                </div>
+                <h5>Environmental Technician, Sierra Espuña Natural Park</h5>
+
+
+            </section>
+        </div>
+        <div class="container awards-container">
+            <div class="title">
+                <h3>Awards</h3>
+                <div class="keyline"></div>
+            </div>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                Creativity Awards
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+
+                    <h5 class="awarder">FYVAR (Spanish Association of Manufacturers and Sellers of Promotional Gifts and Advertising)</h5>
+
+                    <p class="summary">FYVAR&#x27;s Creativity Award 2013 to AmaliaLopez.com for its new website
+        Link: http://www.fyvar.es/web/fyvarnews_noticia.php?id&#x3D;543</p>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                Leonardo Da Vinci Program
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+
+                    <h5 class="awarder">Universitat de Girona</h5>
+
+                </section>
+        </div>
+        <div class="container references-container">
+            <div class="title">
+                <h3>References</h3>
+                <div class="keyline"></div>
+            </div>
+                <section class="item clearfix">
+                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+                    <blockquote>
+                        It’s been a pleasure to work with Carlos for several years when I was managing the support team at CloudBees.
+        He was really in the mindset to learn and share the knowledge acquired which is a key for a good support engineer.
+        He also helped to automate some tasks like the provisioning of our environments used for interviews.
+        Kudos Carlos!
+                    </blockquote>
+
+                    <h5 class="pull-right"> — Arnaud Héritier</h5>
+                </section>
+                <section class="item clearfix">
+                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+                    <blockquote>
+                        It&#x27;s difficult to find someone like Carlos in the DevOps world.
+
+        We worked together on implementing the Cloudbees CI, with me representing the customer, while Carlos was our designated support engineer.
+        During our collaboration, Carlos had something like a super power to read minds, every time we had an issue, he came up with the solution at the same time we raised the issue, or even before.
+
+        I really felt that, whenever we discussed, we were completing each-other&#x27;s ideas on the implementation. Carlos provided us with great documentation and even feature expansions, taking into account restrictions that applied to our environment, which were far from standard.
+        I will really miss our meetings and mindreading sessions :)
+
+        For all the above and more, Carlos earns my highest recommendation.
+                    </blockquote>
+
+                    <h5 class="pull-right"> — Andrei Alexandru Gheorghe</h5>
+                </section>
+                <section class="item clearfix">
+                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+                    <blockquote>
+                        Carlos has carried out a very good project in our Web and Mobile software development Master. He has designed and deployed several Restful Web Services consumed by an iOS application in order to offer a simulated service for available tables in geo-located restaurants.
+                    </blockquote>
+
+                    <h5 class="pull-right"> — Juan Antonio Álvarez</h5>
+                </section>
+                <section class="item clearfix">
+                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+                    <blockquote>
+                        Carlos was a great classmate. It is very pleasant to work with him, always gets the goals, works very well in a team and motivate others. It is a great coordinator and is always one step ahead.
+                    </blockquote>
+
+                    <h5 class="pull-right"> — Diego Jordano Márquez</h5>
+                </section>
+                <section class="item clearfix">
+                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+                    <blockquote>
+                        Carlos ha impartido en BC3 Formación cursos de SIG, demostrando en todo momento su alta formación y experiencia en la materia, así como una gran implicación con la empresa y los alumnos.
+
+        Por parte de BC3 Formación, ha cumplido ampliamente nuestras expectativas, desarrollando su trabajo de manera seria y responsable. Por supuesto, cuenta con nuestra total confianza para futuras colaboraciones.
+                    </blockquote>
+
+                    <h5 class="pull-right"> — Manuel Brey Giménez</h5>
+                </section>
+                <section class="item clearfix">
+                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+                    <blockquote>
+                        Carlos desarrolló las labores encomendadas de forma muy competente.
+                    </blockquote>
+
+                    <h5 class="pull-right"> — Cayetano Benavent Viñuales</h5>
+                </section>
+                <section class="item clearfix">
+                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+                    <blockquote>
+                        Trabajó en Cibernos en el departamento de SIG y demostró ser una persona muy competente en su puesto, cumpliendo todas las responsabilidades y tareas que se le encargaron.
+
+        Es un gran Profesional, muy serio en su trabajo, responsable y posee muy buenas aptitudes y actitudes así como un gran  afan de superación.
+
+        Su conducta fue siempre la de una persona responsable y digna de toda confianza.
+                    </blockquote>
+
+                    <h5 class="pull-right"> — José Ramón Hernández</h5>
+                </section>
+                <section class="item clearfix">
+                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+                    <blockquote>
+                        Carlos worked in my GIS team with Buro Happold Engineers Limited for two and half years between 2006 and 2009.  Throughout that time he worked conscientiously, both as part of the core team and independently, supporting projects with many different disciplines across the practise.
+
+        From the outset Carlos demonstrated a high degree of technical capability and consistently produced innovative solutions and excellent output.
+
+        He was a popular member of staff and I would not hesitate in recommending him for a position in any organisation.
+                    </blockquote>
+
+                    <h5 class="pull-right"> — Simon Woddy</h5>
+                </section>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
 
 	</div>
 	
