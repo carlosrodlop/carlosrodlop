@@ -1,8 +1,3 @@
-# This workflow updates the docker container which has context and
-# pandoc installed, and on which the resume documents are built. The
-# workflow runs whenever the dockerfile is changed, and updates the
-# container image in the Github Packages registry.
-
 name: Publish DevOps Docker Image
 
 # Controls when the action will run.
