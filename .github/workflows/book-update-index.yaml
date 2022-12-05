@@ -1,6 +1,6 @@
 # example GitHub workflow
 
-name: CV Resumen from JSON to HTML
+name: Update Book Index README
 
 on:
   push:
