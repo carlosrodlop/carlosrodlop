@@ -31,7 +31,7 @@ jobs:
           # Index
 
           ## Pages
-          printf '* %s\n' "${array[@]}"
+          printf '* %s\n' "${pages[@]}"
 
           ## Diagrams
           printf '* %s\n' "${diagrams[@]}"
