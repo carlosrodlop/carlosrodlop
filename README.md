@@ -1,12 +1,14 @@
 <!-- https://rahuldkjain.github.io/gh-profile-readme-generator/ -->
 
-# Hi 👋,
+# Carlos' Profile
+
+Hi 👋,
 
 ![Carlos Logo](img/carlosrodlop.png)
 
 
-| [![linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlosrodlop/)|
-|---|
+| [![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlosrodlop/)| [CV](/docs/cv/) | [Book](/docs/book/)|
+|---|---|---|
 
 ## Bio
 
