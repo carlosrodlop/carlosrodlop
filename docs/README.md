@@ -16,6 +16,7 @@ This Mono-repo aims to be my entry point for daily work. I iam to do everything 
   * Containing secrets encrypted via [SOPS](https://github.com/mozilla/sops)
 * `src/secrets` (🔒) Secrets Bucket
   * Encrypted via [Git-crypt](https://github.com/AGWA/git-crypt)
+  * Vaults: [pass](https://www.passwordstore.org/) and [KeePassX](https://www.keepassx.org/)
 
 [Pre-commit hooks](https://pre-commit.com/#install) to validate:
 * Formats
