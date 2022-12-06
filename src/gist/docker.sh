@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 # Docker daemon
 ## Debian/ubuntu
 sudo service docker start
@@ -51,4 +50,3 @@ docker run -v /foo:/bar brikis98/my-rails-app # docker container run -v HOST_PAT
 docker volume create --name html
 docker container run --name www -d -p 8080:80 -v html:/usr/share/nginx/html
 docker volume inspect html # To check where that volumen is mounted
-
