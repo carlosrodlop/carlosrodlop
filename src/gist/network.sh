@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 # Check connection FROM > TO
 ## JNLP connnection (1- master and 2-agent): From 1-master: to CJOC:JNLP port, From 2-agent to OC/Master:JNLP port
 telnet my-jenkins.com 8443 #It maintains a socket open, so it can be useful to validate if there is a man a middle closing the channel Connection closed by foreign host

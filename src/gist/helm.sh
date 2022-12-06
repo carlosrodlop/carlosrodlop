@@ -1,11 +1,9 @@
-#!/usr/bin/env bash
-
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+################################################################
 # REFERENCES:
 # https://helm.sh/docs/intro/using_helm/
 # https://helm.sh/docs/helm/
 # https://artifacthub.io/packages/helm/cloudbees/cloudbees-core
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+################################################################
 
 # Add Repo to Helm
 helm repo add cloudbees https://charts.cloudbees.com/public/cloudbees
@@ -14,7 +12,7 @@ helm repo update
 helm search hub jenkins # in the public hub
 helm search repo cloudbees # in your repository definition, latest stable
 helm search repo cloudbees --version 3.9.0 # in your repository definition, filter by version
-# Check values 
+# Check values
 helm inspect values cloudbees/cloudbees-core # terminal
 helm pull --version 3.6.0 cloudbees/cloudbees-core #Download
 # List releases vs list repo

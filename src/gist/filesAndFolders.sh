@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # CJE1
 ## Find de Mesos Tasks where a container was running. That information
 find <$SUPPORT_BUNDLE/pse> -name "*<Container_ID>*"

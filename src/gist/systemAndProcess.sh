@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # Get System identification
 uname -a
 cat /etc/*release*
@@ -29,7 +27,7 @@ less /etc/group # List existing groups id
 
 # Services
 ## Run Services - Different Options https://askubuntu.com/questions/903354/difference-between-systemctl-and-service-commands
-systemctl start cloudbees-core-oc 
+systemctl start cloudbees-core-oc
 /etc/init.d/cloudbees-core-oc start
 services cloudbees-core-oc start
 ## Logs

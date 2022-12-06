@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # Revert Uncommited Changes
 git reset --hard; git clean -fd
 
@@ -35,8 +33,8 @@ git merge master
 # untrack files after being indexed https://stackoverflow.com/questions/1274057
 ## It will remain the current version in the remote repository
 git update-index --skip-worktree path/to/file.sh # for modified tracked files that the user don't want to commit anymore
-git update-index --assume-unchanged path/to/file.sh # performance to prevent git to check status of big tracked files. 
-## Remove from the remote repository and move to .gitignore 
+git update-index --assume-unchanged path/to/file.sh # performance to prevent git to check status of big tracked files.
+## Remove from the remote repository and move to .gitignore
 git rm --cached file-example.txt
 git rm -r --cached folder-example
 
@@ -62,4 +60,4 @@ git submodule add git@github.com:org-example/repo-example.git libs/submodule-exa
 # https://stackoverflow.com/a/16162000
 git submodule deinit -f libs/example-repo
 rm -rf .git/modules/libs/example-repo
-git rm -f libs/example-repo 
+git rm -f libs/example-repo

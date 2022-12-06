@@ -1,7 +1,7 @@
-#!/usr/bin/env bash
-
-ENTRYPOINT
-https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+################################################################
+# REFERENCES:
+#https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+################################################################
 
 # CLUSTER
 
