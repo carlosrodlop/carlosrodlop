@@ -12,4 +12,3 @@
 * [JavaEE_LIFERAY.png](https://github.com/carlosrodlop/carlosrodlop/blob/main/docs/book/diagrams/JavaEE_LIFERAY.png)
 * [JavaEE_Spring.png](https://github.com/carlosrodlop/carlosrodlop/blob/main/docs/book/diagrams/JavaEE_Spring.png)
 * [Terraform.png](https://github.com/carlosrodlop/carlosrodlop/blob/main/docs/book/diagrams/Terraform.png)
-
