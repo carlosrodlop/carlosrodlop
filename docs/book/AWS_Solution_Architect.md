@@ -736,3 +736,205 @@ There are two types of queues: Standard & FIFO
 ## Storage
 
 ### S3 (Simple Storage Service)
+
+![](https://d1.awsstatic.com/s3-pdp-redesign/product-page-diagram_Amazon-S3_HIW.cf4c2bd7aa02f1fe77be8aa120393993e08ac86d.png)
+
+* Storage service that is highly scalable, secure and performant
+* It is OBJECT BASED storage (suitable for files). It does not allow to install Operation System (different with EBS for example)
+* S3 Object is made up of
+  * Key →  Name of the object, full path of the object in bucket e.g. /movies/comedy/abc.avi
+  * Value → data bytes of object (photos, videos, documents, etc.)
+  * Version ID - version object (if versioning is enabled)
+  * Metadata
+  * Sub-resources (Access Control Lists & Torrent)
+* S3 Bucket holds objects. S3 console show virtual folders based on key.
+* There is unlimited storage, but individual files uploaded can be from **0 bytes to 5TB**.  You should use multi-part upload for Object size > 100MB
+* S3 is a UNIVERSAL NAMESPACE, so bucket names need to be globally unique. The reason why is because it creates a web address (DNS name) with the buckets name in it
+  * When you view Buckets you view them globally but you can have buckets in individual regions
+
+```
+https://<bucket-name>.s3.<aws-region>.amazonaws.com
+or
+https://s3.<aws-region>.amazonaws.com/<bucket-name>
+```
+
+* When you upload a file to S3, you receive a HTTP `200` code if the file upload is successful.
+* **S3 Consistency**
+  * Delivers **strong read-after-write consistency for PUTS and DELETES** of objects, for both new objects and for updates to existing objects. This means once there is a successful write, overwrite or delete — the next read request automatically receives the latest version of the object.
+  * Updates to a single key are atomic. For example, if you PUT to an existing key from one thread and perform a GET on the same key from a second thread concurrently, you will get either the old data or the new data, but never partial or corrupt data.
+* In S3 you pay for the following things:
+  * Storage
+  * Requests and Data Retrievals
+  * Storage Management Pricing
+  * Data Transfer Pricing
+  * Transfer Acceleration
+  * Cross Region Replication Pricing
+* We can change storage class and encryption on the fly
+#### Optional features:
+
+* Enable `S3 Versioning` and `MFA` delete features to protect against accidental delete of S3 Object.
+* Use `Object Lock` to store object using write-once-read-many (WORM) model to prevent objects from being deleted or overwritten for a fixed amount of time (`Retention period`) or indefinitely (`Legal hold`). Each version of object can have different retention-period.
+* You can host static websites on S3 bucket consists of HTML, CSS, client-side JavaScript, and images. You need to enable Static website hosting and Public access for S3 to avoid 403 forbidden error. Also you need to add CORS Policy to allow cross origin request.
+
+```
+https://<bucket-name>.s3-website[.-]<aws-region>.amazonaws.com
+```
+
+**Note**: It is not used for dynamic websites or websites which require database, for ex: Wordpress...etc.
+
+* `S3 Select` or `Glacier Select` can be used to retrieve subset of data from S3 Objects using SQL query. S3 Objects can be CSV, JSON, or Apache Parquet. GZIP & BZIP2 compression is supported with CSV or JSON format with server-side encryption.
+  * Allows you to save money on data transfer and increase speed.
+* Using `Range` HTTP Header in a GET Request to download the specific range of bytes of S3 object, known as Byte Range Fetch
+* You can create `S3 event notification` to push events e.g. s3:ObjectCreated:* to SNS topic, SQS queue or execute a Lambda function. It is possible that you receive single notification for two writes to non-versioned object at the same time. Enable versioning to ensure you get all notifications.
+* Enable `S3 Cross-Region Replication` for asynchronous replication of object across buckets in another region.
+  * Cross Region Replication REQUIRES versioning to be ENABLED on both SOURCE & DESTINATION bucket.
+  * Files in an existing bucket are not replicated automatically once this is enabled — only subsequent updated files. A new objects
+  * You can have this enabled for the entire bucket or just for specific prefixes
+  * Delete markers ARE NOT replicated
+* Enable `Server access logging` for logging object-level fields object-size, total time, turn around time, and Http referrer. Not available with CloudTrail.
+* Use `VPC S3 gateway endpoint` to access S3 bucket within AWS VPC to reduce the overall data transfer cost.
+* Enable `S3 Transfer Acceleration` for faster transfer and high throughput to S3 bucket (mainly uploads)
+  * Create CloudFront distribution with Origin Access Identity (OAI) pointing to S3 for faster cached content delivery (mainly reads) over long distances between your client and S3.
+  * Restrict the access of S3 bucket through CloudFront only using Origin Access Identity (OAI). Make sure user can’t use a direct URL to the S3 bucket to access the file.
+* Use AWS Athena (Serverless Query Engine) to perform analytics directly against S3 objects using SQL query and save the analysis report in another S3 bucket.
+  * Use Case: one time SQL query on S3 objects, S3 access log analysis, serverless queries on S3, IoT data analytics in S3, etc.
+
+#### S3 Tiered Storage (Storage Classes)
+
+* You can upload files in the same bucket with different Storage Classes like S3 standard, Standard-IA, One Zone-IA, Glacier etc.
+* You can setup `S3 Lifecycle Rules` to transition current (or previous version) objects to cheaper storage classes or delete (expire if versioned) objects after certain days for e.g.
+  * Use Case:
+    * Transition from S3 Standard to S3 Standard-IA or One Zone-IA can only be done after 30 days.
+  * You can also setup lifecycle rule to abort multipart upload, if it doesn’t complete within certain days, which auto delete the parts from S3 buckets associated with multipart upload.
+  * It can be u
+* Princing per Storage type
+  * S3 Glacier Deep Archive is the cheapest.
+  * S3 Standard is the most expensive, if you are going to use it — why not use S3 Intelligent tiering (same price), unless you have thousands or millions of objects.
+    * Benefit of using  S3 Intelligent tiering: it does give you access to the infrequently access — so you could save money!
+    * Warning: If you have a lot of objects you are going to incur monitoring and automation charges.
+
+| S3 Storage Class | Durability | Availability |  AZ |  Min. Storage | Retrieval Time | Retrieval fee|
+|---|---|---|---|---|---|---|
+S3 Standard (General Purpose) |	11 9’s | 99.99%	| ≥3	| N/A	| milliseconds	| N/A | 
+S3 Intelligent Tiering | 11 9’s	| 99.9%	| ≥3	| 30 days	| millisecond | N/A
+S3 Standard-IA (Infrequent Access) | 11 9’s |	99.9%	| ≥3 | 30 days |	milliseconds	| per GB
+S3 One Zone-IA (Infrequent Access) |11 9’s |99.5%	| 1	| 30 days	| milliseconds	|per GB
+S3 Glacier	| 11 9’s | 99.99% |	≥3	| 90 days	| Expedite (1-5 mins), Standard (3-5 hrs), Bulk (5-12 hrs) | per GB
+S3 Glacier Deep Archive | 11 9’s | 99.99%	| ≥3 | 180 days	| Standard (12 hrs), Bulk (48 hrs)  per GB
+
+* `Standard`: General purpose storage for any type of frequently used data very high availability, and fast retrieval
+  * HA: Stored redundantly across multiple devices in multiple facilities and is designed to sustain the loss of 2 facilities concurrently.
+* `Intelligent Tiering`: Analyze your Object’s usage and move them to the appropriate cost-effective storage class automatically, without performance impact or operational overhead.
+  * Use case: automatic cost savings for data with unknown or changing access patterns
+* `Standard-IA` (Infrequently Accessed) : Cost effective for infrequent access files which cannot be recreated
+  * For data that is not accessed very frequently — but once it is accessed it needs to be retrieved rapidly.
+  * Is cheaper than standard S3, but you do get charged a retrieval fee
+* `One-Zone IA`(also called S3 RRS) : Cost effective for infrequent access files which can be recreated
+  * Low cost option for data that is not accessed frequently and does not require the redundancy, if the zone fails, we loose the data.
+  * Use case: re-creatable infrequently accessed data that needs milliseconds access.
+* `Glacier`: Cheaper choice to Archive Data. Retrival time configurable from minutes to hours
+* `Glacier Deep Archive`: Cheapest choice for Long-term storage of large amount of data for compliance. Retrival time configurable but slower than `Glacier`, strating from 12 hours.
+
+#### Sharing S3 buckets Across Accounts
+
+If you have two accounts within the same organisation you can use any of these to share the an S3 bucket with both accounts:
+
+* Bucket policy & IAM — applies to entire bucket, but programmatic access only
+* Using bucket ALCs & IAM — can apply to individual objects — programatic access only
+* Cross Account IAM roles — programatic and console access
+
+#### S3 Security
+
+* By default newly created buckets are private, but you can make them public if needed, for example - you would need to make it public for static web hosting purposes.
+
+##### Access
+###### Access Control lists (deprecated)
+
+* Access Control Lists can be for **individual files**. Can grant basic read and write permissions at an object level (not just whole bucket)
+* For example: use if there is a file in a bucket you don’t want everyone to have access to.
+
+###### Bucket policy (recommended)
+
+* S3 Bucket Policies are JSON based policy for complex access rules at user, account, folder, and object level
+* Bucket policies are **bucket wide**. This works at budget levels not individual file level. Applies to whole bucket!
+
+###### S3 Signed URLS
+
+* Used to secure content so that only people you authorise are able to access (upload or download object data) temporarly it.
+* It can be generated from CLI or SDK (can’t from web) and has an LIMITED LIFETIME (e.g. 5 min)
+
+```
+aws s3 presign s3://mybucket/myobject --expires-in 300
+```
+
+* Use Case: when not using CloudFront (Different from CloudFront signed urls) and user have direct access to S3
+* Issues a request as the IAM user who creates the pre-signed URL (Same permissions)
+
+##### Encryption
+
+* `Encryption in Transit` — encrypting network traffic (between client and S3) using SSL/TLS
+* `Encryption at Rest (Server Side)` — happens server side, encrypting the data which is stored. Can be achieved by:
+  * `SSE-S3`: S3 Managed Keys (SSE-S3), AWS Managed Keys
+  * `SSE-KMS`: AWS Key Management Service(SSE-KMS) AWS & you manage keys together
+  * `SSE-C`: Customer provided keys — give AWS you own keys that you manage.
+* `Encryption at Rest (Client Side)` — client encrypt and decrypt the data before sending and after receiving data from S3
+* To meet PCI-DSS or HIPAA compliance, encrypt S3 using SSE-C and Client Side Encryption
+
+
+#### S3 Versioning
+
+* It acts like a backup tool that stores all versions of an object (even writes & deletes)
+  * If you delete a file it will still show up in versioning with the delete marker on it.
+* When enabled on your bucket it cannot be disabled — only suspended
+* It is possible to integrate it with life cycle rules
+* If you mark a single file as public and then upload a new version of it — the new version is private
+* The size of your S3 bucket is the sum of all files and all versions of those files
+* Versioning's MFA Delete capability, which uses multi-factor authentication, can be used to provide an additional layer of security.
+#### S3 Lock Policies
+
+* Use Object Lock to store object using write-once-read-many (WORM) model to prevent objects from being deleted or overwritten for a custom-defined retention period or indefinitely.
+* Stores objects using a Write Once, Read Many (WORM) model.
+* Lock protection is maintained regardless of storage class and throughout the S3 Lifecycle transitions between storage classes.
+* Can be used to meet regulatory requirements as an extra layer of protection
+* `Retention Period` → period that protects an object version for a fixed amount of time. Once it expires the object can be overwritten. Unless there is a LEGAL HOLD placed on its version.
+  * S3 has two types of retention mode:
+    * Governance Mode → Users can’t overwrite , delete or alter the object version locked without special permissions — but users can be granted this access.
+    * Compliance Mode → A protected object version can’t be overwritten or deleted by ANY user including the root user during its retention period
+* `Legal Hold` → Prevents object version from being overwritten or deleted. It doesn’t have a retention period, it is in effect until removed
+* `Glacier Vault Lock` → enforce compliance controls on individual S3 Glacier vaults using a vault lock policy.
+
+#### S3 Performance
+
+S3 Has extremely low latency
+
+##### Performance limitations
+
+* KMS can slow down performance as you need to call `GenerateDataKey` when uploading files and decrypt when downloading.
+* KMS also has a per second quota, which could affect performance
+##### Improving Performance
+
+* S3 Prefix is the part between the bucket name and the filename. You can get better performance by spreading your reads across different prefixes.
+* It is recommended for files that are over 100mb that you use multi-part uploads to improve performance, as it splits your file into parts and uploads them in Parallel.
+* For download this is call S3 Byte Range Fetches — Parallelises download by specifying byte ranges, which speeds up downloads and can download partial amounts of info.
+
+#### S3 Storage Gateway
+
+* Is a hybrid cloud storage service for connecting on-premises software applications with cloud based storage.
+* Allows your on-premise to access virtually unlimited cloud storage.
+* Can be downloaded as a Virtual Machine Image and installed in your datacenter.
+* Has low latency as it caches data in the local VM or gateway hardware appliance.
+* Storage Gateways Type
+  * **1.** File Gateway
+    * Stores objects directly in s3
+    * Utilises standard storage protocols with NFS & SMB
+    * Common use case is for on-premise backup to the cloud
+  * **2.** Volume Gateway
+    * Presents your applications with disk volumes using ISCSI block protocol
+    * Stores/manages on-premise data in S3
+    * It allows you to take point-in-time snapshots using AWS Backup and stores them in EBS (Only captures changed blocks)
+    * Types of Volume Gateways:
+      * Volume Gateway (Stored Volumes) — Store you primary data locally so there is low latency to the entire dataset and then asynchronously backs up that data to S3.
+      * Volume Gateway (Cached Volumes) — Uses s3 as your primary storage while retaining frequently accessed data locally. Minimise need to scale your on-premise infrastructure
+  * **3.** Tape Gateway
+    * Durable, cost effective archiving
+    * Is a way of replacing physical tapes with a virtual tape interface in AWS without changes existing backup workflows
