@@ -10,7 +10,17 @@ After doing the course from [Digital Training](https://digitalcloud.training/aws
 Finally, I practiced the following Exam Tests
 # AWS Solution Architect
 
+## Index
+
+1. [Global](#global)
+2. [Security](#security)
+3. [Compute](#compute)
+4. [Application Integration](#application_integration)
+5. [Storage](#storage)
+
 ## Global
+
+Go to [Index](#index)
 
 ### Infrastructure
 
@@ -100,7 +110,9 @@ resource_type/resource, resource_type/resource/qualifier, resource_type/resource
 
 * Your AWS account has default quotas, formerly referred to as limits, for each AWS service. Unless otherwise noted, each quota is Region-specific. You can request increases for some quotas, and other quotas cannot be increased.
 
-## Security, Identity & Compliance
+## Security
+
+Go to [Index](#index)
 
 ### IAM (Global Service)
 
@@ -395,6 +407,8 @@ Steps: You first authenticate user using `Cognito User Pools` and then exchange 
 
 ## Compute
 
+Go to [Index](#index)
+
 ### EC2
 
 * Infrastructure as a Service (IaaS) - Re-sizable (elastic) and secure virtual machine on the cloud.
@@ -664,7 +678,9 @@ For example, if you know there will be increased load on the application at 9am 
   * Max environment variables size can be 4KB
   * Compressed `.zip` and uncompressed code can’t exceed 50MB and 250MB respectively
 
-## Application Integration
+## Application_Integration
+
+Go to [Index](#index)
 
 ### SQS (Amazon Simple Queue Service)
 
@@ -735,6 +751,8 @@ There are two types of queues: Standard & FIFO
 
 ## Storage
 
+Go to [Index](#index)
+
 ### S3 (Simple Storage Service)
 
 ![](https://d1.awsstatic.com/s3-pdp-redesign/product-page-diagram_Amazon-S3_HIW.cf4c2bd7aa02f1fe77be8aa120393993e08ac86d.png)
@@ -798,6 +816,16 @@ https://<bucket-name>.s3-website[.-]<aws-region>.amazonaws.com
   * Restrict the access of S3 bucket through CloudFront only using Origin Access Identity (OAI). Make sure user can’t use a direct URL to the S3 bucket to access the file.
 * Use AWS Athena (Serverless Query Engine) to perform analytics directly against S3 objects using SQL query and save the analysis report in another S3 bucket.
   * Use Case: one time SQL query on S3 objects, S3 access log analysis, serverless queries on S3, IoT data analytics in S3, etc.
+* Locks
+  * Use `Object Lock` to store object using Write-Once-Read-Many (WORM) model to prevent objects from being deleted or overwritten for a custom-defined retention period or indefinitely. It can be one bucket or individual elements.
+    * You can use S3 Object lock to meet regulatory requirements that require WORM storage, or add an extra layer of protection against object changes and deletion.
+    * Amazon S3 currently does not support enabling object lock after a bucket has been created.
+    * S3 has two types of retention mode:
+      * Governance Mode → Users can’t overwrite , delete or alter the object version locked unless they have special permissions (permissions requires to be granted).
+      * Compliance Mode → A protected object version can’t be overwritten or deleted by ANY user including the root user during its retention period
+    * `Retention Period` → period that protects an object version for a fixed amount of time. Once it expires the object can be overwritten. Unless there is a LEGAL HOLD placed on its version.
+    * `Legal Hold` → Prevents object version from being overwritten or deleted. It doesn’t have a retention period, it remains in effect until it is removed.
+  * `Glacier Vault Lock` → enforce compliance controls on individual S3 Glacier vaults using a Vault Lock policy.
 
 #### S3 Tiered Storage (Storage Classes)
 
@@ -880,7 +908,6 @@ aws s3 presign s3://mybucket/myobject --expires-in 300
 * `Encryption at Rest (Client Side)` — client encrypt and decrypt the data before sending and after receiving data from S3
 * To meet PCI-DSS or HIPAA compliance, encrypt S3 using SSE-C and Client Side Encryption
 
-
 #### S3 Versioning
 
 * It acts like a backup tool that stores all versions of an object (even writes & deletes)
@@ -890,18 +917,6 @@ aws s3 presign s3://mybucket/myobject --expires-in 300
 * If you mark a single file as public and then upload a new version of it — the new version is private
 * The size of your S3 bucket is the sum of all files and all versions of those files
 * Versioning's MFA Delete capability, which uses multi-factor authentication, can be used to provide an additional layer of security.
-#### S3 Lock Policies
-
-* Use Object Lock to store object using write-once-read-many (WORM) model to prevent objects from being deleted or overwritten for a custom-defined retention period or indefinitely.
-* Stores objects using a Write Once, Read Many (WORM) model.
-* Lock protection is maintained regardless of storage class and throughout the S3 Lifecycle transitions between storage classes.
-* Can be used to meet regulatory requirements as an extra layer of protection
-* `Retention Period` → period that protects an object version for a fixed amount of time. Once it expires the object can be overwritten. Unless there is a LEGAL HOLD placed on its version.
-  * S3 has two types of retention mode:
-    * Governance Mode → Users can’t overwrite , delete or alter the object version locked without special permissions — but users can be granted this access.
-    * Compliance Mode → A protected object version can’t be overwritten or deleted by ANY user including the root user during its retention period
-* `Legal Hold` → Prevents object version from being overwritten or deleted. It doesn’t have a retention period, it is in effect until removed
-* `Glacier Vault Lock` → enforce compliance controls on individual S3 Glacier vaults using a vault lock policy.
 
 #### S3 Performance
 
@@ -909,13 +924,27 @@ S3 Has extremely low latency
 
 ##### Performance limitations
 
-* KMS can slow down performance as you need to call `GenerateDataKey` when uploading files and decrypt when downloading.
-* KMS also has a per second quota, which could affect performance
+* If you are using KMS (SSE-KMS) to encrypt your objects in S3, you must keep in mind the KMS limits.
+  * When you upload a file, you will call GenerateDataKey in the KMS API.
+  * When you download a file, you will call Decrypt in the KMS API.
+* Uploading/Downloading will count towards the KMS per second quota, which could affect performance
+  *  Region-specific, however, it's either 5,500, 10,000 or 30,000 requests our second.
+  *   accessed through a Network File System (NFS) mount point
 ##### Improving Performance
 
-* S3 Prefix is the part between the bucket name and the filename. You can get better performance by spreading your reads across different prefixes.
-* It is recommended for files that are over 100mb that you use multi-part uploads to improve performance, as it splits your file into parts and uploads them in Parallel.
-* For download this is call S3 Byte Range Fetches — Parallelises download by specifying byte ranges, which speeds up downloads and can download partial amounts of info.
+* `S3 Prefix` is the part between the bucket name and the filename. You can get better performance by spreading your reads across different prefixes.
+
+```
+mybucketname/folder1/subfolder1/myfile.jpg > 	/folder1/subfolder1 is the prefix
+```
+
+Use Case: By default, you can get the first byte out of S3 within 100-200 milliseconds. You can also achieve a high number of requests: 3,500 PUT/COPY/POST/DELETE and 5,500 GET/HEAD requests per second per prefix. Spreading your reads across different prefixes. For Example, If you are using two prefixes, you can achieve 11,000 requests per second.
+
+* `Multipart Uploads` -> it splits your file into parts and uploads them in Parallel
+  * Recommended for files over 100MB
+  * Required for files over 5GB
+
+* For download this is call `S3 Byte Range Fetches` — Parallelises download by specifying byte ranges, which speeds up downloads and can download partial amounts of info.
 
 #### S3 Storage Gateway
 
@@ -924,17 +953,17 @@ S3 Has extremely low latency
 * Can be downloaded as a Virtual Machine Image and installed in your datacenter.
 * Has low latency as it caches data in the local VM or gateway hardware appliance.
 * Storage Gateways Type
-  * **1.** File Gateway
+  * **1.** File Gateway (protocol NFS & SMB)
     * Stores objects directly in s3
     * Utilises standard storage protocols with NFS & SMB
     * Common use case is for on-premise backup to the cloud
-  * **2.** Volume Gateway
+  * **2.** Volume Gateway (ISCSI block protocol)
     * Presents your applications with disk volumes using ISCSI block protocol
     * Stores/manages on-premise data in S3
     * It allows you to take point-in-time snapshots using AWS Backup and stores them in EBS (Only captures changed blocks)
     * Types of Volume Gateways:
-      * Volume Gateway (Stored Volumes) — Store you primary data locally so there is low latency to the entire dataset and then asynchronously backs up that data to S3.
-      * Volume Gateway (Cached Volumes) — Uses s3 as your primary storage while retaining frequently accessed data locally. Minimise need to scale your on-premise infrastructure
-  * **3.** Tape Gateway
+      * Stored Volumes — Entire Dataset is stored on site and is asynchronously backed up to S3. Store you primary data locally so there is low latency to the entire dataset and then asynchronously backs up that data to S3.
+      * Cached Volumes — Entire Dataset is stored on S3 and the most frequently accessed data is cached on site. Uses s3 as your primary storage while retaining frequently accessed data locally. Minimise need to scale your on-premise infrastructure
+  * **3.** Tape Gateway (VTL)
     * Durable, cost effective archiving
     * Is a way of replacing physical tapes with a virtual tape interface in AWS without changes existing backup workflows
