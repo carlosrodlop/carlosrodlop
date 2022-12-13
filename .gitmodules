@@ -5,8 +5,8 @@
 	path = src/config
 	url = git@github.com:carlosrodlop/carlosrodlop-conf.git
 [submodule "src/ps-env"]
-	path = src/ps-env
+	path = src/ext/ps-env
 	url = git@github.com:cloudbees/ps-crodriguezlopez-env.git
 [submodule "docs/ps-docs"]
-	path = docs/ps-docs
+	path = docs/ext/ps-docs
 	url = git@github.com:carlosrodlop/docsite-ps.git

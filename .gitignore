@@ -5,9 +5,9 @@ git-crypt-key
 key.txt
 reports
 #submodules
-src/ps-env
+#src/ps-env
 src/secrets
-src/config
+#src/config
 docs/ps-docs
 v_kube
 v_tmp
