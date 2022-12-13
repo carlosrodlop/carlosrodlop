@@ -4,10 +4,6 @@ git-crypt-key
 #sops
 key.txt
 reports
-#submodules
-#src/ps-env
-src/secrets
-#src/config
-docs/ps-docs
+#.docker
 v_kube
 v_tmp
