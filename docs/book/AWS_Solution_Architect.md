@@ -1,13 +1,3 @@
-# References
-
-After doing the course from [Digital Training](https://digitalcloud.training/aws-cheat-sheets/), I reviwed the following resources to make this summary:
-
-* [Amazon Docs](https://aws.amazon.com/)
-* [AWS Certified Solutions Architect Associate (SAA-C02) Exam Notes - Coding N Concepts](https://codingnconcepts.com/aws/aws-certified-solutions-architect-associate/#aws-infrastructure)
-* [AWS\_CCP\_Notes/AWS\_Solution\_Architecture\_Associate.txt at main · kasukur/AWS\_CCP\_Notes](https://github.com/kasukur/AWS_CCP_Notes/blob/main/AWS_Solution_Architecture_Associate.txt)
-* [AWS Solution Architect Associate Exam Study Notes | by Chloe McAteer | Medium](https://chloemcateer.medium.com/aws-solution-architect-associate-exam-study-notes-b6c5884ee500)
-
-Finally, I practiced the following Exam Tests
 # AWS Solution Architect
 
 ## Index
@@ -17,6 +7,7 @@ Finally, I practiced the following Exam Tests
 3. [Compute](#compute)
 4. [Application Integration](#application_integration)
 5. [Storage](#storage)
+6. [References](#references)
 
 ## Global
 
@@ -967,3 +958,14 @@ Use Case: By default, you can get the first byte out of S3 within 100-200 millis
   * **3.** Tape Gateway (VTL)
     * Durable, cost effective archiving
     * Is a way of replacing physical tapes with a virtual tape interface in AWS without changes existing backup workflows
+
+## References
+
+After doing the course from [Digital Training](https://digitalcloud.training/aws-cheat-sheets/), I reviwed the following resources to make this summary:
+
+* [Amazon Docs](https://aws.amazon.com/)
+* [AWS Certified Solutions Architect Associate (SAA-C02) Exam Notes - Coding N Concepts](https://codingnconcepts.com/aws/aws-certified-solutions-architect-associate/#aws-infrastructure)
+* [AWS\_CCP\_Notes/AWS\_Solution\_Architecture\_Associate.txt at main · kasukur/AWS\_CCP\_Notes](https://github.com/kasukur/AWS_CCP_Notes/blob/main/AWS_Solution_Architecture_Associate.txt)
+* [AWS Solution Architect Associate Exam Study Notes | by Chloe McAteer | Medium](https://chloemcateer.medium.com/aws-solution-architect-associate-exam-study-notes-b6c5884ee500)
+
+Finally, I practiced the following Exam Tests

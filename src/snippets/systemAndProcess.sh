@@ -42,3 +42,8 @@ ps -ef | grep cloudbees-core-oc
 ps aux | grep cloudbees-core-oc
 ## List processes run by user cloudbees-core
 ps -fu cloudbees-core
+
+# Print running JVM properties
+java -XshowSettings:all
+jps -lvm
+java -XshowSettings:properties -version

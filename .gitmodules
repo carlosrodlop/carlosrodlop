@@ -4,3 +4,12 @@
 [submodule "src/config"]
 	path = src/config
 	url = git@github.com:carlosrodlop/carlosrodlop-conf.git
+[submodule "docs/forks/docsite-ps"]
+	path = docs/forks/docsite-ps
+	url = git@github.com:carlosrodlop/docsite-ps.git
+[submodule "docs/forks/ps-docs"]
+	path = docs/forks/ps-docs
+	url = git@github.com:carlosrodlop/ps-docs.git
+[submodule "src/forks/ps-env"]
+	path = src/forks/ps-env
+	url = git@github.com:cloudbees/ps-crodriguezlopez-env.git
