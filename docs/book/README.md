@@ -3,6 +3,8 @@
 ## Pages
 * [AWESOME_POD.md](AWESOME_POD.md)
 * [AWS_Solution_Architect.md](AWS_Solution_Architect.md)
+* [CloudBees_CI.md](CloudBees_CI.md)
+* [ElasticSearch.md](ElasticSearch.md)
 
 ## Diagrams
 * [CKA-Architecture-Components.png](https://github.com/carlosrodlop/carlosrodlop/blob/main/docs/book/diagrams/CKA-Architecture-Components.png)
