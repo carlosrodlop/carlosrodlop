@@ -58,6 +58,6 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 
 #### Note
 
-* `*` [CV as JSON](https://jsonresume.org/) Linkedin CV exported via [LinkedIn to JSON Resume Browser Tool](https://github.com/joshuatz/linkedin-to-jsonresume)
+`*` [CV as JSON](https://jsonresume.org/) Linkedin CV exported via [LinkedIn to JSON Resume Browser Tool](https://github.com/joshuatz/linkedin-to-jsonresume)
 
 <img src="https://komarev.com/ghpvc/?username=carlosrodlop&label=Profile%20views&color=0e75b6&style=flat" alt="carlosrodlop" />
