@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'docs/cv/**'
+      - 'cv.json'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -25,10 +25,10 @@ jobs:
         name: Export resume as HTML
         with:
           theme: flat
-          resume_filepath: docs/cv/resume.json
+          resume_filepath: cv.json
           # modifies the index.html in-place
-          output_filepath: docs/cv/resume.html
+          output_filepath: cv-carlosrodlop.html
       - uses: actions/upload-artifact@v3
         with:
           name: cv
-          path: docs/cv/resume.html
+          path: cv-carlosrodlop.html
