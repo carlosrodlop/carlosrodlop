@@ -970,18 +970,20 @@ Use Case: By default, you can get the first byte out of S3 within 100-200 millis
 ### EBS (Elastic Block Store)
 
 * EBS is persistent storage volumes for EC2
-* It is Block-based storage: It needs to be mounted to an EC2 instance within the **same Availability Zone** (EBS Volume think like a "USB stick")
+* It is Block-based storage: It needs to be **mounted to an EC2 instance within the same Availability Zone** (EBS Volume think like a "USB stick")
   * 1 EBS - 1 EC2. It can be attached to only one EC2 instance at a time. Can be detached & attached to another EC2 instance in that same AZ only.
   * 1 EC2 - 1..N EBS. Can attach multiple EBS volumes to single EC2 instance. Data persist after detaching from EC2
-* EBS Snapshot is a backup of EBS Volume at a point in time. You can not copy EBS volume across AZ but you can create EBS Volume from Snapshot across AZ. EBS Snapshot can copy across AWS Regions.
-* Facts about EBS Volume encryption:-
+* EBS Snapshots
+  * It is a backup of EBS Volume at a point in time.
+  * You can not copy EBS volume across AZ but you can **create EBS Volume from Snapshot across AZ**, including different AWS Regions.
+* EBS supports dynamic changes in live production volume e.g. volume type, volume size, and IOPS capacity without service interruption
+* EBS Volume encryption:
   * All data at rest inside the volume is encrypted
   * All data in flight between the volume and EC2 instance is encrypted
   * All snapshots of encrypted volumes are automatically encrypted
   * All volumes created from encrypted snapshots are automatically encrypted
   * Volumes created from unencrypted snapshots can be encrypted at the time of creation
-* EBS supports dynamic changes in live production volume e.g. volume type, volume size, and IOPS capacity without service interruption
-* There are two types of EBS volumes:
+* Types of EBS volumes:
   * SSD for small/random IO operations, High IOPS means number of read and write operations per second, Only SSD EBS Volumes can be used as boot volumes for EC2
   * HDD for large/sequential IO operations, High Throughput means number of bytes read and write per second
 * EBS Volumes with two types of RAID configuration:-
