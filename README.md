@@ -1,12 +1,12 @@
 <!-- https://rahuldkjain.github.io/gh-profile-readme-generator/ -->
 
-# Carlos' Profile
+# Carlos' Git-Profile
 
 Hi 👋,
 
 ![Carlos Logo](img/logos/carlosrodlop.png)
 
-| [![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlosrodlop/)| [📖](/docs/)|
+| [![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlosrodlop/)| [![CV Download](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-html.yaml/badge.svg)](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-html.yaml) |
 |---|---|
 
 ## Bio
@@ -52,6 +52,8 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 
 - [DR CloudBees CI EKS with Velero](https://events.devopsworld.com/widget/cloudbees/devopsworld22/conferenceSessionDetails?tab.day=20220928&search=1040). Orlando, EEUU. 2022
 - [Combining Serverless Continuous Delivery With ChatOps](https://www.meetup.com/es-ES/SVQJUG/events/263195348/). Sevilla, Spain. 2019
+
+
 
 <hr>
 
