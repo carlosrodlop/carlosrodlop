@@ -959,6 +959,71 @@ Use Case: By default, you can get the first byte out of S3 within 100-200 millis
     * Durable, cost effective archiving
     * Is a way of replacing physical tapes with a virtual tape interface in AWS without changes existing backup workflows
 
+### Instance Store
+
+* Instance Store is temporary block-based storage physically attached to an EC2 instance
+* It can be attached to an EC2 instance only when the instance is launched and cannot be dynamically resized
+* Also known to as Ephemeral Storage
+* Deliver very low-latency and high random I/O performance
+* Data persists on instance reboot, data doesn’t persist on stop or termination
+
+### EBS (Elastic Block Store)
+
+* EBS is persistent storage volumes for EC2
+* It is Block-based storage: It needs to be mounted to an EC2 instance within the **same Availability Zone** (EBS Volume think like a "USB stick")
+  * 1 EBS - 1 EC2. It can be attached to only one EC2 instance at a time. Can be detached & attached to another EC2 instance in that same AZ only.
+  * 1 EC2 - 1..N EBS. Can attach multiple EBS volumes to single EC2 instance. Data persist after detaching from EC2
+* EBS Snapshot is a backup of EBS Volume at a point in time. You can not copy EBS volume across AZ but you can create EBS Volume from Snapshot across AZ. EBS Snapshot can copy across AWS Regions.
+* Facts about EBS Volume encryption:-
+  * All data at rest inside the volume is encrypted
+  * All data in flight between the volume and EC2 instance is encrypted
+  * All snapshots of encrypted volumes are automatically encrypted
+  * All volumes created from encrypted snapshots are automatically encrypted
+  * Volumes created from unencrypted snapshots can be encrypted at the time of creation
+* EBS supports dynamic changes in live production volume e.g. volume type, volume size, and IOPS capacity without service interruption
+* There are two types of EBS volumes:
+  * SSD for small/random IO operations, High IOPS means number of read and write operations per second, Only SSD EBS Volumes can be used as boot volumes for EC2
+  * HDD for large/sequential IO operations, High Throughput means number of bytes read and write per second
+* EBS Volumes with two types of RAID configuration:-
+  * RAID 0 (increase performance) two 500GB EBS Volumes with 4000 IOPS - creates 1000GB RAID0 Array with 8000 IOPS and 1000Mbps throughput
+  * RAID 1 (increase fault tolerance) two 500GB EBS Volumes with 4000 IOPS - creates 500GB RAID1 Array with 4000 IOPS and 500Mbps throughput
+
+EBS VolumeTypes | Description | Usage | 
+|---|---|---|
+General Purpose SSD (gp2/gp3) |	Max 16000 IOPS |	boot volumes, dev environment, virtual desktop|
+Provisioned IOPS SSD (io1/io2)|	16000 - 64000 IOPS, EBS Multi-Attach | critical business application, large SQL and NoSQL database workloads |
+Throughput Optimized HDD (st1) |	Low-cost, frequently accessed, throughput intensive	|	Big Data, Data warehouses, log processing |
+Cold HDD (sc1) |	Lowest-cost, infrequently accessed	|	Large data with lowest cost|
+
+### EFS (Elastic File System)
+
+* EFS is a POSIX-compliant file-based storage
+* EFS supports file systems semantics - strong read after write consistency and file locking
+* highly scalable - can automatically scale from gigabytes to petabytes of data without needing to provision storage. With burst mode, the throughput increase, as file system grows in size.
+* Highly Available - stores data redundantly across multiple Availability Zones
+* Network File System (NFS) that can be mounted on and accessed concurrently by thousands of EC2 in multiple AZs without sacrificing performance.
+* EFS file systems can be accessed by Amazon EC2 Linux instances, Amazon ECS, Amazon EKS, AWS Fargate, and AWS Lambda functions via a file system interface such as NFS protocol.
+* Performance Mode:
+  * General Purpose for most file system for low-latency file operations, good for content-management, web-serving etc.
+  * Max I/O is optimized to use with 10s, 100s, 1000s of EC2 instances with high aggregated throughput and IOPS, slightly higher latency for file operations, good for big data analytics, media processing workflow
+* Use case: Share files, images, software updates, or computing across all EC2 instances in ECS, EKS cluster
+
+### FSx for Windows
+
+* Windows-based file system supports SMB protocol & Windows NTFS
+* Supports Microsoft Active Directory (AD) integration, ACLs, user quotas
+
+### FSx for Lustre
+
+* Lustre = Linux + Cluster is a **POSIX-compliant parallel linux file system**, which stores data across multiple network file servers
+* High performance file system for **fast processing of workload** with consistent **sub-millisecond latencies**, up to hundreds of gigabytes per second of throughput, and up to millions of IOPS.
+* Use it for Machine learning, High performance computing (HPC), video processing, financial modeling, genome sequencing, and electronic design automation (EDA).
+* You can use **FSx for Lustre as hot storage** for your highly accessed files, and **Amazon S3 as cold storage** for rarely accessed files.
+* **Seamless integration with Amazon S3** - connect your S3 data sets to your FSx for Lustre file system, run your analyses, write results back to S3, and delete your file system
+* FSx for Lustre provide two deployment options:
+  * **Scratch file systems** - for temporary storage and short term processing
+  * **Persistent file systems** - for high available & persist storage and long term processing
+
 ## References
 
 After doing the course from [Digital Training](https://digitalcloud.training/aws-cheat-sheets/), I reviwed the following resources to make this summary:
