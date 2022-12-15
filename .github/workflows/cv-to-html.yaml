@@ -1,4 +1,4 @@
-name: CV Resumen from JSON to HTML
+name: CV Artifact
 
 on:
   push:
