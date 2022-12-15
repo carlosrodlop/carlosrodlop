@@ -7,3 +7,6 @@ reports
 #.docker
 v_kube
 v_tmp
+src/config
+src/forks/ps-env/
+src/secrets
