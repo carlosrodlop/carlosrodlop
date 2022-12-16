@@ -1,12 +1,5 @@
 .DS_Store
-#git-crypt
-git-crypt-key
-#sops
-key.txt
 reports
-#.docker
-v_kube
-v_tmp
-src/config
-src/forks/ps-env/
-src/secrets
+#submodules
+#docs
+#secrets
