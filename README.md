@@ -17,9 +17,6 @@ Automation Consultant embracing the DevOps culture. Background of Java Web and (
 
 Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional Service Team, helping customers to love more our CI/CD products!
 
-## GitHub Stats
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=carlosrodlop&" alt="carlosrodlop" /></p>
 
 ## My 🔧
 
@@ -39,6 +36,10 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 <a href="https://certificates.cloudbees.com/4f8608d3-0e74-4c04-9e5c-3fa2123af47e"><img src="img/badges/cb-ci-essentials.png" alt="cb ci essentials" width="100"></a>
 <a href="https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/acb39642-b66f-47b3-85e9-ccb344b73cfc-carlos-antonio-rodriguez-lopez-certified-kubernetes-administrator-cka-certificate.pdf"><img src="img/badges/cka.png" alt="cka" width="100"></a>
 <a href="https://certificates.cloudbees.com/949c399f-7beb-4872-82f1-fe8c53424ef8"><img src="img/badges/cb-enginner.png" alt="cb enginner" width="100"></a>
+
+## GitHub Stats
+
+<p style="text-align:center"> <img src="https://github-readme-streak-stats.herokuapp.com/?user=carlosrodlop&" alt="carlosrodlop" /> </p>
 
 ## Knowledge Sharing
 
