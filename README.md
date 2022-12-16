@@ -6,8 +6,8 @@ Hi 👋,
 
 ![Carlos Logo](img/logos/carlosrodlop.png)
 
-| [![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlosrodlop/)| [![CV Download](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-html.yaml/badge.svg)](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-html.yaml) | [GITHUB](GITHUB.md)
-|---|---|---|
+| [![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlosrodlop/)| [![CV Download](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-html.yaml/badge.svg)](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-html.yaml) |
+|---|---|
 
 `*` _CV Artifact renders the output from my Linkedin profile exported via [LinkedIn to JSON Resume Browser Tool](https://github.com/joshuatz/linkedin-to-jsonresume) using [CV as JSON](https://jsonresume.org/)_
 
@@ -16,6 +16,10 @@ Hi 👋,
 Automation Consultant embracing the DevOps culture. Background of Java Web and (Geo) Data Management and Analysis. Running CI/CD pipelines in the Cloud.
 
 Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional Service Team, helping customers to love more our CI/CD products!
+
+## GitHub Stats
+
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=carlosrodlop&" alt="carlosrodlop" /></p>
 
 ## My 🔧
 
