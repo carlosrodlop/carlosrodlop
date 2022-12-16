@@ -58,4 +58,4 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 
 <hr>
 
-<img src="https://komarev.com/ghpvc/?username=carlosrodlop&label=Profile%20views&color=0e75b6&style=flat" alt="carlosrodlop" />
+<img alt="gitleaks badge" src="https://img.shields.io/badge/protected%20by-gitleaks-blue"> <img src="https://komarev.com/ghpvc/?username=carlosrodlop&label=Profile%20views&color=0e75b6&style=flat" alt="carlosrodlop" />
