@@ -1,12 +1,6 @@
-[submodule "src/config"]
-	path = src/config
-	url = git@github.com:carlosrodlop/carlosrodlop-conf.git
-[submodule "src/forks/ps-env"]
-	path = src/forks/ps-env
-	url = git@github.com:cloudbees/ps-crodriguezlopez-env.git
-[submodule "docs"]
-	path = docs
-	url = git@github.com:carlosrodlop/carlosrodlop-docs
 [submodule "secrets"]
 	path = secrets
 	url = git@github.com:carlosrodlop/carlosrodlop-secrets.git
+[submodule "docs"]
+	path = docs
+	url = git@github.com:carlosrodlop/carlosrodlop-docs.git
