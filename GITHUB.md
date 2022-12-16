@@ -1,10 +1,10 @@
 # My GitHub
 
-## Stats
+## Stats
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=carlosrodlop&" alt="carlosrodlop" /></p>
 
-## Submodules
+## Submodules
 
 My profile repository is my entry point in my workstation to browse around the following repos
 
