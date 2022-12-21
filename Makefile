@@ -8,20 +8,6 @@ docker-sast-scan-all: ## SAST scan from https://slscan.io/en/latest/ for the roo
 docker-scan-all:
 	@docker run --rm -e "WORKSPACE=$(PWD)" -v $(PWD):/app shiftleft/sast-scan scan --build
 
-.PHONY:
-docker-run-devops-tools: ## Run image from Dockerfile.devops
-docker-run-devops-tools:
-	@cat src/secrets/files/github/gh_token.txt | docker login ghcr.io --username carlosrodlop --password-stdin
-	@docker run --name devops_tools -it --rm \
-        --mount type=bind,source="$(MKFILE_DIR)/src",target=/root/labs \
-        --mount type=bind,source="$(HOME)/.aws",target=/root/.aws \
-        --mount type=bind,source="$(HOME)/.ssh",target=/root/.ssh \
-        -v "$(MKFILE_DIR)"/.docker/devops/v_kube:/root/.kube/ \
-        -v "$(MKFILE_DIR)"/.docker/devops/v_tmp:/tmp/ \
-        -p 8080:8080 \
-		--platform linux/amd64 \
-        ghcr.io/carlosrodlop/carlosrodlop.devops:main
-
 ####################
 ## Common targets
 ####################
