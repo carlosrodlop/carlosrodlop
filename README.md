@@ -6,7 +6,7 @@ Hi 👋,
 
 ![Carlos Logo](img/logos/carlosrodlop.png)
 
-| [![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlosrodlop/)| [![CV Download](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-html.yaml/badge.svg)](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-html.yaml) |
+| [![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlosrodlop/)| [![CV Download](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-html.yaml/badge.svg)](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-html.yaml)|
 |---|---|
 
 `*` _CV Artifact renders the output from my Linkedin profile exported via [LinkedIn to JSON Resume Browser Tool](https://github.com/joshuatz/linkedin-to-jsonresume) using [CV as JSON](https://jsonresume.org/)_
@@ -18,7 +18,7 @@ Automation Consultant embracing the DevOps culture. Background of Java Web and (
 Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional Service Team, helping customers to love more our CI/CD products!
 
 
-## My 🔧
+## My 🛠
 
 ### Work Ecosystem
 
@@ -37,13 +37,13 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 <a href="https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/acb39642-b66f-47b3-85e9-ccb344b73cfc-carlos-antonio-rodriguez-lopez-certified-kubernetes-administrator-cka-certificate.pdf"><img src="img/badges/cka.png" alt="cka" width="100"></a>
 <a href="https://certificates.cloudbees.com/949c399f-7beb-4872-82f1-fe8c53424ef8"><img src="img/badges/cb-enginner.png" alt="cb enginner" width="100"></a>
 
-## GitHub Stats
+## GitHub 📊
 
 <p style="text-align:center"> <img src="https://github-readme-streak-stats.herokuapp.com/?user=carlosrodlop&" alt="carlosrodlop" /> </p>
 
 ## Knowledge Sharing
 
-### &#x270d; Blog & Writing
+### ✍ Blog & Writing
 
 - [DR CloudBees in EKS with Velero](https://www.cloudbees.com/blog/), 2022.
 - [Support an Interview-As-Code Model](https://stories.jenkins.io/user-story/to-run-technical-simulations-for-developer-engineer-interviews/), 2020.
@@ -51,11 +51,13 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 - [Template Catalog: Welcome to the Pipeline as Code Family](https://www.cloudbees.com/blog/pipeline-as-code), 2020.
 - [My Experience as a Developer Support Engineer at CloudBees](https://www.cloudbees.com/blog/my-experience-developer-support-engineer-cloudbees), 2019.
 
-### &#128172; Talks
+### 🗣 Talks
 
 - [DR CloudBees CI EKS with Velero](https://events.devopsworld.com/widget/cloudbees/devopsworld22/conferenceSessionDetails?tab.day=20220928&search=1040). Orlando, EEUU. 2022
 - [Combining Serverless Continuous Delivery With ChatOps](https://www.meetup.com/es-ES/SVQJUG/events/263195348/). Sevilla, Spain. 2019
 
 <hr>
 
-<img alt="gitleaks badge" src="https://img.shields.io/badge/protected%20by-gitleaks-blue"> <img src="https://komarev.com/ghpvc/?username=carlosrodlop&label=Profile%20views&color=0e75b6&style=flat" alt="carlosrodlop" />
+[![gitleaks badge](https://img.shields.io/badge/protected%20by-gitleaks-blue)](https://github.com/zricethezav/gitleaks) [![stats](https://img.shields.io/badge/SAST%20by-ShiftLeftSecurity-blue)](https://github.com/ShiftLeftSecurity/sast-scan)
+
+![profile view](https://komarev.com/ghpvc/?username=carlosrodlop&label=Profile%20views&color=0e75b6&style=flat")
