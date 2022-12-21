@@ -13,9 +13,9 @@ Hi 👋,
 
 ## Bio
 
-Automation Consultant embracing the DevOps culture. Background of Java Web and (Geo) Data Management and Analysis. Running CI/CD pipelines in the Cloud.
+Automation Consultant embracing the DevOps culture. Background of Java Web and (Geo) Data Management and Analysis. Currently, running CI/CD pipelines in the Cloud.
 
-Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional Service Team, helping customers to love more our CI/CD products!
+Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional Service Team, helping customers to love more our products!
 
 
 ## My 🛠
