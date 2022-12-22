@@ -58,6 +58,6 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 
 <hr>
 
-[![gitleaks badge](https://img.shields.io/badge/protected%20by-gitleaks-blue)](https://github.com/zricethezav/gitleaks) [![stats](https://img.shields.io/badge/SAST%20by-ShiftLeftSecurity-blue)](https://github.com/ShiftLeftSecurity/sast-scan)
+[![gitleaks badge](https://img.shields.io/badge/protected%20by-gitleaks-blue)](https://github.com/zricethezav/gitleaks#pre-commit)
 
 ![profile view](https://komarev.com/ghpvc/?username=carlosrodlop&label=Profile%20views&color=0e75b6&style=flat")
