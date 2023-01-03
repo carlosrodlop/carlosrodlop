@@ -45,8 +45,8 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 ### Public Contributions
 
 * [MWM Seville University | Let's eat](https://github.com/MWM-Sevilla-2014-15/LetsEat_googleappengine)
-* [Jenkins | LDAP plugin](https://github.com/jenkinsci/ldap-plugin/commits?author=carlosrodlop)
-* [alecharp | The Hive](https://github.com/alecharp/the-hive/commits?author=carlosrodlop)
+* [Jenkins | LDAP plugin](https://github.com/jenkinsci/ldap-plugin)
+* [alecharp | The Hive](https://github.com/alecharp/the-hive)
 * [CloudBees | Pipeline Home](https://github.com/cloudbees-oss/pipeline-home-demo)
 * [CloudBees | DR Demo](https://github.com/cloudbees-oss/cbci-eks-dr-demo)
 
