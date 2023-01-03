@@ -39,7 +39,9 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 
 ## GitHub 📊
 
-<p style="text-align:center"> <img src="https://github-readme-streak-stats.herokuapp.com/?user=carlosrodlop&" alt="carlosrodlop" /> </p>
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=carlosrodlop&show_icons=true&locale=en" alt="carlosrodlop" /></p>
+
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=carlosrodlop&" alt="carlosrodlop" /></p>
 
 ## Knowledge Sharing
 
