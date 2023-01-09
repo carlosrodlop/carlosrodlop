@@ -11,7 +11,7 @@ DEC_KEY 	  		:= $(shell cat $(SOPS_KEY))
 ENC_KEY	  	  		:= $(shell age-keygen -y $(SOPS_KEY))
 
 define print_title
-    @echo "===================================="
+	@echo "===================================="
 	@echo "$1"
 	@echo "===================================="
 endef
