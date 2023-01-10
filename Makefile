@@ -16,6 +16,20 @@ define print_title
 	@echo "===================================="
 endef
 
+define print_subtitle
+	@echo "==> $1"
+endef
+
+define ask_confirmation
+	@read -p "Are you sure to continue with: $1?  " -n 1 -r
+	@if [[ ! $$REPLY =~ ^[Yy]$ ]]; then exit 1; fi
+endef
+
+.PHONY: install-hooks
+install-hooks: ## Install git secrets along with other pre-commit hooks
+	@git secrets --install -f
+	@pre-commit install
+
 .PHONY: help
 help: ## Makefile Help Page
 	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage:\n  make \033[36m<target>\033[0m\n\nTargets:\n"} /^[\/\%a-zA-Z_-]+:.*?##/ { printf "  \033[36m%-21s\033[0m %s\n", $$1, $$2 }' $(MAKEFILE_LIST) 2>/dev/null
