@@ -26,3 +26,4 @@ repos:
   rev: v8.15.1
   hooks:
     - id: gitleaks
+
