@@ -11,18 +11,15 @@ DEC_KEY 	  		:= $(shell cat $(SOPS_KEY))
 ENC_KEY	  	  		:= $(shell age-keygen -y $(SOPS_KEY))
 
 define print_title
-	@echo "===================================="
-	@echo "$1"
-	@echo "===================================="
+	@echo "# $(1) #"
 endef
 
 define print_subtitle
-	@echo "==> $1"
+	@echo "## $(1) ##"
 endef
 
 define ask_confirmation
-	@read -p "Are you sure to continue with: $1?  " -n 1 -r
-	@if [[ ! $$REPLY =~ ^[Yy]$ ]]; then exit 1; fi
+	@read -n 1 -r -s -p "Press any key to continue if you wish to $(1)..."
 endef
 
 .PHONY: install-hooks
