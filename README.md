@@ -6,17 +6,18 @@ Hi 👋,
 
 ![Carlos Logo](img/logos/carlosrodlop.png)
 
-| [![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlosrodlop/)| [![CV Download](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-html.yaml/badge.svg)](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-html.yaml)|
-|---|---|
+| [![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlosrodlop/) | [![CV Download](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-html.yaml/badge.svg)](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-html.yaml) |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
 `*` _CV Artifact renders the output from my Linkedin profile exported via [LinkedIn to JSON Resume Browser Tool](https://github.com/joshuatz/linkedin-to-jsonresume) using [CV as JSON](https://jsonresume.org/)_
+
+This repository aims to be my public work profile, containing a link to a downloadable version of my CV. In addition, it links meta-repositories I use at my daily work: documentation, workstation configuration and secrets.
 
 ## Bio
 
 Automation Consultant embracing the DevOps culture. Background of Java Web and (Geo) Data Management and Analysis. Currently, running CI/CD pipelines in the Cloud.
 
 Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional Service Team, helping customers to love more our products!
-
 
 ## My 🛠
 
@@ -49,12 +50,12 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 
 ### Public Contributions
 
-* [MWM Seville University | Let's eat](https://github.com/MWM-Sevilla-2014-15/LetsEat_googleappengine)
-* [alecharp | The Hive](https://github.com/alecharp/the-hive)
-* [Jenkins | LDAP plugin](https://github.com/jenkinsci/ldap-plugin)
-* [CloudBees | Jenkins scripts](https://github.com/cloudbees/jenkins-scripts)
-* [CloudBees | Pipeline Home](https://github.com/cloudbees-oss/pipeline-home-demo)
-* [CloudBees | DR Demo](https://github.com/cloudbees-oss/cbci-eks-dr-demo)
+- [MWM Seville University | Let's eat](https://github.com/MWM-Sevilla-2014-15/LetsEat_googleappengine)
+- [alecharp | The Hive](https://github.com/alecharp/the-hive)
+- [Jenkins | LDAP plugin](https://github.com/jenkinsci/ldap-plugin)
+- [CloudBees | Jenkins scripts](https://github.com/cloudbees/jenkins-scripts)
+- [CloudBees | Pipeline Home](https://github.com/cloudbees-oss/pipeline-home-demo)
+- [CloudBees | DR Demo](https://github.com/cloudbees-oss/cbci-eks-dr-demo)
 
 ## Knowledge Sharing
 
