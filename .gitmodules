@@ -1,9 +1,6 @@
 [submodule "secrets"]
 	path = secrets
 	url = git@github.com:carlosrodlop/carlosrodlop-secrets.git
-[submodule "docs"]
-	path = docs
-	url = git@github.com:carlosrodlop/carlosrodlop-docs.git
-[submodule "config"]
-	path = config
+[submodule "conf"]
+	path = conf
 	url = git@github.com:carlosrodlop/carlosrodlop-conf.git

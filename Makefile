@@ -5,10 +5,6 @@
 .DEFAULT_GOAL   	:= help
 SHELL           	:= /bin/bash
 MAKEFLAGS       	+= --no-print-directory
-PARENT_MKFILE_DIR	:= $(abspath $(dir $(lastword $(MAKEFILE_LIST))))
-SOPS_KEY 	  		:= $(PARENT_MKFILE_DIR)/secrets/files/sops/sops-age-key.txt
-DEC_KEY 	  		:= $(shell cat $(SOPS_KEY))
-ENC_KEY	  	  		:= $(shell age-keygen -y $(SOPS_KEY))
 
 define print_title
 	@echo "# $(1) #"
