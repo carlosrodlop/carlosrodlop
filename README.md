@@ -11,7 +11,7 @@ Hi 👋,
 
 `*` _CV Artifact renders the output from my Linkedin profile exported via [LinkedIn to JSON Resume Browser Tool](https://github.com/joshuatz/linkedin-to-jsonresume) using [CV as JSON](https://jsonresume.org/)_
 
-This repository aims to be my public work profile, containing a link to a downloadable version of my CV. In addition, it links meta-repositories I use at my daily work: documentation, workstation configuration and secrets.
+This repository aims to be my public work profile, containing a link to a downloadable version of my CV. In addition, it links meta-repositories I use at my daily work: workstation configuration and secrets.
 
 ## Bio
 
