@@ -15,7 +15,7 @@ This repository aims to be my public work profile, containing a link to a downlo
 
 ## Bio
 
-Automation Consultant embracing the DevOps culture. Background of Java Web and (Geo) Data Management and Analysis. Currently, running CI/CD pipelines in the Cloud.
+I started my career working on [GIS](https://github.com/carlosrodlop/gis) for data workflows and visualizations. Years later, I put my focus on the DevOps culture. Currently, running CI/CD pipelines in Kubernetes.
 
 Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional Service Team, helping customers to love more our products!
 
