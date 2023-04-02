@@ -3,7 +3,7 @@
 # Carlos' Profile
 
 <p align="center">
-  <img alt="Carlosrodlop" src="img/logos/carlosrodlop.png" height="100" />
+  <img alt="Carlosrodlop" src="img/logos/carlosrodlop.png" height="150" />
   <p align="center">Hi 👋, Wellcome to my GitHub profile</p>
 </p>
 
