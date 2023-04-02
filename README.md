@@ -4,17 +4,14 @@
 
 <p align="center">
   <img alt="Carlosrodlop" src="img/logos/carlosrodlop.png" height="150" />
-  <p align="center">Hi 👋, Wellcome to my GitHub profile</p>
+  <p align="center">Hi 👋, Wellcome to my GitHub profile. Here you know more about my professional life</p>
 </p>
 
 ---
 
-[![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlosrodlop/) [![CV Download](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-html.yaml/badge.svg)](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-html.yaml) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](AWESOME.md)
-
+[![CV Download](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-html.yaml/badge.svg)](https://github.com/carlosrodlop/carlosrodlop/actions/workflows/cv-to-html.yaml) [![gitleaks badge](https://img.shields.io/badge/protected%20by-gitleaks-blue)](https://github.com/zricethezav/gitleaks#pre-commit) [![gitsecrets badge](https://img.shields.io/badge/protected%20by%20-git%20secrets-blue)](https://github.com/awslabs/git-secrets) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](AWESOME.md) ![profile view](https://komarev.com/ghpvc/?username=carlosrodlop&label=Profile%20views&color=0e75b6&style=flat")
 
 `*` _CV Artifact renders the output from my Linkedin profile exported via [LinkedIn to JSON Resume Browser Tool](https://github.com/joshuatz/linkedin-to-jsonresume) using [CV as JSON](https://jsonresume.org/)_
-
-This repository aims to be my public work profile, containing a link to a downloadable version of my CV. In addition, it links configuration repositories for workstations and secrets.
 
 ## Bio
 
@@ -65,9 +62,3 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 
 - [DR CloudBees CI EKS with Velero](https://events.devopsworld.com/widget/cloudbees/devopsworld22/conferenceSessionDetails?tab.day=20220928&search=1040). Orlando, EEUU. 2022
 - [Combining Serverless Continuous Delivery With ChatOps](https://www.meetup.com/es-ES/SVQJUG/events/263195348/). Sevilla, Spain. 2019
-
-<hr>
-
-[![gitleaks badge](https://img.shields.io/badge/protected%20by-gitleaks-blue)](https://github.com/zricethezav/gitleaks#pre-commit) [![gitsecrets badge](https://img.shields.io/badge/protected%20by%20-git%20secrets-blue)](https://github.com/awslabs/git-secrets)
-
-![profile view](https://komarev.com/ghpvc/?username=carlosrodlop&label=Profile%20views&color=0e75b6&style=flat")
