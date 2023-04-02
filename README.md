@@ -5,7 +5,7 @@
 <p>
   <img alt="Carlosrodlop" src="img/logos/carlosrodlop.png" style="display: block; margin-left: auto; margin-right: auto; width: 80%;" />
   <p align="center">Wellcome to my GitHub profile where you know more about my skills</p>
-  <a href="https://www.linkedin.com/in/carlosrodlop/"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/LinkedIn-Logo.png" alt="linkedin" style="display: block; margin-left: auto; margin-right: auto; width: 30%;"></a>
+  <a href="https://www.linkedin.com/in/carlosrodlop/"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/LinkedIn-Logo.png" alt="linkedin" style="display: block; margin-left: auto; margin-right: auto; width: 20%;"></a>
 </p>
 
 ---
