@@ -3,8 +3,9 @@
 # Carlos' Profile
 
 <p align="center">
-  <img alt="Carlosrodlop" src="img/logos/carlosrodlop.png" height="150" />
-  <p align="center">Hi 👋, Wellcome to my GitHub profile. Here you know more about my professional life</p>
+  <img alt="Carlosrodlop" src="img/logos/carlosrodlop.png" style="display: block; margin-left: auto; margin-right: auto; width: 80%;" />
+  <p align="center">Wellcome to my GitHub profile where you know more about my skills</p>
+  <a href="https://www.linkedin.com/in/carlosrodlop/"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/LinkedIn-Logo.png" alt="linkedin" style="display: block; margin-left: auto; margin-right: auto; width: 30%;"></a>
 </p>
 
 ---
@@ -15,7 +16,7 @@
 
 ## Bio
 
-I started my career working on [GIS](https://github.com/carlosrodlop/gis) for data workflows and visualizations. Years later, I put my focus on the DevOps culture. Currently, running CI/CD pipelines in Kubernetes.
+I started my career working on [GIS](https://github.com/carlosrodlop/gis) technologies for data workflow analysis and visualizations. Years later, I put my focus on the DevOps culture. Currently, running [CI](https://github.com/carlosrodlop/cbci.jenkins-lib)/CD pipelines in [Kubernetes](https://github.com/carlosrodlop/K8s-lib).
 
 Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional Service Team, helping customers to love more our products!
 
