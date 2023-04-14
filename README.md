@@ -4,7 +4,7 @@
 
 <p align="center">
   <img alt="Carlosrodlop" src="img/logos/carlosrodlop.png" style="width: 80%" />
-  <a href="https://www.linkedin.com/in/carlosrodlop/"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/LinkedIn-Logo.png" alt="linkedin" style="width: 20%;"></a>
+  <a href="https://www.linkedin.com/in/carlosrodlop/"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/LinkedIn-Logo.png" alt="linkedin" style="width: 15%;"></a>
   <p align="center">Welcome to my GitHub profile where you know more about my skills</p>
 </p>
 
