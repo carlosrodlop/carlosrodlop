@@ -1,5 +1,7 @@
 # Awesome
 
+![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)
+
 ## Libraries
 
 * [Docker](https://github.com/carlosrodlop/docker-lib#awesome)
@@ -8,12 +10,11 @@
 * [GCP](https://github.com/carlosrodlop/terraform-lib/tree/main/clouds/gcp#awesome)
 * [Kubernetes](https://github.com/carlosrodlop/K8s-lib#awesome)
 * CloudBees CI & Jenkins
-  * [Admin](https://github.com/carlosrodlop/cbci.jenkins-lib#awesome)
-  * [Pipelines](https://github.com/carlosrodlop/cbci.jenkins-lib/tree/pipelines)
+  * [Admin](https://github.com/carlosrodlop/cbci.jenkins-lib/blob/main/docs/CBCI-Admin.md)
+  * [Pipelines](https://github.com/carlosrodlop/cbci.jenkins-lib/blob/main/docs/CBCI-Pipelines.md)
 
 ## Books
 
-- [GitHub - EbookFoundation/free-programming-books: Freely available programming books](https://github.sre.pub/EbookFoundation/free-programming-books)
 - [liveBook · Manning](https://livebook.manning.com/)
 
 ## Certificates
