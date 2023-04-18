@@ -55,7 +55,7 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 
 - [DR CloudBees in EKS with Velero](https://www.cloudbees.com/blog/), 2022.
 - [Support an Interview-As-Code Model](https://stories.jenkins.io/user-story/to-run-technical-simulations-for-developer-engineer-interviews/), 2020.
-- Troubleshooting Jenkins in Kubernetes
+- Troubleshooting Jenkins in Kubernetes, 2020.
   - [Part 1](https://www.cloudbees.com/blog/apm-tools-jenkins-performance)
   - [Part 2](https://www.cloudbees.com/blog/application-performance-monitoring-tools)
 - [Template Catalog: Welcome to the Pipeline as Code Family](https://www.cloudbees.com/blog/pipeline-as-code), 2020.
