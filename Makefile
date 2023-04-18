@@ -23,6 +23,10 @@ define getTFValue
 	$(shell terraform -chdir=$(1) output --raw $(2))
 endef
 
+define getEnvProperty
+	$(shell cat .env | grep $(1) | cut -d'=' -f2)
+endef
+
 #https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/#the-kubeconfig-environment-variable
 .PHONY: check_kubeconfig
 check_kubeconfig: ## Check for the required KUBECONFIG environment variable
