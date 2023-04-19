@@ -60,6 +60,7 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
   - [Part 2](https://www.cloudbees.com/blog/application-performance-monitoring-tools)
 - [Template Catalog: Welcome to the Pipeline as Code Family](https://www.cloudbees.com/blog/pipeline-as-code), 2020.
 - [My Experience as a Developer Support Engineer at CloudBees](https://www.cloudbees.com/blog/my-experience-developer-support-engineer-cloudbees), 2019.
+- [GIS for USLE in Guadalfeo Watershed](https://github.com/carlosrodlop/gis/blob/master/usle-guadalfeo/dis_BScEnvSC_carlosrodlop.pdf), 2006.
 
 ### 🗣 Talks
 
