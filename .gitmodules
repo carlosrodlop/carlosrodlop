@@ -4,3 +4,6 @@
 [submodule "conf"]
 	path = conf
 	url = git@github.com:carlosrodlop/carlosrodlop-conf.git
+[submodule "docs"]
+	path = docs
+	url = git@github.com:carlosrodlop/docs.git
