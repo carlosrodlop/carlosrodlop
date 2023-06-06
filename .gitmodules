@@ -6,4 +6,4 @@
 	url = git@github.com:carlosrodlop/carlosrodlop-conf.git
 [submodule "docs"]
 	path = docs
-	url = git@github.com:carlosrodlop/docs.git
+	url = git@github.com:carlosrodlop/carlosrodlop-docs.git
