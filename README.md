@@ -51,9 +51,9 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 
 ### GitHub Organization
 
-`carlosrodlop` repository is the landing to my GitHub organization `carlosrodlop`. In addition, this repository gathers common resources to my shared globally, including submodules to Secrets, Workstation Configuration and Documentation.
+`carlosrodlop` repository is the landing to my GitHub organization `carlosrodlop`. In addition, this repository gathers common resources to my shared globally, including submodules to [Secrets](https://github.com/carlosrodlop/carlosrodlop-secrets), [Workstation Configuration](https://github.com/carlosrodlop/carlosrodlop-conf) and [Documentation](https://github.com/carlosrodlop/carlosrodlop-docs).
 
-This organization is used to share knowledge and examples following this [Security Manifesto](SECURITY_MANIFESTO.md). There are different repositories libraries per Area of Knowledge and/or Languages such as Docker, Kubernetes, Terraform, CloudBees/Jenkins, Java, etc.
+This organization is used to share knowledge and examples following this [Security Manifesto](SECURITY_MANIFESTO.md). There are different repositories libraries per Area of Knowledge and/or Languages such as [Docker](https://github.com/carlosrodlop/docker-lib), [Kubernetes](https://github.com/carlosrodlop/K8s-lib), [Terraform](https://github.com/carlosrodlop/terraform-lib), [CloudBees/Jenkins](https://github.com/carlosrodlop/cbci.jenkins-lib), Java, etc.
 
 ## Knowledge Sharing
 
