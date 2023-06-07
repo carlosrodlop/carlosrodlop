@@ -55,9 +55,11 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 
 ## About my organization
 
-[carlosrodlop/carlosrodlop](https://github.com/carlosrodlop/carlosrodlop) repository is the landing to my organization [carlosrodlop](https://github.com/carlosrodlop). In addition, this repository gathers shared resources which are organized into submodules for [Secrets](https://github.com/carlosrodlop/carlosrodlop-secrets), [Workstation Configuration](https://github.com/carlosrodlop/carlosrodlop-conf) and [Documentation](https://github.com/carlosrodlop/carlosrodlop-docs).
+I follow the "Everything as Code" (EaC) principle for my daily work.
 
-This organization is used to create Proof of Concept on different Technologies following this [Security Manifesto](https://github.com/carlosrodlop/carlosrodlop-docs/blob/main/SECURITY_MANIFESTO.md). Repositories libraries host reusable code per Area of Knowledge and/or Languages such as [Docker](https://github.com/carlosrodlop/docker-lib), [Kubernetes](https://github.com/carlosrodlop/K8s-lib), [Terraform](https://github.com/carlosrodlop/terraform-lib), [CloudBees/Jenkins](https://github.com/carlosrodlop/cbci.jenkins-lib), etc.
+The [carlosrodlop/carlosrodlop](https://github.com/carlosrodlop/carlosrodlop) repository is the landing gate to my organization [carlosrodlop](https://github.com/carlosrodlop) and gathers common resources which are organized into submodules for [Secrets](https://github.com/carlosrodlop/carlosrodlop-secrets), [Workstation Configuration](https://github.com/carlosrodlop/carlosrodlop-conf) and [Documentation](https://github.com/carlosrodlop/carlosrodlop-docs).
+
+This organization hosts Proof of Concept on different Technologies and their integrations following the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) principle and this [Security Manifesto](https://github.com/carlosrodlop/carlosrodlop-docs/blob/main/SECURITY_MANIFESTO.md). Repositories libraries are organized per Area of Knowledge and/or Languages such as [Docker](https://github.com/carlosrodlop/docker-lib), [Kubernetes](https://github.com/carlosrodlop/K8s-lib), [Terraform](https://github.com/carlosrodlop/terraform-lib), [CloudBees/Jenkins](https://github.com/carlosrodlop/cbci.jenkins-lib), etc.
 
 ### Stats 📊
 
