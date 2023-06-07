@@ -1,11 +1,11 @@
 <!-- https://rahuldkjain.github.io/gh-profile-readme-generator/ -->
 
-# Carlos' Profile
+#
 
 <p align="center">
   <img alt="Carlosrodlop" src="img/logos/carlosrodlop.png" style="width: 80%" />
   <a href="https://www.linkedin.com/in/carlosrodlop/"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/LinkedIn-Logo.png" alt="linkedin" style="width: 15%;"></a>
-  <p align="center">Welcome to my GitHub profile where you know more about my skills</p>
+  <p align="center">Welcome to my GitHub Organization</p>
 </p>
 
 ---
@@ -14,13 +14,11 @@
 
 `*` _CV Artifact renders the output from my Linkedin profile exported via [LinkedIn to JSON Resume Browser Tool](https://github.com/joshuatz/linkedin-to-jsonresume) using [CV as JSON](https://jsonresume.org/)_
 
-## Bio
+## About me
 
 I started my career working on [GIS](https://github.com/carlosrodlop/gis) technologies for data workflow analysis and visualizations. Years later, I put my focus on the DevOps culture. Currently, running [CI](https://github.com/carlosrodlop/cbci.jenkins-lib)/CD pipelines in [Kubernetes](https://github.com/carlosrodlop/K8s-lib).
 
 Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional Service Team, helping customers to love more our products!
-
-## My 🛠
 
 ### Work Ecosystem
 
@@ -30,7 +28,7 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 
 ![](https://img.shields.io/badge/Tools-Jenkins-informational?style=flat&logo=jenkins&logoColor=white&color=A0C65C) [![](https://img.shields.io/badge/Tools-Docker-informational?style=flat&logo=docker&logoColor=white&color=A0C65C)](https://hub.docker.com/u/carlosrodlop) ![](https://img.shields.io/badge/Tools-Kubernetes-informational?style=flat&logo=kubernetes&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Tools-Terraform-informational?style=flat&logo=terraform&logoColor=white&color=A0C65C)
 
-### My Badges
+### Badges
 
 <a href="https://certificates.cloudbees.com/4ed81b42-e8cf-4f94-8b7d-0c91b81ce0ca#gs.g5lwaa"><img src="img/badges/cd-ro-associate.png" alt="cd-ro-associate" width="100"></a>
 <a href="https://certificates.cloudbees.com/9945c321-c644-4272-a5f9-f867c649498b#gs.fmhv2t"><img src="img/badges/cb-cd-essentials.png" alt="cb-cd-essentials" width="100"></a>
@@ -38,24 +36,6 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 <a href="https://certificates.cloudbees.com/4f8608d3-0e74-4c04-9e5c-3fa2123af47e"><img src="img/badges/cb-ci-essentials.png" alt="cb ci essentials" width="100"></a>
 <a href="https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/acb39642-b66f-47b3-85e9-ccb344b73cfc-carlos-antonio-rodriguez-lopez-certified-kubernetes-administrator-cka-certificate.pdf"><img src="img/badges/cka.png" alt="cka" width="100"></a>
 <a href="https://certificates.cloudbees.com/949c399f-7beb-4872-82f1-fe8c53424ef8"><img src="img/badges/cb-enginner.png" alt="cb enginner" width="100"></a>
-
-## Coding in GitHub
-
-### Stats 📊
-
-<!-- Not wrking
-<p style="text-align:center"> <img src="https://github-readme-streak-stats.herokuapp.com/?user=carlosrodlop&" alt="carlosrodlop" /> </p>
--->
-
-<p style="text-align:center"> <img src="https://github-readme-stats.vercel.app/api?username=carlosrodlop&show_icons=true&locale=en" alt="carlosrodlop" /> </p>
-
-### Organization
-
-`carlosrodlop` repository is the landing to my GitHub organization `carlosrodlop`. In addition, this repository gathers common resources to my shared globally and organized into submodules to [Secrets](https://github.com/carlosrodlop/carlosrodlop-secrets), [Workstation Configuration](https://github.com/carlosrodlop/carlosrodlop-conf) and [Documentation](https://github.com/carlosrodlop/carlosrodlop-docs).
-
-This organization is used to create Proof of Concept on different Technologies following this [Security Manifesto](SECURITY_MANIFESTO.md). Repositories libraries host reusable code per Area of Knowledge and/or Languages such as [Docker](https://github.com/carlosrodlop/docker-lib), [Kubernetes](https://github.com/carlosrodlop/K8s-lib), [Terraform](https://github.com/carlosrodlop/terraform-lib), [CloudBees/Jenkins](https://github.com/carlosrodlop/cbci.jenkins-lib), Java, etc.
-
-## Knowledge Sharing
 
 ### ✍ Blog & Writing
 
@@ -72,3 +52,17 @@ This organization is used to create Proof of Concept on different Technologies f
 
 - [DR CloudBees CI EKS with Velero](https://events.devopsworld.com/widget/cloudbees/devopsworld22/conferenceSessionDetails?tab.day=20220928&search=1040). Orlando, EEUU. 2022
 - [Combining Serverless Continuous Delivery With ChatOps](https://www.meetup.com/es-ES/SVQJUG/events/263195348/). Sevilla, Spain. 2019
+
+## About my organization
+
+[carlosrodlop/carlosrodlop](https://github.com/carlosrodlop/carlosrodlop) repository is the landing to my organization [carlosrodlop](https://github.com/carlosrodlop). In addition, this repository gathers common resources to my shared globally and organized into submodules to [Secrets](https://github.com/carlosrodlop/carlosrodlop-secrets), [Workstation Configuration](https://github.com/carlosrodlop/carlosrodlop-conf) and [Documentation](https://github.com/carlosrodlop/carlosrodlop-docs).
+
+This organization is used to create Proof of Concept on different Technologies following this [Security Manifesto](SECURITY_MANIFESTO.md). Repositories libraries host reusable code per Area of Knowledge and/or Languages such as [Docker](https://github.com/carlosrodlop/docker-lib), [Kubernetes](https://github.com/carlosrodlop/K8s-lib), [Terraform](https://github.com/carlosrodlop/terraform-lib), [CloudBees/Jenkins](https://github.com/carlosrodlop/cbci.jenkins-lib), Java, etc.
+
+### Stats 📊
+
+<!-- Not wrking
+<p style="text-align:center"> <img src="https://github-readme-streak-stats.herokuapp.com/?user=carlosrodlop&" alt="carlosrodlop" /> </p>
+-->
+
+<p style="text-align:center"> <img src="https://github-readme-stats.vercel.app/api?username=carlosrodlop&show_icons=true&locale=en" alt="carlosrodlop" /> </p>
