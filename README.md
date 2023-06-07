@@ -39,9 +39,9 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 <a href="https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/acb39642-b66f-47b3-85e9-ccb344b73cfc-carlos-antonio-rodriguez-lopez-certified-kubernetes-administrator-cka-certificate.pdf"><img src="img/badges/cka.png" alt="cka" width="100"></a>
 <a href="https://certificates.cloudbees.com/949c399f-7beb-4872-82f1-fe8c53424ef8"><img src="img/badges/cb-enginner.png" alt="cb enginner" width="100"></a>
 
-## Coding
+## Coding in GitHub
 
-### GitHub Stats 📊
+### Stats 📊
 
 <!-- Not wrking
 <p style="text-align:center"> <img src="https://github-readme-streak-stats.herokuapp.com/?user=carlosrodlop&" alt="carlosrodlop" /> </p>
@@ -49,11 +49,11 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 
 <p style="text-align:center"> <img src="https://github-readme-stats.vercel.app/api?username=carlosrodlop&show_icons=true&locale=en" alt="carlosrodlop" /> </p>
 
-### GitHub Organization
+### Organization
 
-`carlosrodlop` repository is the landing to my GitHub organization `carlosrodlop`. In addition, this repository gathers common resources to my shared globally, including submodules to [Secrets](https://github.com/carlosrodlop/carlosrodlop-secrets), [Workstation Configuration](https://github.com/carlosrodlop/carlosrodlop-conf) and [Documentation](https://github.com/carlosrodlop/carlosrodlop-docs).
+`carlosrodlop` repository is the landing to my GitHub organization `carlosrodlop`. In addition, this repository gathers common resources to my shared globally and organized into submodules to [Secrets](https://github.com/carlosrodlop/carlosrodlop-secrets), [Workstation Configuration](https://github.com/carlosrodlop/carlosrodlop-conf) and [Documentation](https://github.com/carlosrodlop/carlosrodlop-docs).
 
-This organization is used to share knowledge and examples following this [Security Manifesto](SECURITY_MANIFESTO.md). There are different repositories libraries per Area of Knowledge and/or Languages such as [Docker](https://github.com/carlosrodlop/docker-lib), [Kubernetes](https://github.com/carlosrodlop/K8s-lib), [Terraform](https://github.com/carlosrodlop/terraform-lib), [CloudBees/Jenkins](https://github.com/carlosrodlop/cbci.jenkins-lib), Java, etc.
+This organization is used to create Proof of Concept on different Technologies following this [Security Manifesto](SECURITY_MANIFESTO.md). Repositories libraries host reusable code per Area of Knowledge and/or Languages such as [Docker](https://github.com/carlosrodlop/docker-lib), [Kubernetes](https://github.com/carlosrodlop/K8s-lib), [Terraform](https://github.com/carlosrodlop/terraform-lib), [CloudBees/Jenkins](https://github.com/carlosrodlop/cbci.jenkins-lib), Java, etc.
 
 ## Knowledge Sharing
 
