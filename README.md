@@ -57,7 +57,7 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 
 [carlosrodlop/carlosrodlop](https://github.com/carlosrodlop/carlosrodlop) repository is the landing to my organization [carlosrodlop](https://github.com/carlosrodlop). In addition, this repository gathers common resources to my shared globally and organized into submodules to [Secrets](https://github.com/carlosrodlop/carlosrodlop-secrets), [Workstation Configuration](https://github.com/carlosrodlop/carlosrodlop-conf) and [Documentation](https://github.com/carlosrodlop/carlosrodlop-docs).
 
-This organization is used to create Proof of Concept on different Technologies following this [Security Manifesto](SECURITY_MANIFESTO.md). Repositories libraries host reusable code per Area of Knowledge and/or Languages such as [Docker](https://github.com/carlosrodlop/docker-lib), [Kubernetes](https://github.com/carlosrodlop/K8s-lib), [Terraform](https://github.com/carlosrodlop/terraform-lib), [CloudBees/Jenkins](https://github.com/carlosrodlop/cbci.jenkins-lib), Java, etc.
+This organization is used to create Proof of Concept on different Technologies following this [Security Manifesto](https://github.com/carlosrodlop/carlosrodlop-docs/blob/main/SECURITY_MANIFESTO.md). Repositories libraries host reusable code per Area of Knowledge and/or Languages such as [Docker](https://github.com/carlosrodlop/docker-lib), [Kubernetes](https://github.com/carlosrodlop/K8s-lib), [Terraform](https://github.com/carlosrodlop/terraform-lib), [CloudBees/Jenkins](https://github.com/carlosrodlop/cbci.jenkins-lib), Java, etc.
 
 ### Stats 📊
 
