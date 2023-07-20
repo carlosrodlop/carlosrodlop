@@ -1,7 +1,5 @@
 <!-- https://rahuldkjain.github.io/gh-profile-readme-generator/ -->
 
-#
-
 <p align="center">
   <img alt="Carlosrodlop" src="img/logos/carlosrodlop.png" style="width: 80%" />
   <a href="https://www.linkedin.com/in/carlosrodlop/"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/LinkedIn-Logo.png" alt="linkedin" style="width: 15%;"></a>
@@ -30,6 +28,7 @@ Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional S
 
 ### Badges
 
+<a href="https://www.credly.com/badges/e4decf74-aaf5-4bdf-8c99-03f4499bd89a/public_url"><img src="img/badges/aws-sa.png" alt="cd-ro-associate" width="100"></a>
 <a href="https://certificates.cloudbees.com/4ed81b42-e8cf-4f94-8b7d-0c91b81ce0ca#gs.g5lwaa"><img src="img/badges/cd-ro-associate.png" alt="cd-ro-associate" width="100"></a>
 <a href="https://certificates.cloudbees.com/9945c321-c644-4272-a5f9-f867c649498b#gs.fmhv2t"><img src="img/badges/cb-cd-essentials.png" alt="cb-cd-essentials" width="100"></a>
 <a href="https://www.credly.com/badges/34eac3f4-61d4-43e6-b3c8-1694dcefbc49/linked_in?t=rcc75i"><img src="img/badges/terraform.png" alt="terraform" width="100"></a>
