@@ -16,7 +16,7 @@
 
 I started my career working on [GIS](https://github.com/carlosrodlop/gis) technologies for data workflow analysis and visualizations. Years later, I put my focus on Web Programming and then on DevOps culture and tooling. Currently, running [CI](https://github.com/carlosrodlop/cbci.jenkins-lib)/CD pipelines in [Kubernetes](https://github.com/carlosrodlop/K8s-lib).
 
-Working happily at [CloudBees](https://www.cloudbees.com/) in the Professional Service Team, helping customers to love more our products!
+Working happily at [☁️ 🐝 ](https://www.cloudbees.com/) in the Professional Service Team, helping customers to ❤️ more our products!
 
 ### Work Ecosystem
 
