@@ -2,7 +2,7 @@
 
 <p align="center">
   <img alt="Carlosrodlop" src="img/logos/carlosrodlop.png" style="width: 80%" />
-  <a href="https://www.linkedin.com/in/carlosrodlop/"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/LinkedIn-Logo.png" alt="linkedin" style="width: 100;"></a>
+  <a href="https://www.linkedin.com/in/carlosrodlop/"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/LinkedIn-Logo.png" alt="linkedin" style="width: 10%;"></a>
   <p align="center">Welcome to my GitHub Organization</p>
 </p>
 
