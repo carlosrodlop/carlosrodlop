@@ -50,8 +50,9 @@ Working happily at [☁️ 🐝 ](https://www.cloudbees.com/) in the Professiona
 
 ### 🗣 Talks
 
-- [DR CloudBees CI EKS with Velero](https://events.devopsworld.com/widget/cloudbees/devopsworld22/conferenceSessionDetails?tab.day=20220928&search=1040). Orlando, EEUU. 2022
-- [Combining Serverless Continuous Delivery With ChatOps](https://www.meetup.com/es-ES/SVQJUG/events/263195348/). Sevilla, Spain. 2019
+- [Cloud Friendly Jenkins](https://community.cncf.io/events/details/cncf-cloud-native-sevilla-presents-cloud-friendly-jenkins-amp-calico-network-policies/). Sevilla CNCF Local Group, 2019.
+- [DR CloudBees CI EKS with Velero](https://events.devopsworld.com/widget/cloudbees/devopsworld22/conferenceSessionDetails?tab.day=20220928&search=1040). DevOps World Orlado (EEUU), 2022.
+- [Combining Serverless Continuous Delivery With ChatOps](https://www.meetup.com/es-ES/SVQJUG/events/263195348/). Sevilla Java Meetup Group, 2019.
 
 ## About my organization
 
