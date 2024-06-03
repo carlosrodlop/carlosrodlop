@@ -39,7 +39,8 @@ Working happily at [☁️ 🐝 ](https://www.cloudbees.com/) in the Professiona
 
 ### ✍ Blog & Writing
 
-- [DR CloudBees in EKS with Velero](https://www.cloudbees.com/blog/), 2022.
+- [CloudBees CI EKS Terraform Add-on](https://www.cloudbees.com/blog/deploy-cloudbees-ci-to-amazon-web-services-aws-elastic-kubernetes-service), 2023.
+- [DR CloudBees in EKS with Velero](https://www.cloudbees.com/blog/cloudbees-ci-disaster-recovery-dr-proof-of-concept-using-velero), 2022.
 - [Support an Interview-As-Code Model](https://stories.jenkins.io/user-story/to-run-technical-simulations-for-developer-engineer-interviews/), 2020.
 - Troubleshooting Jenkins in Kubernetes, 2020.
   - [Part 1](https://www.cloudbees.com/blog/apm-tools-jenkins-performance)
@@ -50,7 +51,7 @@ Working happily at [☁️ 🐝 ](https://www.cloudbees.com/) in the Professiona
 
 ### 🗣 Talks
 
-- [Cloud Friendly Jenkins](https://community.cncf.io/events/details/cncf-cloud-native-sevilla-presents-cloud-friendly-jenkins-amp-calico-network-policies/). Sevilla CNCF Local Group, 2019.
+- [Cloud Friendly Jenkins](https://community.cncf.io/events/details/cncf-cloud-native-sevilla-presents-cloud-friendly-jenkins-amp-calico-network-policies/). Sevilla CNCF Local Group, 2023.
 - [DR CloudBees CI EKS with Velero](https://events.devopsworld.com/widget/cloudbees/devopsworld22/conferenceSessionDetails?tab.day=20220928&search=1040). DevOps World Orlado (EEUU), 2022.
 - [Combining Serverless Continuous Delivery With ChatOps](https://www.meetup.com/es-ES/SVQJUG/events/263195348/). Sevilla Java Meetup Group, 2019.
 
