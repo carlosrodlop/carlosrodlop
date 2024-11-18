@@ -52,8 +52,8 @@ Working happily at [☁️ 🐝 ](https://www.cloudbees.com/) in the Professiona
 
 ### 🗣 Talks
 
-- [EKS Blueprints: Jenkins at Scale](https://community.cncf.io/events/details/cncf-cloud-native-madrid-presents-cloud-native-madrid-ryanair/). Madrid CNCF Local Group, 2023.
-- [Cloud Friendly Jenkins](https://community.cncf.io/events/details/cncf-cloud-native-sevilla-presents-cloud-friendly-jenkins-amp-calico-network-policies/). Sevilla CNCF Local Group, 2023.
+- [EKS Blueprints: Jenkins at Scale](https://community.cncf.io/events/details/cncf-cloud-native-madrid-presents-cloud-native-madrid-ryanair/). Madrid CNCF Local Group, 2024.
+- [Cloud Friendly Jenkins](https://community.cncf.io/events/details/cncf-cloud-native-sevilla-presents-cloud-friendly-jenkins-amp-calico-network-policies/). Sevilla CNCF Local Group, 2024.
 - [DR CloudBees CI EKS with Velero](https://events.devopsworld.com/widget/cloudbees/devopsworld22/conferenceSessionDetails?tab.day=20220928&search=1040). DevOps World Orlado (EEUU), 2022.
 - [Combining Serverless Continuous Delivery With ChatOps](https://www.meetup.com/es-ES/SVQJUG/events/263195348/). Sevilla Java Meetup Group, 2019.
 
