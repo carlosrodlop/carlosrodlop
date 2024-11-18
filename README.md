@@ -28,6 +28,7 @@ Working happily at [☁️ 🐝 ](https://www.cloudbees.com/) in the Professiona
 
 ### Badges
 
+<a href="https://credly.com/badges/498cd855-cbb8-475b-a3cf-22e6c127b6f4"><img src="img/badges/cisco-python-1.png" alt="cisco-python-1" width="100"></a>
 <a href="https://certificates.cloudbees.com/2666591d-f7db-451d-8024-ff3b65f2ed9b#gs.5pd8if"><img src="img/badges/jenkins.png" alt="jenkins" width="100"></a>
 <a href="https://www.credly.com/badges/e4decf74-aaf5-4bdf-8c99-03f4499bd89a/public_url"><img src="img/badges/aws-sa.png" alt="aws-sa" width="100"></a>
 <a href="https://certificates.cloudbees.com/4ed81b42-e8cf-4f94-8b7d-0c91b81ce0ca#gs.g5lwaa"><img src="img/badges/cd-ro-associate.png" alt="cd-ro-associate" width="100"></a>
@@ -51,6 +52,7 @@ Working happily at [☁️ 🐝 ](https://www.cloudbees.com/) in the Professiona
 
 ### 🗣 Talks
 
+- [EKS Blueprints: Jenkins at Scale](https://community.cncf.io/events/details/cncf-cloud-native-madrid-presents-cloud-native-madrid-ryanair/). Madrid CNCF Local Group, 2023.
 - [Cloud Friendly Jenkins](https://community.cncf.io/events/details/cncf-cloud-native-sevilla-presents-cloud-friendly-jenkins-amp-calico-network-policies/). Sevilla CNCF Local Group, 2023.
 - [DR CloudBees CI EKS with Velero](https://events.devopsworld.com/widget/cloudbees/devopsworld22/conferenceSessionDetails?tab.day=20220928&search=1040). DevOps World Orlado (EEUU), 2022.
 - [Combining Serverless Continuous Delivery With ChatOps](https://www.meetup.com/es-ES/SVQJUG/events/263195348/). Sevilla Java Meetup Group, 2019.
