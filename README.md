@@ -14,9 +14,13 @@
 
 ## About me
 
-I started my career working on [GIS](https://github.com/carlosrodlop/gis) technologies for **Data** analysis and viewers. Years later, I put my focus on **Web Programming** and then on **DevOps** culture and tooling. Currently, running [CI](https://github.com/carlosrodlop/cbci.jenkins-lib)/[CD](https://github.com/carlosrodlop/cbcd-lib) pipelines in [Kubernetes](https://github.com/carlosrodlop/K8s-lib).
+I am a Consultant specializing in DevSecOps and Cloud Computing, dedicated to helping customers succeed throughout their product adoption journey with software solutions.
 
-Working happily at [☁️ 🐝 ](https://www.cloudbees.com/) in the Professional Service Team, helping customers to ❤️ more about our products!
+Currently, I am part of CloudBees, a leading provider of enterprise-grade continuous integration and delivery (CI/CD) solutions. I transitioned from a Support role to Services, where I co-lead internal projects for Architecture Blueprints and the reduction of Cloud Footprint in the team, alongside my client-facing responsibilities.
+
+Beyond my role at CloudBees, I co-organize Cloud Native Sevilla, a local chapter of the Cloud Native Computing Foundation (CNCF). Through this community, I help foster the adoption of cloud-native technologies and practices.
+
+Previously, I gained experience as Java Web Developer and GIS DBA and Developer where I contributed to projects for different sectors like Urban Planning, Telecom and Energy.
 
 ### Work Ecosystem
 
@@ -28,6 +32,7 @@ Working happily at [☁️ 🐝 ](https://www.cloudbees.com/) in the Professiona
 
 ### Badges
 
+<a href="https://www.credly.com/badges/de1a3dfd-47bc-44ef-95ec-6add0682ebc4"><img src="img/badges/cisco-python-2.png" alt="cisco-python-2" width="100"></a>
 <a href="https://credly.com/badges/498cd855-cbb8-475b-a3cf-22e6c127b6f4"><img src="img/badges/cisco-python-1.png" alt="cisco-python-1" width="100"></a>
 <a href="https://certificates.cloudbees.com/2666591d-f7db-451d-8024-ff3b65f2ed9b#gs.5pd8if"><img src="img/badges/jenkins.png" alt="jenkins" width="100"></a>
 <a href="https://www.credly.com/badges/e4decf74-aaf5-4bdf-8c99-03f4499bd89a/public_url"><img src="img/badges/aws-sa.png" alt="aws-sa" width="100"></a>
@@ -71,4 +76,12 @@ This organization hosts Proof of Concept on different Technologies and their int
 <p style="text-align:center"> <img src="https://github-readme-streak-stats.herokuapp.com/?user=carlosrodlop&" alt="carlosrodlop" /> </p>
 -->
 
-<p style="text-align:center"> <img src="https://github-readme-stats.vercel.app/api?username=carlosrodlop&show_icons=true&locale=en" alt="carlosrodlop" /> </p>
+
+<div style="display: flex; align-items: center;">
+  <p style="margin: 0; padding-right: 10px;">
+    <img src="https://github-readme-stats.vercel.app/api?username=carlosrodlop&show_icons=true&locale=en" alt="carlosrodlop" />
+  </p>
+  <p style="margin: 0;">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=carlosrodlop&show_icons=true&locale=en&layout=compact" alt="carlosrodlop" />
+  </p>
+</div>
