@@ -32,16 +32,39 @@ Previously, I gained experience as Java Web Developer and GIS DBA and Developer 
 
 ### Badges
 
-<a href="https://www.credly.com/badges/de1a3dfd-47bc-44ef-95ec-6add0682ebc4"><img src="img/badges/cisco-python-2.png" alt="cisco-python-2" width="100"></a>
-<a href="https://credly.com/badges/498cd855-cbb8-475b-a3cf-22e6c127b6f4"><img src="img/badges/cisco-python-1.png" alt="cisco-python-1" width="100"></a>
-<a href="https://certificates.cloudbees.com/2666591d-f7db-451d-8024-ff3b65f2ed9b#gs.5pd8if"><img src="img/badges/jenkins.png" alt="jenkins" width="100"></a>
-<a href="https://www.credly.com/badges/e4decf74-aaf5-4bdf-8c99-03f4499bd89a/public_url"><img src="img/badges/aws-sa.png" alt="aws-sa" width="100"></a>
-<a href="https://certificates.cloudbees.com/4ed81b42-e8cf-4f94-8b7d-0c91b81ce0ca#gs.g5lwaa"><img src="img/badges/cd-ro-associate.png" alt="cd-ro-associate" width="100"></a>
-<a href="https://certificates.cloudbees.com/9945c321-c644-4272-a5f9-f867c649498b#gs.fmhv2t"><img src="img/badges/cb-cd-essentials.png" alt="cb-cd-essentials" width="100"></a>
-<a href="https://www.credly.com/badges/34eac3f4-61d4-43e6-b3c8-1694dcefbc49/linked_in?t=rcc75i"><img src="img/badges/terraform.png" alt="terraform" width="100"></a>
-<a href="https://certificates.cloudbees.com/4f8608d3-0e74-4c04-9e5c-3fa2123af47e"><img src="img/badges/cb-ci-essentials.png" alt="cb ci essentials" width="100"></a>
-<a href="https://www.credly.com/badges/11b2c761-abc5-46dc-9637-e72f6e0ba54f"><img src="img/badges/cka.png" alt="cka" width="100"></a>
-<a href="https://certificates.cloudbees.com/949c399f-7beb-4872-82f1-fe8c53424ef8"><img src="img/badges/cb-ci-enginner.png" alt="cb ci enginner" width="100"></a>
+<div style="display: flex; gap: 20px; flex-wrap: wrap; align-items: center;">
+  <a href="https://www.credly.com/badges/de1a3dfd-47bc-44ef-95ec-6add0682ebc4">
+    <img src="img/badges/cisco-python-2.png" alt="cisco-python-2" width="100">
+  </a>
+  <a href="https://credly.com/badges/498cd855-cbb8-475b-a3cf-22e6c127b6f4">
+    <img src="img/badges/cisco-python-1.png" alt="cisco-python-1" width="100">
+  </a>
+  <a href="https://certificates.cloudbees.com/2666591d-f7db-451d-8024-ff3b65f2ed9b#gs.5pd8if">
+    <img src="img/badges/jenkins.png" alt="jenkins" width="100">
+  </a>
+  <a href="https://www.credly.com/badges/e4decf74-aaf5-4bdf-8c99-03f4499bd89a/public_url">
+    <img src="img/badges/aws-sa.png" alt="aws-sa" width="100">
+  </a>
+  <a href="https://certificates.cloudbees.com/4ed81b42-e8cf-4f94-8b7d-0c91b81ce0ca#gs.g5lwaa">
+    <img src="img/badges/cd-ro-associate.png" alt="cd-ro-associate" width="100">
+  </a>
+  <a href="https://certificates.cloudbees.com/9945c321-c644-4272-a5f9-f867c649498b#gs.fmhv2t">
+    <img src="img/badges/cb-cd-essentials.png" alt="cb-cd-essentials" width="100">
+  </a>
+  <a href="https://www.credly.com/badges/34eac3f4-61d4-43e6-b3c8-1694dcefbc49/linked_in?t=rcc75i">
+    <img src="img/badges/terraform.png" alt="terraform" width="100">
+  </a>
+  <a href="https://certificates.cloudbees.com/4f8608d3-0e74-4c04-9e5c-3fa2123af47e">
+    <img src="img/badges/cb-ci-essentials.png" alt="cb ci essentials" width="100">
+  </a>
+  <a href="https://www.credly.com/badges/11b2c761-abc5-46dc-9637-e72f6e0ba54f">
+    <img src="img/badges/cka.png" alt="cka" width="100">
+  </a>
+  <a href="https://certificates.cloudbees.com/949c399f-7beb-4872-82f1-fe8c53424ef8">
+    <img src="img/badges/cb-ci-enginner.png" alt="cb ci enginner" width="100">
+  </a>
+</div>
+
 
 ### ✍ Blog & Writing
 
