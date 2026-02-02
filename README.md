@@ -22,14 +22,6 @@ Beyond my role at CloudBees, I co-organize Cloud Native Sevilla, a local chapter
 
 Previously, I gained experience as Java Web Developer and GIS DBA and Developer where I contributed to projects for different sectors like Urban Planning, Telecom and Energy.
 
-### Work Ecosystem
-
-![](https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Shell-Bash-informational?style=flat&logo=gnu-bash&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Cloud-AWS-informational?style=flat&logo=amazon-aws&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Cloud-GCP-informational?style=flat&logo=gcp&logoColor=white&color=A0C65C)
-
-[![](https://img.shields.io/badge/Editor-Visual_Studio-informational?style=flat&logo=visualstudiocode&logoColor=white&color=A0C65C)](https://gist.github.com/carlosrodlop/c0b8a65820590e6b5cc13a87f96aee75) ![](https://img.shields.io/badge/Code-Java-informational?style=flat&logo=java&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Code-Groovy-informational?style=flat&logo=Apache+Groovy&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=Python&logoColor=white&color=A0C65C)
-
-![](https://img.shields.io/badge/Tools-Jenkins-informational?style=flat&logo=jenkins&logoColor=white&color=A0C65C) [![](https://img.shields.io/badge/Tools-Docker-informational?style=flat&logo=docker&logoColor=white&color=A0C65C)](https://hub.docker.com/u/carlosrodlop) ![](https://img.shields.io/badge/Tools-Kubernetes-informational?style=flat&logo=kubernetes&logoColor=white&color=A0C65C) ![](https://img.shields.io/badge/Tools-Terraform-informational?style=flat&logo=terraform&logoColor=white&color=A0C65C)
-
 ### Badges
 
 <a href="https://www.credly.com/badges/f5b946ae-b91a-4dc2-968b-5cbb7cd07519/public_url"><img src="img/badges/cncg-organizer-2025.png" alt="organizer-cnf-2025" width="100"></a>
@@ -61,7 +53,10 @@ Previously, I gained experience as Java Web Developer and GIS DBA and Developer 
 
 ### 🗣 Talks
 
-- [EKS Blueprints: Jenkins at Scale](https://community.cncf.io/events/details/cncf-cloud-native-madrid-presents-cloud-native-madrid-ryanair/). Madrid CNCF Local Group, 2024.
+- Jenkins at 20: Scaling CI/CD Pipelines in the Cloud-Native Era with EKS Blueprints. 
+  - [Madrid CNCF Local Group, 2024](https://community.cncf.io/events/details/cncf-cloud-native-madrid-presents-cloud-native-madrid-ryanair/)
+  - [Lisbon AWS & CNCF Local Group, 2024](https://community.cncf.io/events/details/cncf-cloud-native-lisbon-presents-19-cnl-meetup-cloud-native-lisbon-aws-user-group-lisbon/)
+  - [London CNCF Local Group, 2025](https://www.meetup.com/cloud-native-london/events/305905095/)
 - [Cloud Friendly Jenkins](https://community.cncf.io/events/details/cncf-cloud-native-sevilla-presents-cloud-friendly-jenkins-amp-calico-network-policies/). Sevilla CNCF Local Group, 2024.
 - [DR CloudBees CI EKS with Velero](https://events.devopsworld.com/widget/cloudbees/devopsworld22/conferenceSessionDetails?tab.day=20220928&search=1040). DevOps World Orlado (EEUU), 2022.
 - [Combining Serverless Continuous Delivery With ChatOps](https://www.meetup.com/es-ES/SVQJUG/events/263195348/). Sevilla Java Meetup Group, 2019.
