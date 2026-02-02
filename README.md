@@ -32,10 +32,10 @@ Previously, I gained experience as Java Web Developer and GIS DBA and Developer 
 
 ### Badges
 
-<a href="https://www.credly.com/badges/ec860dbd-b1d4-4b5a-a5ad-650790e45fc1"><img src="img/badges/cncg-organizer-2025.png" alt="organizer-cnf-2025" width="100"></a>
-<a href="https://www.credly.com/badges/ec860dbd-b1d4-4b5a-a5ad-650790e45fc1"><img src="img/badges/organizer-cnf-2024.png" alt="organizer-cnf-2024" width="100"></a>
-<a href="https://www.credly.com/badges/ec860dbd-b1d4-4b5a-a5ad-650790e45fc1"><img src="img/badges/organizer-cnf-2024.png" alt="organizer-cnf-2024" width="100"></a>
-<a href="https://www.credly.com/badges/ec860dbd-b1d4-4b5a-a5ad-650790e45fc1"><img src="img/badges/cncg-organizer-2024.png" alt="organizer-cnf-2024" width="100"></a>
+<a href="https://www.credly.com/earner/earned/badge/f5b946ae-b91a-4dc2-968b-5cbb7cd07519"><img src="img/badges/cncg-organizer-2025.png" alt="organizer-cnf-2025" width="100"></a>
+<a href="https://www.credential.net/bd92be6e-78be-4ef8-a83e-70848d209427#acc.khXmYHao"><img src="img/badges/wiz-cloudFundamentals.png" alt="wiz-cloudFundamentals" width="100"></a>
+<a href="https://www.credly.com/badges/ec860dbd-b1d4-4b5a-a5ad-650790e45fc1"><img src="img/badges/wiz-demo.png" alt="wiz-demo" width="100"></a>
+<a href="https://www.credly.com/badges/ec860dbd-b1d4-4b5a-a5ad-650790e45fc1"><img src="img/badges/cncg-organizer-2024.png" alt="cncg-organizer-2024" width="100"></a>
 <a href="https://www.credly.com/badges/de1a3dfd-47bc-44ef-95ec-6add0682ebc4"><img src="img/badges/cisco-python-2.png" alt="cisco-python-2" width="100"></a>
 <a href="https://credly.com/badges/498cd855-cbb8-475b-a3cf-22e6c127b6f4"><img src="img/badges/cisco-python-1.png" alt="cisco-python-1" width="100"></a>
 <a href="https://certificates.cloudbees.com/2666591d-f7db-451d-8024-ff3b65f2ed9b#gs.5pd8if"><img src="img/badges/jenkins.png" alt="jenkins" width="100"></a>
